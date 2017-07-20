@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ko"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="ko"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="ko"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="ko"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ko">
+<!--<![endif]-->
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>김태균 포트폴리오사이트에 오신것을 환영합니다.</title>
+
+    <meta name="description" content="김태균 포트폴리오사이트" />
+
+    <!-- Mobile Specifics -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+
+    <!-- Mobile Internet Explorer ClearType Technology -->
+    <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+    <link rel="icon" href="include/img/favicon.ico" />
+    <!-- Bootstrap -->
+    <link href="include/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="include/css/main.css">
+
+    <!-- Supersized -->
+    <link href="include/css/supersized.css" rel="stylesheet">
+    <link href="include/css/supersized.shutter.css" rel="stylesheet">
+
+    <!-- FancyBox -->
+    <link href="include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+    <!-- Font Icons -->
+    <link href="include/css/fonts.css" rel="stylesheet">
+
+    <!-- Shortcodes -->
+    <link href="include/css/shortcodes.css" rel="stylesheet">
+
+    <!-- Responsive -->
+    <link href="include/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="include/css/responsive.css" rel="stylesheet">
+
+    <!-- Supersized -->
+    <link href="include/css/supersized.css" rel="stylesheet">
+    <link href="include/css/supersized.shutter.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900" rel="stylesheet" type="text/css">
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="#">
+
+    <link rel="apple-touch-icon" href="#">
+    <link rel="apple-touch-icon" sizes="114x114" href="#">
+    <link rel="apple-touch-icon" sizes="72x72" href="#">
+    <link rel="apple-touch-icon" sizes="144x144" href="#">
+
+    <!-- Modernizr -->
+    <script src="include/js/modernizr.js"></script>
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'Insert Your Code']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Analytics -->
+
+</head>
+
+
+<body>
+
+    <!-- This section is for Splash Screen -->
+    <div class="ole">
+        <section id="jSplash">
+            <div id="circle"></div>
+        </section>
+    </div>
+    <!-- End of Splash Screen -->
+
+    <!-- Homepage Slider -->
+    <div id="home-slider">
+        <div class="overlay"></div>
+
+        <!--
+    <div class="slider-text">
+    	<div id="slidecaption">
+    	</div>
+    </div>   
+-->
+
+        <div class="control-nav">
+            <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+            <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+            <ul id="slide-list"></ul>
+
+            <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+        </div>
+    </div>
+    <!-- End Homepage Slider -->
+
+    <!-- Header -->
+    <header>
+        <div class="sticky-nav">
+            <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+
+            <div id="logo"></div>
+
+            <nav id="menu">
+                <ul id="menu-nav">
+                    <li class="current"><a href="#home-slider">Home</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Our Work Section -->
+    <div id="work" class="page">
+        <div class="container">
+            <!-- Title Page -->
+            <div class="row">
+                <div class="span12">
+                    <div class="title-page">
+                        <h2 class="title">포트폴리오</h2>
+                        <h3 class="title-description"><a href="#">김태균</a> 의 포트폴리오입니다.</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- End Title Page -->
+
+            <!-- Portfolio Projects -->
+            <div class="row">
+                <div class="span3">
+                    <!-- Filter -->
+                    <nav id="options" class="work-nav">
+                        <ul id="filters" class="option-set" data-option-key="filter">
+                            <li class="type-work">Type of Work</li>
+                            <li><a href="#filter" data-option-value="*" class="selected">전체보기</a></li>
+                            <li><a href="#filter" data-option-value=".github">GitHub</a></li>
+                            <li><a href="#filter" data-option-value=".mj">MJ Plex</a></li>
+                            <li><a href="#filter" data-option-value=".imbc">iMBC</a></li>
+                            <li><a href="#filter" data-option-value=".dk">dk techin(구 다음서비스)</a></li>
+                            <li><a href="#filter" data-option-value=".amoeba">amoeba</a></li>
+                            <li><a href="#filter" data-option-value=".study">study</a></li>
+                            <li><a href="#filter" data-option-value=".etc">etc</a></li>
+                        </ul>
+                    </nav>
+                    <!-- End Filter -->
+                </div>
+
+                <div class="span9">
+                    <div class="row">
+                        <section id="projects">
+                            <ul id="thumbs">
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 github">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="GitHub" href="include/img/work/img-git.jpg">
+                                        <span class="overlay-img">GitHub</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/img-git.jpg" alt="작업기간 :  2016년 9월부터 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="https://github.com/tuhbm">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="React Todo List" href="include/img/work/img-reactTodoList.jpg">
+                                        <span class="overlay-img">React Todo List</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/img-reactTodoList.jpg" alt="작업기간 :  2017년 7월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="https://github.com/tuhbm/tuhbm.github.io/tree/master/react-study/react-todoList">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="React Youtube List" href="include/img/work/img-reactYoutubeList.jpg">
+                                        <span class="overlay-img">React Youtube List</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/img-reactYoutubeList.jpg" alt="작업기간 :  2017년 7월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="https://github.com/tuhbm/tuhbm.github.io/tree/master/react-study/react-youtubeList">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="css slide" href="include/img/work/img-css-slide.jpg">
+                                        <span class="overlay-img">css slide</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/img-css-slide.jpg" alt="작업기간 :  2017년 7월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./css_study/pure_css_slide/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="AMP" href="include/img/work/img-amp.jpg">
+                                        <span class="overlay-img">AMP</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/img-amp.jpg" alt="작업기간 :  2017년 4월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./amp/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="D3" href="include/img/work/img-d3.jpg">
+                                        <span class="overlay-img">D3</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/img-d3.jpg" alt="작업기간 :  2017년 6월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./d3/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="구글맵 일반" href="include/img/work/google-map1.jpg">
+                                        <span class="overlay-img">구글맵 일반</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/google-map1.jpg" alt="작업기간 :  2017년 5월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./api-study/google-map-marker.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="구글맵 종류별" href="include/img/work/google-map2.jpg">
+                                        <span class="overlay-img">구글맵 종류별</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/google-map2.jpg" alt="작업기간 :  2017년 5월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./api-study/google-map.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="구글맵 지진 빈도 그래프" href="include/img/work/google-map3.jpg">
+                                        <span class="overlay-img">구글맵 지진 빈도 그래프</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/google-map3.jpg" alt="작업기간 :  2017년 5월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./api-study/google-map-graph.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="구글맵 열지도" href="include/img/work/google-map4.jpg">
+                                        <span class="overlay-img">구글맵 열지도</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/google-map4.jpg" alt="작업기간 :  2017년 5월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./api-study/google-map-graph2.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="구글맵 MarkerClusterer" href="include/img/work/google-map5.jpg">
+                                        <span class="overlay-img">구글맵 MarkerClusterer</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/google-map5.jpg" alt="작업기간 :  2017년 5월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./api-study/google-map-markerClusterer.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 amoeba">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="SK Tech X 여행블로그서비스 VOLO" href="include/img/work/portfolio39.jpg">
+                                        <span class="overlay-img">SK Tech X 여행블로그서비스 VOLO</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio39.jpg" alt="작업기간 :  2017년 1월 / 작업비중 : 60%">
+                                    <a class="btn-work-link" target="_blank" href="https://withvolo.com/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 etc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="실력자" href="include/img/work/img-hitter.jpg">
+                                        <span class="overlay-img">실력자</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/img-hitter.jpg" alt="작업기간 :  2016년 12월 / 작업비중 : 60%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.myspecialist.co.kr/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 study">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="움직이는 물고기" href="include/img/work/portfolio38.jpg">
+                                        <span class="overlay-img">움직이는 물고기</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio38.jpg" alt="작업기간 :  2016년 11월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./javascript_study/fishmove_game/movefish.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="카카오페이 영화 프로모션" href="include/img/work/portfolio36.jpg">
+                                        <span class="overlay-img">카카오페이 영화 프로모션</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio36.jpg" alt="작업기간 :  2016년 11월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/kakaopay_prm_clean_161031/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="카카오페이 반응형 프로모션" href="include/img/work/portfolio37.jpg">
+                                        <span class="overlay-img">카카오페이 반응형 프로모션</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio37.jpg" alt="작업기간 :  2016년 10월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/kakaopay_prm_clean_161018/index_submit.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="카카오페이 반응형 프로모션" href="include/img/work/portfolio35.jpg">
+                                        <span class="overlay-img">카카오페이 반응형 프로모션</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio35.jpg" alt="작업기간 :  2016년 11월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/kakaotalk_prm_clean_161014/normal.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="다음대선홈" href="include/img/work/portfolio24.jpg">
+                                        <span class="overlay-img">다음대선홈</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio24.jpg" alt="작업기간 :  2016년 10월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test11/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="M)다음-뮤직바 상세페이지" href="include/img/work/portfolio25.jpg">
+                                        <span class="overlay-img">M)다음-뮤직바 상세페이지</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio25.jpg" alt="작업기간 :  2016년 10월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test10/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="DM다음고객센터" href="include/img/work/portfolio26.jpg">
+                                        <span class="overlay-img">DM다음고객센터</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio26.jpg" alt="작업기간 :  2016년 10월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test9/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="M)다음영화 상세페이지" href="include/img/work/portfolio27.jpg">
+                                        <span class="overlay-img">M)다음영화 상세페이지</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio27.jpg" alt="작업기간 :  2016년 9월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test8/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="다음-만화앱 프로모션" href="include/img/work/portfolio28.jpg">
+                                        <span class="overlay-img">다음-만화앱 프로모션</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio28.jpg" alt="작업기간 :  2016년 9월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test7/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="M)티스토리 우수블로그" href="include/img/work/portfolio29.jpg">
+                                        <span class="overlay-img">M)티스토리 우수블로그</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio29.jpg" alt="작업기간 :  2016년 9월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test6/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="M)다음 캐쉬충전" href="include/img/work/portfolio30.jpg">
+                                        <span class="overlay-img">M)다음 캐쉬충전</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio30.jpg" alt="작업기간 :  2016년 9월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test5/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="다음 희망해" href="include/img/work/portfolio31.jpg">
+                                        <span class="overlay-img">다음 희망해</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio31.jpg" alt="작업기간 :  2016년 8월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test4/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="다음 스포츠 홈" href="include/img/work/portfolio32.jpg">
+                                        <span class="overlay-img">다음 스포츠 홈</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio32.jpg" alt="작업기간 :  2016년 8월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test3/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="다음-마이피플 채널관리" href="include/img/work/portfolio33.jpg">
+                                        <span class="overlay-img">다음-마이피플 채널관리</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio33.jpg" alt="작업기간 :  2016년 8월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test2/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="다음-마일리지" href="include/img/work/portfolio34.jpg">
+                                        <span class="overlay-img">다음-마일리지</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio34.jpg" alt="작업기간 :  2016년 8월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test1/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 dk">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="다음-도서" href="include/img/work/dk-test.jpg">
+                                        <span class="overlay-img">다음-도서</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/dk-test.jpg" alt="작업기간 :  2016년 6월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="./dktechin/test/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="씽동야조우(중국판 슈퍼스타K)" href="include/img/work/portfolio01.jpg">
+                                        <span class="overlay-img">씽동야조우(중국판 슈퍼스타K)</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio01.jpg" alt="작업기간 : 2015년 7월 / 작업비중 : 90%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.mbcplus.com/program/superidol/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="DMC페스티벌 DJ콘서트" href="include/img/work/portfolio02.jpg">
+                                        <span class="overlay-img">DMC페스티벌 DJ콘서트</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio02.jpg" alt="작업기간 : 2015년 8월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/radio/event/2015djconcert/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="주말드라마 엄마" href="include/img/work/portfolio03.jpg">
+                                        <span class="overlay-img">주말드라마 엄마</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio03.jpg" alt="작업기간 : 2015년 8월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/tv/drama/mom/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="2015추석특집 아이돌육상대회" href="include/img/work/portfolio04.jpg">
+                                        <span class="overlay-img">2015추석특집 아이돌육상대회</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio04.jpg" alt="작업기간 :  2015년 9월 / 작업비중 : 90%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/tv/ent/event/idolchampionship2015/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="iMBC 앱 해요 웹사이트" href="include/img/work/portfolio05.jpg">
+                                        <span class="overlay-img">iMBC 앱 해요 웹사이트</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio05.jpg" alt="작업기간 : 2015년 10월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://heyo.imbc.com/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="MBC나눔 좋은친구들" href="include/img/work/portfolio06.jpg">
+                                        <span class="overlay-img">MBC나눔 좋은친구들</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio06.jpg" alt="작업기간 :  2015년 11월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://nanum.imbc.com/goodfriends/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="쇼!음악중심" href="include/img/work/portfolio07.jpg">
+                                        <span class="overlay-img">쇼!음악중심</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio07.jpg" alt="작업기간 :  2015년 11월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/tv/ent/musiccore/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="옆집 CEO들" href="include/img/work/portfolio08.jpg">
+                                        <span class="overlay-img">옆집 CEO들</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio08.jpg" alt="작업기간 :  2015년 12월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/tv/culture/ceo/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="방송문화진흥원" href="include/img/work/portfolio09.jpg">
+                                        <span class="overlay-img">방송문화진흥원</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio09.jpg" alt="작업기간 :  2015년 12월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.fbc.or.kr/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="툰드라쇼 시즌2" href="include/img/work/portfolio16.jpg">
+                                        <span class="overlay-img">툰드라쇼 시즌2</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio16.jpg" alt="작업기간 :  2016년 1월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.mbcplus.com/program/toon2/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="설특집 요리원정대" href="include/img/work/portfolio17.jpg">
+                                        <span class="overlay-img">설특집 요리원정대</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio17.jpg" alt="작업기간 :  2016년 1월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/tv/ent/cooking/program/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="가화만사성" href="include/img/work/portfolio18.jpg">
+                                        <span class="overlay-img">가화만사성</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio18.jpg" alt="작업기간 :  2016년 2월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/tv/drama/gahwa/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="마이리틀베이비" href="include/img/work/portfolio19.jpg">
+                                        <span class="overlay-img">마이리틀베이비</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio19.jpg" alt="작업기간 :  2016년 2월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/tv/drama/malibe/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- 2016-11-03일 업데이트 -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="출발비디오여행" href="include/img/work/portfolio20.jpg">
+                                        <span class="overlay-img">출발비디오여행</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio20.jpg" alt="작업기간 :  2016년 3월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/tv/ent/video/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="휴먼다큐사랑" href="include/img/work/portfolio21.jpg">
+                                        <span class="overlay-img">휴먼다큐사랑</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio21.jpg" alt="작업기간 :  2016년 5월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/tv/culture/spdocu/love/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="MBC스페셜" href="include/img/work/portfolio22.jpg">
+                                        <span class="overlay-img">MBC스페셜</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio22.jpg" alt="작업기간 :  2016년 5월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.imbc.com/broad/tv/culture/mbcspecial/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 imbc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="MBC Sports Plus2" href="include/img/work/portfolio23.jpg">
+                                        <span class="overlay-img">MBC Sports Plus2</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio23.jpg" alt="작업기간 :  2016년 6월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.mbcplus.com/sports2/index.html">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 mj">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="디자이너잡" href="include/img/work/portfolio10.jpg">
+                                        <span class="overlay-img">디자이너잡</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio10.jpg" alt="작업기간 :  2015년 2월 / 작업비중 : 90%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.designerjob.co.kr/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 mj">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="미디어잡" href="include/img/work/portfolio11.jpg">
+                                        <span class="overlay-img">미디어잡</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio11.jpg" alt="작업기간 :  2015년 1월 / 작업비중 : 70%">
+                                    <a class="btn-work-link" target="_blank" href="http://www.mediajob.co.kr/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 etc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="투싼ix" href="include/img/work/portfolio12.jpg">
+                                        <span class="overlay-img">투싼ix</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio12.jpg" alt="작업기간 :  2014년 7월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://tuhbm1.dothome.co.kr/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 etc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="인천시설관리공단" href="include/img/work/portfolio13.jpg">
+                                        <span class="overlay-img">인천시설관리공단</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio13.jpg" alt="작업기간 :  2014년 11월 / 작업비중 : 95%">
+                                    <a class="btn-work-link" target="_blank" href="http://tuhbm4.dothome.co.kr/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 etc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="인천남구청" href="include/img/work/portfolio14.jpg">
+                                        <span class="overlay-img">인천남구청</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio14.jpg" alt="작업기간 :  2014년 6월 / 작업비중 : 90%">
+                                    <a class="btn-work-link" target="_blank" href="http://tuhbm8.dothome.co.kr/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 etc">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="유니온스틸(반응형)" href="include/img/work/portfolio15.jpg">
+                                        <span class="overlay-img">유니온스틸(반응형)</span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="include/img/work/portfolio15.jpg" alt="작업기간 :  2014년 12월 / 작업비중 : 100%">
+                                    <a class="btn-work-link" target="_blank" href="http://tuhbm7.dothome.co.kr/">링크바로가기</a>
+                                </li>
+                                <!-- End Item Project -->
+
+
+
+
+                                <!-- 2016-11-03일 업데이트 -->
+                            </ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Portfolio Projects -->
+        </div>
+    </div>
+    <!-- End Our Work Section -->
+
+    <!-- About Section -->
+    <div id="about" class="page-alternate">
+        <div class="container">
+            <!-- Title Page -->
+            <div class="row">
+                <div class="span12">
+                    <div class="title-page">
+                        <h2 class="title">About Me</h2>
+                        <h3 class="title-description">웹퍼블리셔 김태균을 소개합니다.</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- End Title Page -->
+
+            <!-- People -->
+            <div class="row">
+
+                <!-- Start Profile -->
+                <div class="span4 profile">
+                    <div class="image-wrap">
+                        <div class="hover-wrap">
+                            <span class="overlay-img"><img src="include/img/profile/profile-01.jpg" alt=""></span>
+                            <!--                    <span class="overlay-text-thumb">김태균</span>-->
+                        </div>
+                        <img src="include/img/profile/profile-02.jpg" alt="">
+                    </div>
+                    <h3 class="profile-name">김태균 / TaeKyun Kim</h3>
+                    <p class="profile-description">출생 : 1989년 2월 7일(인천) / 사는곳 : 인천 / 취미: 야구관람</p>
+
+                    <!--
+            <div class="social">
+            	<ul class="social-icons">
+                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
+                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
+                </ul>
+            </div>
+-->
+                </div>
+                <!-- End Profile -->
+
+
+
+            </div>
+            <!-- End People -->
+        </div>
+    </div>
+    <!-- End About Section -->
+
+
+    <!-- Contact Section -->
+    <div id="contact" class="page area-contact">
+        <div class="container">
+            <!-- Title Page -->
+            <!--<div class="row">-->
+                <!--<div class="span12">-->
+                    <!--<div class="title-page">-->
+                        <!--<h2 class="title">연락바랍니다.</h2>-->
+                        <!--<h3 class="title-description">저와 함께하고 싶으시다면 연락주세요.</h3>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!-- End Title Page -->
+
+            <!-- Contact Form -->
+            <div class="row">
+                <!--
+    	<div class="span9">
+        
+        	<form id="contact-form" class="contact-form" action="#">
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="성명" value="" name="name" />
+                </p>
+                <p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="전자메일주소" value="" name="email" />
+                </p>
+                <p class="contact-message">
+                	<textarea id="contact_message" placeholder="메시지" name="message" rows="15" cols="40"></textarea>
+                </p>
+                <p class="contact-submit">
+                	<a id="contact-submit" class="submit" href="#">전자메일 보내기</a>
+                </p>
+                
+                <div id="response">
+                
+                </div>
+            </form>
+         
+        </div>
+-->
+
+                <div class="span3 box-contact">
+                    <div class="contact-details">
+                        <h3>Contact Details</h3>
+                        <ul>
+                            <li><a href="#">tuhbm@naver.com</a></li>
+                            <li>(010) 8606-6734</li>
+                            <li>
+                                <!--Incheon namgu Younghyeon 3 dong-->
+                                인천광역시 남구 용현동
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact Form -->
+        </div>
+    </div>
+    <!-- End Contact Section -->
+
+
+    <!-- Socialize -->
+    <!--
+    <div id="social-area" class="page area-social">
+        <div class="container">
+            <div class="row">
+
+            <div class="span12">
+                <nav id="social">
+                    <ul>                        
+                        <li><a href="https://www.facebook.com/Bluxart" title="on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                        <li><a href="https://plus.google.com/105500420878314068694"  title=" Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
+                        <li><a href="https://plus.google.com/105500420878314068694" title="blog" target="_blank"><span class="font-icon-social-blogger"></span></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- End Socialize -->
+
+    <!-- Footer -->
+    <footer>
+        <p class="credits">Copyright&copy; Since 2015, Kim taekyun All rights reserved</p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Back To Top -->
+    <a id="back-to-top" href="#">
+        <i class="font-icon-arrow-simple-up"></i>
+    </a>
+    <!-- End Back to Top -->
+
+
+    <!-- Js -->
+    <script src="include/js/jquery.min.js"></script>
+    <!-- jQuery Core -->
+    <script src="include/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="include/js/supersized.3.2.7.min.js"></script>
+    <!-- Slider -->
+    <script src="include/js/waypoints.js"></script>
+    <!-- WayPoints -->
+    <script src="include/js/waypoints-sticky.js"></script>
+    <!-- Waypoints for Header -->
+    <script src="include/js/jquery.isotope.js"></script>
+    <!-- Isotope Filter -->
+    <script src="include/js/jquery.fancybox.pack.js"></script>
+    <!-- Fancybox -->
+    <script src="include/js/jquery.fancybox-media.js"></script>
+    <!-- Fancybox for Media -->
+    <script src="include/js/jquery.tweet.js"></script>
+    <!-- Tweet -->
+    <script src="include/js/plugins.js"></script>
+    <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+    <script src="include/js/main.js"></script>
+    <!-- Default JS -->
+    <!-- End Js -->
+
+</body>
+
+</html>

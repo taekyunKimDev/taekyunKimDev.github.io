@@ -1,0 +1,46 @@
+.search-bar {
+    margin: 20px;
+    text-align: center;
+}
+
+.search-bar input {
+    width:75%;
+}
+
+.video-item img {
+    max-width: 64px;
+}
+
+.video-datail .details {
+    margin-top:10px;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius: 4px;
+}
+
+.list-group-item {
+    cursor:pointer;
+}
+
+.list-group-item:hover {
+    background-color:#eee
+}
+
+.video-list .media-heading{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word;
+}
+
+.video-list .media-desc{
+    margin-top:10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word;
+}
