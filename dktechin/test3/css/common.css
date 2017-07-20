@@ -1,0 +1,366 @@
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes: none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+input::-ms-clear{display:none}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{background:#fff}
+body,th,td,input,select,textarea,button{font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#000}
+a{color:#333;text-decoration:none}
+a:active, a:hover{background-color:transparent;text-decoration:underline}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+/* 공통 */
+#kakaoIndex{overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} 
+.ir_pm{display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+.ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%} 
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.show{display:block}
+.hide{display:none}
+.txt_bar{display: inline-block;width: 1px;height: 10px;margin: 0 7px 0 8px;font-size:10px;vertical-align: top;color:#4b5266}
+.gnb_sports{display:block;overflow:hidden;background:url(../images/gnb_sports.gif) no-repeat}
+.btn_sports{display:block;overflow:hidden;font-size:0;background:url(../images/btn_sports.gif) no-repeat;line-height:0;text-indent:-9999px;z-index:10}
+.tit_sports{display:block;overflow:hidden;font-size:0;background:url(../images/tit_sports.gif) no-repeat;line-height:0;text-indent:-9999px}
+.ico_sports{display:block;overflow:hidden;font-size:0;background:url(../images/ico_sports.png) no-repeat;line-height:0;text-indent:-9999px}
+.tab_sports{display:block;overflow:hidden;font-size:0;background:url(../images/tab_sports.gif) no-repeat;line-height:0;text-indent:-9999px}
+.date_sports{display:inline-block;overflow:hidden;float:left;font-size:0;background:url(../images/option_calendar.gif) no-repeat;line-height:0;text-indent:-9999px}
+/* 레이아웃 */
+#kakaoWrap{position:relative;padding-top:70px}
+.head_sports {overflow:hidden;width:978px;margin:0 auto}
+#kakaoGnb{float:left;margin-top:26px}
+.cont_sports{width:978px;margin:0 auto}
+#cMain{overflow:hidden;border-top:1px solid #b6b9bc;border-bottom:1px solid #63666d;background: url(../images/bg_aside.gif) repeat-y 100% 0}
+#cEtc{overflow:hidden;padding:28px 0 33px 50px;border-top: 1px solid #53565b;border-bottom:2px solid #a1a3a7}
+#kakaoFoot{width:978px;text-align:center;margin:22px auto 0;font-size:11px;color:#7c7c7c;letter-spacing: -1px}
+/* 미니 다음 */
+#wrapMinidaum{position:absolute;width:100%;height:33px;border-bottom:1px solid #eceded;top:0;left:0;text-align:center}
+#wrapMinidaum .inner_minidaum{width:978px;margin:0 auto}
+/* 헤더 */
+.head_sports .logo_sports{float:left;margin-right:20px}
+.head_sports .logo_sports .gnb_sports{width:107px;height:33px;background-position:0 0}
+.head_sports .link_service{float:left;margin-bottom:0}
+.head_sports .link_service li{float:left}
+.head_sports .link_service .link_news{width:43px;height:33px;margin-right:12px;background-position: 0 -50px}
+.head_sports .link_service .link_ent{width:41px;height:33px;margin-right:14px;background-position: 0 -100px}
+.head_sports .link_service .link_life{width:62px;height:33px;background-position: 0 -150px}
+.head_sports .area_search{float:right;width:308px;margin-right:1px;margin-top:2px;padding-left: 2px;background:url(../images/gnb_sports.gif) no-repeat -125px 0}
+.form_search{width:308px;padding-right:2px;background:url(../images/gnb_sports.gif) repeat-x 132px 0}
+.box_search{overflow:hidden;width:100%;height:27px;border-top: 1px solid #c1c1c1;border-bottom: 1px solid #c1c1c1;background-color:#000}
+.inp_search{float:left;border:0 none;width: 238px;height: 27px;padding: 0 10px 0 12px}
+.area_search .btn_search{float:left;width: 48px;height: 29px;background: url(../images/btn_sports.gif) no-repeat 0 -170px;cursor: pointer}
+#kakaoGnb{float:left;margin-top:26px}
+.gnb_list{overflow:hidden;width:978px;border-top:2px solid #444a57}
+.gnb_list li{float:left}
+.gnb_list .link_home{width:88px;height:47px;background-position:0 -200px}
+.gnb_list .link_football{width:62px;height:47px;background-position:-88px -200px}
+.gnb_list .link_abroadfootball{width:89px;height:47px;background-position:-150px -200px}
+.gnb_list .link_baseball{width:61px;height:47px;background-position:-239px -200px}
+.gnb_list .link_abroadbaseball{width:87px;height:47px;background-position:-300px -200px}
+.gnb_list .link_golf{width:62px;height:47px;background-position:-387px -200px}
+.gnb_list .link_basketvolley{width:93px;height:47px;background-position:-449px -200px}
+.gnb_list .link_normal{width:62px;height:47px;margin-right:105px;background-position:-542px -200px}
+.gnb_list .link_photo{width:56px;height:47px;background-position:-709px -200px}
+.gnb_list .link_vod{width:57px;height:47px;background-position:-765px -200px}
+.gnb_list .link_column{width:54px;height:47px;background-position:-822px -200px}
+.gnb_list .link_livescore{width:102px;height:47px;background-position:-876px -200px}
+/* 컨텐츠 */
+.sports_calendar{width:976px;height:82px;border:1px solid #0a1236;background-color:#303a6d}
+/* option_calendar */
+.sports_calendar .opt_calendar{float:left;position:relative;width:119px;height:56px;padding:15px 12px 12px;border-right:1px solid #000;z-index:1}
+.opt_calendar .txt_day{display: inline-block;overflow:hidden;margin-left:18px;margin-bottom:7px}
+.opt_calendar .txt_num0{width: 9px;height:14px;background-position: 0px 0}
+.opt_calendar .txt_num1{width: 6px;height:14px;background-position: 0px -25px}
+.opt_calendar .txt_num2{width: 8px;height:14px;background-position: 0px -50px}
+.opt_calendar .txt_num3{width: 9px;height:14px;background-position:0px -75px}
+.opt_calendar .txt_num5{width: 8px;height:14px;background-position: 0px -125px}
+.opt_calendar .txt_num8{width: 9px;height:14px;background-position: 0px -200px}
+.opt_calendar .txt_dot{width:4px;height:14px;background-position: 0px -325px}
+.opt_calendar .txt_leftbrakets{width: 10px;height:14px;background-position: 5px -250px}
+.opt_calendar .txt_rightbrakets{width: 5px;height:14px;background-position: 2px -275px}
+.opt_calendar .txt_thursday{width: 12px;height:14px;background-position: 0px -300px}
+.opt_calendar .list_league{display:inline-block;width:119px;height:28px;background:url(../images/bg_option_calendar.gif) no-repeat 0 0}
+.opt_calendar .opt_list_on{display:inline-block;overflow:hidden;float:right;width:31px;height:28px;background-position:0 -130px}
+.opt_calendar .btn_prev{position:absolute;float:none;width:7px;height:10px;background-position:-40px -90px;top:18px;left:14px}
+.opt_calendar .btn_next{position:absolute;float:none;width:7px;height:10px;background-position:-50px -90px;top:18px;right:14px}
+.opt_calendar .txt_select{display: inline-block;overflow: hidden;position: absolute;width: 80px;height: 28px;padding-left: 7px;font-size: 12px;color: #d5d8ed;line-height: 30px;top: 42px;left: 13px;text-indent: 0}
+.opt_calendar .list_option{display:none;position:absolute;padding:14px 0;border:1px solid #000;background-color:#202c59;top:69px;left:12px;z-index:10}
+.opt_calendar .opt_on{display:block}
+.opt_calendar .league_on .list_option{display:block}
+.opt_calendar .list_option li{width:109px;padding-left:8px;background-color:#202c59;line-height:22px}
+.opt_calendar .list_option .option_on{background-color:#151e3e}
+.opt_calendar .list_option .link_league{display:block;font-family: '돋움',dotum,sans-serif;font-size:12px;color:#d5d8ed;text-indent: 0}
+.opt_calendar .option_on .link_league{font-weight:bold;color:#fff}
+.sports_calendar .today_calendar{overflow:hidden;float:right}
+/* today_calendar */
+.today_calendar{position:relative;width:832px}
+.today_calendar .list_today{overflow:hidden;height:82px;margin-left: -1px;padding:0 27px}
+.today_calendar .list_today li{float:left;position:relative;width: 195px;padding:10px 0 11px}
+.today_calendar .list_today li{background:url(../images/bg_todayCalendar_left.gif) no-repeat 0 0}
+.today_calendar .list_today .match_before{width: 194px}
+.today_calendar .txt_league{position:absolute;font-family: Tahoma,sans-serif;font-size:10px;color:#7e86aa;top:3px;left:9px}
+.today_calendar .txt_team{display:block;font-size:11px;color:#d9dded}
+.today_calendar .team_left{display:block;float:left;width:53px;height:50px;padding-top:11px;padding-right:14px;text-align:right}
+.today_calendar .team_left .txt_team{margin-right:7px}
+.today_calendar .match_before .team_left{width:52px}
+.today_calendar .match_info{float:left;width:58px;height:59px;padding-top:2px;background:url(../images/bg_todayCalendar_top.gif) no-repeat 0 0}
+.today_calendar .team_right{display:block;float:right;width:54px;height:50px;padding-top:11px;padding-left:14px;text-align:left}
+.today_calendar .team_right .txt_team{margin-left:6px}
+.today_calendar .match_info .match_time{display:block;height:13px;border-bottom:1px solid #000;border-left:1px solid #000;border-right:1px solid #000;font-family: tahoma,sans-serif;font-size: 10px;background-color:#202c59;color:#8997d6;line-height:13px;text-align: center}
+.today_calendar .score_board{display:block;overflow:hidden;border-left:1px solid #000;border-right:1px solid #000;background-color:#202c59}
+.today_calendar .before_match{height:22px}
+.today_calendar .before_match .ico_vs{display: block;width:17px;height:12px;margin: 5px auto;background-position:0 -200px}
+.today_calendar .score_board .score_left{float:left;width:30px;height:22px;font-weight:bold;background:url(../images/bg_scoreBoard_center.jpg) no-repeat 27px 0;line-height:22px;text-align:center;color:#fff}
+.today_calendar .score_board .score_right{float:right;width:26px;height:22px;font-weight:bold;line-height:22px;text-align:center;color:#fff}
+.today_calendar .link_situation{width:58px;height:23px}
+.match_sms .link_situation{background-position: -60px 0}
+.match_highlight .link_situation{background-position: -60px -30px}
+.match_before .link_situation{background-position: -60px -60px}
+.match_result .link_situation{background-position: -60px -90px}
+.today_calendar .btn_prev, .today_calendar .btn_next{position: absolute;top:0}
+.today_calendar .btn_prev{width:27px;height:82px;background-position:0 0;left:0}
+.today_calendar .btn_next{width:27px;height:82px;background-position:-30px 0;right:0}
+/* flashnews */
+.box_flashnews{overflow:hidden;position:relative}
+.box_flashnews .inner_flashnews{position:relative;overflow:hidden;width:964px;height:37px;padding:12px 0 0 12px;border-left:1px solid #d7d7d9;border-right:1px solid #d7d7d9;border-bottom:1px solid #d7d7d9;background-color:#efeff2}
+.box_flashnews .inner_flashnews .btn_flashnews{display:block;float:left;width:67px;height:25px;margin-right:15px;background-position: -60px -120px}
+.box_flashnews .list_flashnews{overflow:hidden;float:left;width:300px;height:25px}
+.list_flashnews li{width:300px;line-height:27px}
+.box_flashnews .txt_news{margin-right:8px;font-size:12px;color:#2f2f2f}
+.box_flashnews .time_news{font-size:11px;color:#999}
+.box_flashnews .btn_up{position:absolute;width:15px;height:12px;background-position: -40px -130px;top:12px;left:394px}
+.box_flashnews .btn_down{position:absolute;width:15px;height:13px;background-position: -40px -150px;top:24px;left:394px}
+.box_flashnews .ad_flashnews{height:60px}
+.box_flashnews .bnr_tit{position:absolute;bottom:10px;left:122px}
+.box_flashnews .bnr_obj{position:absolute;bottom:-6px;right:101px}
+.box_flashnews .bnr_mouse{position:absolute;bottom:16px;right:12px}
+
+.sports_article{float:left;width:648px;min-height: 2043px;padding:0 30px 118px 0}
+/* 실시간 뉴스 갤러리 */
+.sports_news{overflow:hidden;margin-top:20px;margin-bottom:30px}
+.large_news{position:relative;float:left;width:386px;height:323px}
+.large_news .thumb_large{display:block;position: relative;height:323px}
+.large_news .thumb_large .ico_live{position: absolute;width:50px;height:50px;background-position:0 0;top:0;left:0}
+.large_news .box_txtnews{position:absolute;width:348px;height:82px;padding:15px 19px 10px;background:url(../images/bg_mainnews_txt.png) repeat-x;bottom:0;left:0}
+.box_txtnews .title_livenews{display:block;overflow:hidden;width:300px;height:27px;margin-bottom:5px;font-size:18px;font-weight: normal;color:#fff}
+.box_txtnews .title_livenews .txt_preface{margin-right:5px;color:#ff0000}
+.list_txtnews li{padding-left:14px;background:url(../images/ico_sports.png) no-repeat 0px -372px;line-height:18px}
+.list_txtnews li .txt_preface{margin-right:5px;color:#809ff7}
+.list_txtnews li .tit_txtnews{color:#c0c4d6}
+.large_news .page_num{position:absolute;font-size:16px;color:#798090;bottom:70px;right:15px}
+.large_news .page_num .num_now{font-weight:bold;color:#fff}
+.sports_news .list_news{float:right;width:261px;height:323px;margin-top:-1px}
+.sports_news .list_news li{overflow:hidden;position:relative;width:261px;margin-top:1px}
+.sports_news .list_news .link_list{display:block}
+.sports_news .list_news .news_thumb{display:block;float:left;width:107px;height:107px}
+.sports_news .list_news .news_txt{display:block;float:left;width:106px;height:90px;padding:15px 33px 0 14px;border-top:1px solid #e9eaec;border-right:1px solid #e9eaec;border-bottom:1px solid #e9eaec}
+.sports_news .list_news .news_title{display:block;margin-bottom:5px;font-size:12px;font-weight:bold;color:#000;letter-spacing: -1px}
+.sports_news .list_news .news_text{display:block;font-size:11px;color:#919191;letter-spacing: -1px}
+.sports_news .list_news .on{display:none;width:257px;height:103px;border:2px solid #6e8feb;position:absolute;z-index: 10;top:0;left:0}
+.sports_news .list_on .on{display:block;overflow:hidden;font-size:0;line-height:0;text-indent:-9999px}
+/* 투데이 하이라이트 */
+.sports_highlight{position:relative;width:644px;padding:29px 4px 23px 0;border-top:2px solid #58595b;border-bottom:1px solid #737373}
+.sports_highlight .tit_highlight{width:95px;height:13px;margin-bottom:14px;background-position:0 0}
+.sports_highlight .list_highlight{overflow:hidden;margin-left:-1px}
+.sports_highlight .list_highlight li{float:left;width:128px;margin-left:1px}
+.sports_highlight .link_highlight{display:block;overflow:hidden}
+.sports_highlight .img_highlight{float:left;overflow:hidden;position:relative;width:128px;height:68px}
+.sports_highlight .ico_play{position:absolute;width:11px;height:12px;background-position:0 -75px;bottom:3px;left:6px;z-index:10}
+.sports_highlight .img_highlight .time_vod{position:absolute;width:38px;height:15px;font-family: tahoma,sans-serif;font-weight:bold;font-size:10px;background:url(../images/bg_timevod.png) repeat-x;bottom:0;right:0;z-index:10;color:#e1e1e1;line-height:15px;text-align:center}
+.sports_highlight .txt_highlight{float:left;margin:8px 0;font-family: '돋움',dotum,sans-serif;font-size:12px;color:#333;line-height:15px;letter-spacing: -1px}
+.sports_highlight .item_info{float:left;width:128px;font-family: '돋움',dotum,sans-serif;font-size:12px;color:#999;letter-spacing: -1px}
+.sports_highlight .item_info .info_num{font-size:11px}
+.sports_highlight .item_info .txt_bar{margin:0 5px 0 6px}
+.sports_highlight .btn_more{position:absolute;width:36px;height:15px;background-position:-60px -150px;top:29px;right:4px}
+/* 왼쪽 뉴스 */
+.article_left{float:left;width:348px;margin-top:30px}
+.article_left .list_news li{overflow:hidden;font-size:14px;font-weight:bold;color:#333}
+.article_left .link_news{float:left;margin-bottom:2px;letter-spacing: -1px;line-height:23px}
+.article_left .list_news .link_news{overflow:hidden}
+.article_left .list_news .news_image{overflow:hidden;float:left;width:70px;height:70px;margin:0 10px 13px 0}
+.article_left .list_news .news_thumb{height:70px}
+.article_left .list_news .news_title{float:left;width:268px;margin:5px 0 0;font-size:14px;font-weight:bold;color:#333}
+.article_left .list_news .news_text{float:left;width:250px;margin-top:5px;padding:0 8px 0 0;font-size:11px;font-weight:normal;color:#898989;line-height:15px;letter-spacing: -2px}
+
+.sports_football, .sports_abroadfootball, .sports_baseball, .sports_abroadbaseball, .sports_golf, .sports_basketvolley, .sports_normal{margin-top:19px;padding-bottom:10px;border-bottom:1px solid #eee}
+.sports_football{margin-top:0}
+.sports_normal{border-bottom:0}
+
+.sports_football .tit_news{width:73px;height:14px;margin-bottom:7px;background-position:0 -25px}
+.sports_abroadfootball .tit_news{width:94px;height:14px;margin-bottom:8px;background-position:0 -50px}
+.sports_baseball .tit_news{width:72px;height:14px;margin-bottom:7px;background-position: 0 -75px}
+.sports_abroadbaseball .tit_news{width:94px;height:14px;margin-bottom:8px;background-position: 0 -100px}
+.sports_golf .tit_news{width:73px;height:14px;margin-bottom:9px;background-position: 0 -125px}
+.sports_basketvolley .tit_news{width:104px;height:14px;margin-bottom:8px;background-position: 0 -150px}
+.sports_normal .tit_news{width:72px;height:14px;margin-bottom:16px;background-position: 0 -175px}
+
+.list_normal li{overflow:hidden;margin-bottom:1px;font-size: 14px;line-height:23px}
+.list_normal li .link_news{font-weight:bold;line-height:21px}
+.ad_left{width: 344px;height: 71px;margin-top:28px}
+/* 오른쪽 뉴스 */
+.article_right{float:right;width:257px;margin-top:29px;padding-right:4px}
+/* 타이틀 */
+.sports_photo .tit_photo{width:66px;height:12px;margin-bottom:10px;background-position:0 -200px}
+.sports_today .tit_today{width:78px;height:13px;margin-bottom:10px;background-position:0 -225px}
+.sports_sns .tit_sns{width:110px;height:11px;margin-bottom:11px;background-position:0 -250px}
+/*  투데이 포토*/
+.sports_photo{position:relative;width:257px}
+.sports_photo .list_photo{overflow:hidden;margin-right:-1px}
+.sports_photo .list_photo li{float:left;width:128px;margin-right:1px;margin-bottom:10px}
+.sports_photo .link_photo{display:block}
+.sports_photo .photo_image{display:block;overflow:hidden;position:relative;width:128px;height:125px}
+.sports_photo .photo_image .ico_slide{position:absolute;width:14px;height:12px;background-position: 0 -100px;bottom:10px;left:10px}
+.sports_photo .photo_text{display:block;margin-top:8px;font-size:12px;color:#333;letter-spacing: -1px;line-height:17px}
+.sports_photo .btn_more{position: absolute;width: 36px;height: 15px;background-position: -60px -150px;top:2px;right: 0}
+/* 광고 */
+.ad_right{width:257px;height:136px;margin:24px 0 39px}
+/* 투데이 스페셜 */
+.sports_today{position:relative;margin-bottom:40px}
+.sports_today .today_cont{position:relative;width:257px;height:171px}
+.sports_today .txt_today{display:block;position:absolute;width:242px;height:33px;padding-left:15px;background:url(../images/bg_todaytxt.png) repeat-x;bottom:0;left:0;line-height:38px;letter-spacing: -1px}
+.sports_today .txt_preface{margin-right:5px;font-size:12px;font-weight:bold;color:#809ff7}
+.sports_today .tit_txtnews{font-weight:bold;color:#fff}
+.sports_today .btn_more{position:absolute;width:36px;height:15px;background-position:-60px -150px;top:2px;right:0}
+/* sns */
+.sports_sns{position:relative}
+.sports_sns .tab_head{overflow:hidden}
+.sports_sns .tab_facebook{float:left;width:129px;height:36px;background-position:0 0}
+.sports_sns .tab_twitter{float:left;width:128px;height:36px;background-position:-129px 0}
+.sports_sns .list_sns{display:none;padding-bottom:45px;border:1px solid #cecece;border-top:0}
+.sports_sns .list_on{display:block}
+.list_sns li{overflow:hidden;width:215px;padding:14px 20px 6px;border-top:1px solid #f2f2f2}
+.list_sns .fst_sns{padding-top:22px;border-top:0}
+.list_sns .txt_sns{float:left;width:215px;margin-bottom:5px;font-size:12px;color:#000;line-height:20px}
+.list_sns .ico_twitter{float: left;position: relative;height: 20px;padding-left: 15px;font-size: 11px;background-position: 0 -173px;color: #999;line-height: 18px;letter-spacing: -1px;text-indent: 0;}
+.list_sns .txt_bar{float: left;width: 1px;height: 10px;margin: 0 5px 0 4px;font-size: 11px;color: #d9d9d9;line-height: 18px}
+.list_sns .txt_time{float:left;font-size:11px;color:#999;line-height:20px;letter-spacing: -1px}
+.sports_sns .link_twitter{position:absolute;width:18px;height:15px;background-position:0 -125px;top:-3px;right:33px}
+.sports_sns .link_facebook{position:absolute;width:16px;height:15px;background-position:0 -150px;top:-3px;right:12px}
+/* 어사이드 */
+.sports_aside{float:right;width:300px}
+#mAside .tab_list{display:none;overflow:hidden}
+#mAside .tab_on{display:block}
+/* 어사이드 타이틀 */
+.sports_column{margin-top:32px}
+.sports_column .tit_column{width:99px;height:13px;margin-bottom:13px;padding-left:23px;background-position:22px -275px}
+.sports_word .tit_word{width:71px;height:14px;margin-bottom:7px;padding-left:24px;background-position:24px -300px}
+.sports_cmt .tit_cmt{width:71px;height:13px;margin-bottom:8px;padding-left:25px;background-position:25px -325px}
+.sports_manyview .tit_manyview{width:63px;height:14px;margin-bottom:8px;padding-left:25px;background-position:25px -350px}
+.sports_notice .tit_notice{width:50px;height:14px;margin-bottom:7px;padding-left:24px;background-position:24px -375px}
+.sports_shopping .tit_shopping{width:60px;height:14px;margin-bottom:9px;padding-left:25px;background-position:25px -400px}
+/*  공통 순위 */
+.sports_aside .rank_list li{display:block;overflow:hidden;float:left;font-size:0;background:url(../images/rank_num.gif) no-repeat}
+.sports_aside  .rank_list .rank_num1{background-position:0 0}
+.sports_aside  .rank_list .rank_num2{background-position:0 -25px}
+.sports_aside  .rank_list .rank_num3{background-position:0 -50px}
+.sports_aside  .rank_list .rank_num4{background-position:0 -75px}
+.sports_aside  .rank_list .rank_num5{background-position:0 -100px}
+.sports_aside  .rank_list .rank_num5{background-position:0 -100px}
+.sports_aside  .rank_list .rank_num6{background-position:0 -125px}
+.sports_aside  .rank_list .rank_num7{background-position:0 -150px}
+.sports_aside  .rank_list .rank_num8{background-position:0 -175px}
+.sports_aside  .rank_list .rank_num9{background-position:0 -200px}
+/* 공통 강조 */
+.link_emph{font-weight: bold}
+/* 칼럼 */
+.sports_column{position:relative;padding-bottom:30px}
+.sports_column .list_column{width: 300px;height: 282px;padding-top:1px;border-top:2px solid #9d9ea3}
+.sports_column .list_column li{overflow:hidden;width:250px;margin:27px 23px 0 25px;border-bottom:1px solid #e8e9e9}
+.sports_column .link_column{display:block;overflow:hidden}
+.sports_column .column_thumb{float:left;width:80px;height:66px;margin-right:12px}
+.sports_column .column_title{float:left;width:148px;margin-bottom:5px;padding-right:10px;font-size:12px;color:#666;line-height:16px}
+.sports_column .column_text{float:left;width:148px;padding-right:10px;font-size:12px;font-weight:bold;color:#333;line-height:16px}
+.sports_column .btn_more{position:absolute;width:36px;height:15px;background-position:-60px -150px;top:2px;right:24px}
+/* 광고 */
+.aside_ad{overflow: hidden;width:250px;height:250px;padding:0 24px 39px 26px}
+.aside_ad .link_ad{display:block}
+/* 실시간 검색어 */
+.sports_word{margin-bottom:33px}
+.sports_word .tab_head{overflow:hidden;width:300px;height:33px}
+.sports_word .tab_total{float:left;width:100px;height:33px;background-position:0-36px}
+.sports_word .tab_sport{float:left;width:100px;height:33px;background-position:-100px -36px}
+.sports_word .tab_enter{float:left;width:100px;height:33px;background-position:-200px -36px}
+.sports_word .tab_list{overflow:hidden;padding:10px 24px 0 25px}
+.sports_word .tab_list li{position:relative;overflow:hidden;width:250px;margin-bottom:5px;letter-spacing: -1px}
+.sports_word .link_word{float:left;width:100px;padding-left:13px;font-size:12px;color:#222;letter-spacing: -1px}
+.sports_word .move_rank{float:right;width:33px;height:9px;margin-top:5px;padding-right:13px;line-height:11px;text-align:right;font-size:11px;letter-spacing: -1px;text-indent:0;top:0}
+.sports_word .rank_up{background-position:100% -225px}
+.sports_word .rank_stay{background-position:100% -250px}
+.sports_word .rank_down{background-position:100% -273px}
+.sports_word .rank_new{background-position:100% -300px}
+/* 댓글 많은 뉴스 */
+.sports_cmt{overflow:hidden;margin-bottom:31px}
+.sports_cmt .tab_head{overflow:hidden}
+.sports_cmt .tab_total{float:left;width:100px;height:33px;background-position:0 -69px}
+.sports_cmt .tab_sport{float:left;width:100px;height:33px;background-position:-100px -69px}
+.sports_cmt .tab_enter{float:left;width:100px;height:33px;background-position:-200px -69px}
+.sports_cmt .tab_list{padding:10px 24px 15px 25px}
+.sports_cmt .tab_list li{overflow:hidden}
+.sports_cmt .link_comment{float:left;margin-bottom:5px;padding-left:13px;font-size:12px;color:#222;letter-spacing: -1px}
+.paging_set{display:block;overflow:hidden;width:100%;text-align: center}
+.paging_set .paging_inner{display:inline-block;margin:0 auto}
+.paging_set .btn_prev{float:left;width:13px;height:13px;background-position:0 -90px}
+.paging_set .btn_next{float:left;width:13px;height:13px;background-position:0 -110px}
+.paging_set .num_now{float:left;padding:0 2px 0 8px;font-size:9px}
+.paging_set .txt_bar{float:left;display:inline;width:4px;height:9px;margin:0}
+.paging_set .num_total{float:left;padding:0 7px 0 1px;font-size:9px}
+/* 많이 본 뉴스 */
+.sports_manyview{overflow:hidden;margin-bottom:33px}
+.sports_manyview .tab_head{overflow:hidden}
+.sports_manyview .tab_total{float:left;width:53px;height:33px;background-position:0 -102px}
+.sports_manyview .tab_football{float:left;width:53px;height:33px;background-position:-53px -102px}
+.sports_manyview .tab_abroadfootball{float:left;width:70px;height:33px;background-position:-106px -102px}
+.sports_manyview .tab_baseball{float:left;width:53px;height:33px;background-position:-176px -102px}
+.sports_manyview .tab_abroadbaseball{float:left;width:71px;height:33px;background-position:-229px -102px}
+.sports_manyview .tab_list{padding:10px 24px 8px 25px}
+.sports_manyview .tab_list li{overflow:hidden}
+.sports_manyview .link_manyview{display:block;margin-bottom:5px;padding-left:13px;font-size:12px;color:#222;letter-spacing: -1px}
+/* 공지사항 */
+.sports_notice{position:relative;margin-bottom:16px}
+.sports_notice .list_notice{padding:10px 24px 15px 25px;border-top:2px solid #9d9ea3}
+.sports_notice .list_notice li{overflow: hidden;font-size:12px;background-position:0 -317px;text-indent:0;line-height:22px}
+.sports_notice .link_notice{display:block;overflow:hidden}
+.sports_notice .thumb_notice{float:left;overflow:hidden;width:70px;height:50px;margin-bottom:5px;margin-right: 12px}
+.thumb_txt{float:left;width:140px;font-weight:bold;text-indent: 0;font-size: 12px;line-height: 23px}
+.sports_notice .txt_preface{float: left;margin-right:5px;padding-left:12px;font-weight:bold;text-indent: 0;font-size: 12px;line-height: 23px;background-position: 0 -317px}
+.sports_notice .txt_notice{float:left;width:140px;margin-top:2px;color:#222}
+.sports_notice .btn_total{position:absolute;width:38px;height:15px;padding-right:5px;font-size:10px;background-position:100% -48px;top:0;right:16px;letter-spacing: -1px;line-height:15px;text-indent:0;color:#989898}
+/*오늘의 쇼핑*/
+.sports_shopping{position:relative;padding-bottom:26px}
+.sports_shopping .tab_head{overflow:hidden}
+.sports_shopping .tab_shopping{float:left;width:75px;height:33px;background-position:0 -135px}
+.sports_shopping .tab_half{float:left;width:75px;height:33px;background-position:-75px -135px}
+.sports_shopping .tab_zoom{float:left;width:75px;height:33px;background-position:-150px -135px}
+.sports_shopping .tab_lowest{float:left;width:75px;height:33px;background-position:-225px -135px}
+.sports_shopping .tab_shop{overflow:hidden;width:249px;margin:7px 0 0 24px}
+.list_store{overflow:hidden;margin-left:-3px}
+.list_store li{float:left;padding-left:3px;margin-right:3px;background:url(../images/ico_sports.png) no-repeat;background-position:0 -342px}
+.list_store .link_store{font-size:11px;color:#333;letter-spacing: -2px}
+.sports_shopping .box_control{overflow:hidden;position:absolute;top:100px;right:30px}
+.sports_shopping .num_page{float:left;margin-right:7px;font-size:11px;color:#aaaacb}
+.sports_shopping .num_now{float:left;color:#000}
+.sports_shopping .txt_bar{float:left;margin:0 3px 0 2px}
+.sports_shopping .num_total{float:left}
+.sports_shopping .btn_prev{float:left;width:13px;height:13px;background-position: -20px -90px}
+.sports_shopping .btn_next{float:left;width:12px;height:13px;background-position: -20px -110px}
+.sports_shopping .btn_more{float:left;width:13px;height:13px;margin-left:4px;background-position:-40px -110px}
+.sports_shopping .list_goods{display:none;overflow:hidden;margin:27px 0 61px 25px}
+.sports_shopping .list_on{display:block}
+.sports_shopping .list_goods li{float:left;width:50px;margin-right:15px;margin-bottom:13px;text-align:center}
+.sports_shopping .list_goods .thumb_shopping{display:block;width:51px;height:40px;margin-bottom: 6px}
+.sports_shopping .list_goods .txt_shopping{display:block;font-size:11px;line-height:12px;letter-spacing: -2px}
+#cEtc .list_total{float:left;width:70px}
+#cEtc .main_title{display:block;font-size:12px;font-weight:bold;color:#333;margin-bottom:6px;letter-spacing: -2px}
+#cEtc .list_total li{font-size:11px;color:#606060;line-height:21px}
+#cEtc .group_football{margin-right:69px}
+#cEtc .group_abroadfootball{margin-right:69px}
+#cEtc .group_baseball{margin-right:69px}
+#cEtc .group_abroadbaseball{margin-right:69px}
+#cEtc .group_golf{margin-right:68px}
+#cEtc .group_basketvolley{margin-right:70px}
+/*푸터*/
+.link_service{font-size:11px;color:#666;letter-spacing: -2px;margin-bottom:10px}
+.link_service .txt_bar{width:1px;height:10px;font-size:10px;color:#d2d2d2}
+.txt_copyright{display:block;letter-spacing: 0}

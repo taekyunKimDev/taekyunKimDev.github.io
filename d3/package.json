@@ -1,0 +1,15 @@
+{
+  "name": "d3-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "d3": "^4.9.1",
+    "jquery": "^3.2.1"
+  }
+}

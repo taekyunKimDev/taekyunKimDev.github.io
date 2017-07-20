@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button
+ {margin:0;padding:0}
+fieldset,img {border:0 none}
+img {vertical-align:top}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle;font-size:100%}
+button {border:0 none;background-color:transparent;cursor:pointer}
+table {border-collapse:collapse;border-spacing:0}
+body {-webkit-text-size-adjust:none}
+input:checked[type='checkbox'] {background-color:#666;-webkit-appearance:checkbox}
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html input[type='button'],input[type='reset'] {-webkit-appearance:none;border-radius:0}
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Malgun Gothic', '맑은 고딕', sans-serif;color:#333}
+a {color:#333;text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+/* 공통 */
+.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+.ir_wa {display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%} 
+.screen_out {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.hide {display:none;clear:both}
+#kakaoIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0}
+/* 공통이미지 */
+.ico_cash {display:block;overflow:hidden;font-size:0;background:url(../images/m320/ico_cash.png) no-repeat;text-indent:-9999px}
+.inp_cash {display:block;overflow:hidden;font-size:0;background:url(../images/m320/bg_inp.png) no-repeat;text-indent:-9999px}
+.wrap_cash {min-width:320px;}
+/* 헤더 */
+.wrap_cash .head_cash {height:47px;background:url(../images/m320/bg_header.png) repeat-x}
+.head_cash .k_head {float:left;height:35px;padding:12px 0 0 8px}
+.head_cash .tit_cash {overflow:hidden;height:20px}
+.head_cash .link_logo {float:left;width:47px;height:20px}
+.head_cash .link_service {display:block;overflow:hidden;float:left;width:66px;height:19px;margin-left:7px;font-size:17px;background:url(../images/m320/tit_cash.png) no-repeat;background-position:0 0;color:#000;text-indent:0}
+.head_cash .gnb_cash {float:right;}
+.head_cash .link_gnb {display:block;width:30px;height:34px;padding:13px 0 0 17px}
+.head_cash .link_gnb .ico_cash {width:18px;height:18px;background-position:0 0}
+.head_cash .view_gnb {display:none;position:absolute;top:47px;right:0;z-index:999}
+.head_cash .gnb_on + .view_gnb{display:block}
+.view_gnb .list_gnb {border:3px solid #000;background-color:#fff}
+.view_gnb .list_gnb li {width:94px;height:50px;border-top:3px solid #000;color:#000;line-height:50px;text-align:center}
+.list_gnb li:first-child{border-top:0}
+/* 컨텐츠 */
+.wrap_cash .cont_cash {border-top:1px solid #d2d8de;background-color:#eff2f5}
+/* 내캐쉬 */
+.cont_cash .user_data {overflow:hidden;height:49px;padding:0 10px 0 11px;border-bottom:1px solid #d2d8de;line-height:49px}
+.cont_cash .user_data .ico_cash {float:left;width:23px;height:23px;margin-top:13px;background-position:-20px 0}
+.cont_cash .tit_user {float:left;margin:1px 11px 0 7px;font-size:14px;font-weight:bold;color:#2b2e37;text-indent:0}
+.cont_cash .num_user {float:left;overflow:hidden;max-width:200px;font-family:helvetica,sans-serif;font-weight:bold;color:#168df3;font-size:19px}
+.cont_cash .num_user .txt_won {margin-left:2px;font-size:16px}
+.cont_cash .link_history {float:right;font-size:12px;color:#646b78;width:64px;height:22px;margin-top:12px;border:1px solid #c4c4c4;border-radius:3px;text-align:center;line-height:23px;-webkit-box-shadow:0px 1px 0px #e3e6e9;box-shadow:0px 1px 0px #e3e6e9;background:-webkit-linear-gradient(#ffffff, #f0f0f0);background:linear-gradient(#ffffff, #f0f0f0)}
+/*캐쉬충전 공통*/
+.cont_cash .group_data {margin:9px 10px 0 11px;border-top:1px solid #fafbfc}
+.group_data .box_choice {background-color:#fff;border:1px solid #abb9c6;border-radius:2px;-webkit-box-shadow:0px 1px 0px #e3e6e9;box-shadow:0px 1px 0px #e3e6e9}
+.group_data .view_subject {position:relative;padding:9px 0 5px 11px;border-bottom:1px solid #dce1e6;font-size:15px;font-weight:bold;color:#2b2e37}
+.group_data .tit_view {font-size:15px}
+.view_info .info_sort {position:relative;line-height:30px}
+.info_sort .txt_won {font-size:13px;color:#666}
+.box_choice .view_info {overflow:hidden;padding-left:12px}
+.view_info .inp_radio {overflow:hidden;position:absolute;top:4px;left:0;width:17px;height:18px;appearance:none;-webkit-appearance:none;opacity:0.01;z-index:10}
+/* 충전금액선택 */
+.cont_cash .data_money {margin-bottom:7px}
+.data_money .view_info {padding:11px 0 12px 12px}
+.data_money .link_limit {position:absolute;right:12px;top:12px;background-position:-42px 0;font-size:12px;color:#6f737b;text-indent:0;font-weight:normal;line-height:15px}
+.data_money .txt_limit {display:none;position:absolute;top:40px;right:12px;width:115px;height:20px;border:2px solid #b78282;border-radius:5px;border-color:#906969;background-color:#3d414d;text-align:center;color:#fff;z-index:9998}
+.data_money .link_limit:hover + .txt_limit {display:block}
+.data_money .link_limit .ico_cash {display:inline-block;width:13px;height:15px;margin-right:7px;background-position:-44px 0;vertical-align:bottom}
+.data_money .info_sort:first-child {margin-bottom:6px}
+.data_money .tf_text {display:inline-block;width:91px;height:30px;padding-left:10px;border:0;font-size:12px;background-position:0 -32px;text-indent:0}
+.data_money .lab_money {float:left;position:relative;margin-right:10px;padding-left:22px;font-size:13px;appearance:none;-webkit-appearance:none;color:#666}
+.data_money .bg_money {float:left;width:101px;height:30px;margin-right:2px;border:0;background-position:0 0;color:#000}
+.data_money .opt_money {display:block;width:101px;height:28px;padding-top:2px;padding-left:7px;border:0;font-family:helvetica,sans-serif;font-size:15px;font-weight:bold;background:none;color:#000;appearance:none;-webkit-appearance:none;line-height:25px}
+.data_money .lab_money .ico_cash {position:absolute;top:5px;left:0;width:17px;height:18px;background-position:-19px -25px}
+/* 결제수단선택 */
+.group_data .data_method .view_info {padding:10px 0 11px 12px}
+.data_method .link_warn {position:absolute;right:10px;top:12px;background-position:-42px 0;font-size:12px;color:#6f737b;text-indent:0;font-weight:normal;line-height:15px}
+.data_method .txt_warn {display:none;position:absolute;top:40px;right:12px;width:115px;height:20px;border:2px solid #b78282;border-radius:5px;border-color:#906969;background-color:#3d414d;text-align:center;color:#fff;z-index:9998}
+.data_method .link_warn:hover + .txt_warn{display:block}
+.data_method .link_warn .ico_cash {display:inline-block;width:13px;height:15px;margin-right:5px;background-position:-44px 0;vertical-align:bottom}
+.data_method .bg_method {float:left;width:130px;height:29px;margin-left:22px;border:0;background-position:0 -64px}
+.data_method .opt_method {display:block;width:130px;height:29px;padding-left:7px;border:0;font-size:13px;font-weight:bold;background:none;color:#000;appearance:none;-webkit-appearance:none}
+.data_method .info_sort {overflow:hidden;float:left;width:50%;margin-bottom:2px}
+.data_method .info_sort:last-child{width:100%}
+.data_method .lab_method {position:relative;float:left;padding-left:21px;line-height:29px}
+.data_method .lab_method .ico_cash {position:absolute;top:5px;left:0;width:17px;height:18px;background-position:-18px -26px}
+/* 공통 라디오 체크on */
+.cont_cash .inp_radio:checked + .lab_money .ico_cash {background-position:0 -26px}
+.cont_cash .inp_radio:checked + .lab_method {font-weight:bold;}
+.cont_cash .inp_radio:checked + .lab_method .ico_cash {background-position:0 -26px}
+/* 정보동의체크 */
+.group_data .data_check {position:relative;margin:13px 0 15px 0}
+.group_data .inp_check {display:block;position:absolute;top:3px;left:0;width:17px;height:18px;opacity:0.01;z-index:10}
+.group_data .data_check .lab_check {position:relative;padding-left:22px;font-size:14px;color:#333;line-height:23px}
+.data_check .lab_check .ico_cash {position:absolute;top:0;left:0;width:17px;height:18px;background-position:-36px -25px}
+.inp_check:checked + .lab_check .ico_cash {background-position:-54px -25px;}
+/* 확인 취소버튼 */
+.group_data .data_function {display:block;padding-bottom:39px;font-size:0;text-align:center}
+.data_function .btn_cancel {display:inline-block;width:73px;height:34px;margin:0 3px;border:1px solid #afb7c0;border-radius:3px;text-align:center;line-height:36px;font-size:14px;background:-webkit-linear-gradient(#ffffff, #f0f0f0);background:linear-gradient(#ffffff, #f0f0f0);color:#646b78}
+.data_function .btn_submit {display:inline-block;width:73px;height:34px;margin:0 3px;border:1px solid #3579d9;border-radius:3px;text-align:center;line-height:36px;font-size:14px;background:-webkit-linear-gradient(#489be6, #3785dd);background:linear-gradient(#489be6, #3785dd);color:#fff}
+/* 푸터 */
+.footer_comm {width:100%;margin:0 auto;padding-top:10px;border-top:1px solid #6d7076;font-family:sans-serif;background-color:#f1f1f1;text-align:center;clear:both}
+.footer_comm .list_foot {display:inline-block;width:auto;height:28px;margin:0 auto;text-align:center;*zoom:1}
+.footer_comm .list_foot li {display:inline-block}
+.footer_comm .btn_foot {display:inline-block;width:64px;height:25px;border:1px solid #c4c4c4;border-radius:3px;font-size:13px;line-height:26px;background-color:#fbfbfb;background-image:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f6f6f6));background-image:linear-gradient(to bottom, #fff, #f6f6f6);color:#444;letter-spacing:-1px;vertical-align:top}
+.footer_comm .btn_off {color:#8b8b8b;cursor:default}
+.footer_comm .copr_info {display:block;padding:4px 0 6px;font-size:11px;color:#888;clear:both}
+.footer_cash .footer_etc {overflow:hidden;margin-top:7px;text-align:center}
+.footer_etc .link_cc {margin-right:8px;font-size:11px;color:#888;text-decoration:underline}
+.footer_etc .link_call {font-size:11px;color:#888;text-decoration:underline}
+.footer_comm .link_daumcorp {font-size:12px;color:#888}
+/* 미디어쿼리 */
+@media
+only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:1.5dppx)  {
+    .wrap_cash .head_cash {background:url(../images/m640/bg_header.png) repeat-x;background-size:1px 47px;-webkit-background-size:1px 47px}
+    .head_cash .link_service {background:url(../images/m640/tit_cash.png) no-repeat;background-size:66px 19px;-webkit-background-size:66px 19px}
+    .ico_cash {background:url(../images/m640/ico_cash.png) no-repeat;background-size:70px 43px;-webkit-background-size:70px 43px}
+    .inp_cash {background:url(../images/m640/bg_inp.png) no-repeat;background-size:83px 47px;-webkit-background-size:130px 93px}
+}

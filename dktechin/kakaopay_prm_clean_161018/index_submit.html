@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>카카오페이 간편결제 프로모션</title>
+    <style>
+        @charset "utf-8";
+        /* reset */
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+        fieldset,img{border:0 none}
+        dl,ul,ol,menu,li{list-style:none}
+        blockquote, q{quotes:none}
+        blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+        input,select,textarea,button{vertical-align:middle;font-size:100%}
+        button{border:0 none;background-color:transparent;cursor:pointer}
+        table{border-collapse:collapse;border-spacing:0}
+        body{-webkit-text-size-adjust:none}
+        input:checked[type='checkbox']{background-color:#666; -webkit-appearance:checkbox}
+        input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html input[type='button'],input[type='reset']{-webkit-appearance:none;border-radius:0}
+        input[type='search']::-webkit-search-cancel-button{-webkit-appearance:none}
+        body{background:#fff}
+        body,th,td,input,select,textarea,button{font-size:14px;line-height:1.5;font-family:'Malgun Gothic', '맑은 고딕', sans-serif;color:#333}
+        a{color:#333;text-decoration:none}
+        a:active, a:hover{text-decoration:none}
+        address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+        /* global */
+        #kakaoIndex{overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0}
+        .ir_pm{display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+        .ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%}
+        .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+        .show{display:block}
+        .hide{display:none}
+        /* Promotion */
+        .prm_kakaopay {min-width:320px}
+        .img_payevent {display:block;width:100%;height:auto;margin:0 auto}
+        .cont_kakaopay .event_info {position:relative}
+        .cont_kakaopay .event_info .inner_submit {position:relative}
+        .cont_kakaopay .event_info .btn_submit {position:absolute;top: 80.1%;left: 6%;width: 88%;height: 4.2%}/* 2016-10-24 위치값수정 */
+        .cont_kakaopay .event_info .list_gift{width:100%;height:100%}
+        .cont_kakaopay .event_info .link_gift{display:block;position:absolute;width: 16%;height: 1%;top: 24.2%;left: 42%}/* 2016-10-24 위치값수정 */
+        .cont_kakaopay .link_notice {display:block;background-color:#b53e73;text-align:center}
+        .cont_kakaopay .notice_inner {display:none;background-color:#3a3a3a}
+        .cont_kakaopay .notice_view .notice_inner {display:block}
+        .foot_kakaopay {position:relative;background:#3b3a3a}
+        .foot_kakaopay .list_sns {height:100%}
+        .foot_kakaopay .link_sns {position: absolute;top: 24%;width: 11.3%;height: 50%;font-size: 0;line-height: 0;text-indent: -9999px}
+        .foot_kakaopay .link_talk {left:22.3%}
+        .foot_kakaopay .link_facebook {left:37.1%}
+        .foot_kakaopay .link_story {left:51.8%}
+        .foot_kakaopay .link_twitter {left:66.5%}
+        .bg_dimmed {position:fixed;top:0;left:0;bottom:0;right:0;width:100%;height:100%;background-color:#000;opacity:0.45;filter:alpha(opacity=45);z-index:9990}
+        .kakaopay_layer {position:absolute;left: 5%;top: 12%;width: 90.313%;height:auto;z-index:9999}  
+        .kakaopay_layer .inner_layer {display:block;vertical-align: middle;position:relative;width:100%;height:100%;background-color:#191d4e}
+        .kakaopay_layer .info_gift{width:100%;}
+        .kakaopay_layer .layer_foot {position:absolute;top: 2%;right: 3%;width: 8%;height: 6%;text-indent:-9999px}
+        .kakaopay_layer .layer_foot .btn_close {display:block;width:100%;height:100%}
+    </style>
+</head>
+<body>
+    <div id="kakaoPromotion" class="prm_kakaopay">
+        <div id="kakaoHead" class="head_kakaopay">
+            <div class="inner_kakaopay ir_pm">                
+                <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_head1_161024.png" class="img_payevent" alt=""><!-- 2016-10-24 이미지수정 -->
+                <h1>카카오페이  x  르노삼성</h1>
+                <p>이벤트 기간 : 2016.10. 26 ~ 11.10</p>
+                <h2 class="ir_pm">GET LUCK with QM6</h2>
+            </div>            
+        </div>
+        <hr class="hide">
+        <div id="kakaoContent" class="cont_kakaopay">
+            <div class="event_info ir_pm">
+                <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_head2_161025.png" class="img_payevent" alt=""><!-- 2016-10-25 이미지수정 -->
+                <h2>이벤트 정보</h2>
+                <p class="ir_pm">카드간편결제 결제 시<em>100% 당첨</em>응모권 증정! (1회)</p>
+                <h3>이벤트 경품</h3>
+                <ol class="list_gift">
+                    <li>1 르노삼성 QM6<a href="https://event.renaultsamsungm.com/qm6/" class="link_gift"></a></li>
+                    <li>2 백화점상품권</li>
+                    <li>3 롯데시네마 영화예매권</li>
+                    <li>4 도넛</li>
+                    <li>5 비타500</li>
+                    <li>6 올리브영 온라인몰 40% 할인</li><!-- 2016-10-25 텍스트수정 -->
+                    <li>7 롯데마트몰 1만원 할인</li>
+                    <li>8 요기요 3천원 할인</li>
+                    <li>9 마켓 컬리 5천원 할인</li>
+                </ol>
+                <div class="area_submit">
+                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/btn_submit.png" class="img_payevent" alt="">
+                    <a href="" class="btn_submit">행운권확인</a>
+                </div> 
+                <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_head3_161025.png" class="img_payevent" alt=""><!-- 2016-10-25 이미지수정 -->
+                <p>경품 내역 QM6(1명), 백화점상품권(100명), 롯데영화예매권(1인 2매/1,000명), 도넛&amp;커피 세트(5,000명), 비타500, 올리브영 온라인몰 40%할인쿠폰, 롯데마트몰 10% 할인쿠폰,  요기요 3천원 할인쿠폰, 마켓컬리 5천원 할인쿠폰</p><!-- 2016-10-25 텍스트수정 -->
+            </div>
+            <div class="event_notice"><!-- 활성화시 notice_view클래스 추가, 비활성화시 notice_view클래스 제거 -->
+                <a href="#none" class="link_notice"><img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/btn_notice.png" class="img_payevent" alt="이건 꼭! 기억해주세요!"></a>
+                <div class="notice_inner ir_pm"><!-- 2016-10-24 텍스트수정 -->
+                   <h2>이벤트 관련사항</h2>
+                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_notice_161025.png" class="img_payevent" alt=""><!-- 2016-10-25 이미지수정 -->
+                    <h3>QM6 관련하여</h3>
+                    <ul>
+                        <li>- 당첨자께는 프로모션 종료 후 개별 연락드릴 예정이며 경품 지급을 위해 개인정보(이름/휴대폰번호)는 르노삼성자동차에 전달됩니다.</li>
+                        <li>- 경품은 QM6 2WD SE 기본 사양(차량 금액 2,740만 원)으로 제공되며, 상기 차량 금액 외 추가 금액은 고객 부담입니다.</li>
+                        <li>- QM6 당첨 시 경품 관련 제세공과금(22%)는 고객 부담입니다.</li>
+                        <li>- 차량 인도 시 르노삼성자동차 계약서 및 인수증에 당첨자 본인 서명이 필요합니다.</li>
+                        <li>- 당첨자 본인 명의로만 차량 등록이 가능합니다. (임판 또는 등록 전 명의 이전 불가)</li>
+                    </ul>
+                    <h3>경품 지급 관련하여</h3>
+                    <ul>                        
+                        <li>- 경품 지급 예정일 : 2016. 11. 21(월)부터 순차적으로 지급됩니다. 단, 비타 500, 올리브영, 롯데마트몰, 요기요, 마켓컬리 할인 쿠폰은 당첨 확인 후 실시간으로 발송됩니다.</li>
+                        <li>- 모든 경품은 카카오페이 플친을 통해 지급됩니다.</li>
+                        <li>- 프로모션 내 경품 이미지와 실 지급 경품은 다를 수도 있습니다. 단, 경품 변경 시 동일 상품군 내에서 선택될 예정입니다. </li>
+                        <li>- 경품 지급 후 대화창을 나가거나 삭제 시 재발송이 불가합니다.</li>
+                    </ul>
+                    <h3>공통 유의사항 관련하여</h3>
+                    <ul>
+                        <li>- 카톡 최신 버전 업데이트 후 응모해주세요.</li>
+                        <li>- 본 이벤트는 카카오페이 카드간편결제자에 한해 진행됩니다.</li>
+                        <li>- 전 가맹점에서 카카오페이 카드간편결제로 결제 완료 시 카카오페이 플친을 통해 100% 당첨 응모권이 자동 발송됩니다. (인당 1회 지급)</li>
+                        <li>- 결제 취소 및 서비스 해지 시 당첨은 자동 취소됩니다.</li>
+                        <li>- 본 프로모션은 당사 및 제휴사 사정에 의해 사전 고지 없이 변경 또는 조기 종료될 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hide">
+        <div id="kakaoFoot" class="foot_kakaopay">
+            <div class="inner_kakaopay">
+                <h2 class="ir_pm">sns 공유하기</h2>
+                <ul class="list_sns">
+                    <li><a href="#none" target="_blank" class="link_sns link_talk">카카오톡</a></li>
+                    <li><a href="#none" target="_blank" class="link_sns link_facebook">페이스북</a></li>
+                    <li><a href="#none" target="_blank" class="link_sns link_story">카카오스토리</a></li>
+                    <li><a href="#none" target="_blank" class="link_sns link_twitter">트위터</a></li>
+                </ul>
+                <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_share.png" class="img_payevent" alt="">  
+            </div>
+        </div>
+    </div>
+    <div class="bg_dimmed" style="display:none"></div><!-- 행운권 확인 클릭시 display:block처리, 닫기버튼 클릭시 display:none 으로 변경 -->
+    <div class="kakaopay_layer" style="display:none"><!-- 행운권 확인 클릭시 display:block처리, 닫기버튼 클릭시 display:none 으로 변경 -->
+        <div class="inner_layer">
+             #if($params.get('loding')) ## 로딩
+            <div class="layer_head ir_pm"><!-- 상황에 따른 이미지 변경에 따른 텍스트 변경 -->
+                <p>행운권 확인</p>
+            </div>
+            <div class="layer_body ir_pm"><!-- 상황에 따른 이미지 변경에 따른 텍스트 변경 -->
+                <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_loding.gif" class="img_payevent" alt="">
+                <strong>잠시만 기다려주세요 GET LUCK &amp; QM6</strong>                
+            </div>
+            #elseif($params.get('sorry')) ## 대상이아닌경우   
+            <div class="layer_head ir_pm"><!-- 상황에 따른 이미지 변경에 따른 텍스트 변경 -->
+                <p>행운권 확인</p>
+            </div>
+            <div class="layer_body ir_pm"><!-- 상황에 따른 이미지 변경에 따른 텍스트 변경 -->
+                <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_sorry.png" class="img_payevent" alt="">                
+                <strong>미안해요 이벤트에 참여할 수 없어요.</strong>
+                <p>카카오페이 카드간편결제로 결제하시면 100% 당첨 응모권이 플친을 통해 자동 발송됩니다.</p>
+            </div>
+            #elseif($params.get('gift')) ## 경품   
+            <div class="layer_head ir_pm"><!-- 상황에 따른 이미지 변경에 따른 텍스트 변경 -->
+                <p>행운권 확인</p>
+            </div>
+            <div class="layer_body ir_pm">
+               <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_gift_161024.png" class="img_payevent" alt="GET LUCKY"><!-- 2016-10-24 이미지수정 -->
+               <div class="info_gift"><!-- 경품이미지 들어가는곳 경품 이미지에 따라 alt값 변경해주세요-->
+                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_gift1_161024.png" class="img_payevent" alt="언제 어디서나 당신과 함께 달릴께요! 곧~ 연락드릴께요! 조금만 기다려주세요"><!-- 2016-10-24 이미지수정 -->
+<!--                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_gift2_161024.png" class="img_payevent" alt="토닥~ 수고한 나에게 작은 선물을 해주세요! 11월21일에 보내드릴께요! 조금만 기다려주세요~">-->
+<!--                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_gift3_161024.png" class="img_payevent" alt="좋은 영화 한편으로 힐링하세요! 11월21일에 보내드릴께요! 조금만 기다려주세요~">-->
+<!--                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_gift4_161024.png" class="img_payevent" alt="오늘도 든든하게 먹고 힘내세요! 11월21일에 보내드릴께요! 조금만 기다려주세요~">-->
+<!--                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_gift5_161024.png" class="img_payevent" alt="비타민C 충전 완료! 오늘도 화이팅하세요~ 플친을 통해 지금 바로 보내드려요! 쓩~~">-->
+<!--                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_gift6_161024.png" class="img_payevent" alt="난 소중하니깐! 뷰티와 건강 모두 잡으세요~ 플친을 통해 지금 바로 보내드려요! 쓩~~">-->
+<!--                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_gift7_161024.png" class="img_payevent" alt="지갑을 가볍게~ 쇼핑 지원금을 드려요! 플친을 통해 지금 바로 보내드려요! 쓩~~">-->
+<!--                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_gift8_161024.png" class="img_payevent" alt="출출한 오늘 밤! 야식은 제가 책임질께요! 플친을 통해 지금 바로 보내드려요! 쓩~~">-->
+<!--                    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161018_kakaopay/img_gift9_161024.png" class="img_payevent" alt="건강을 위해 최상의 먹거리를 만나보세요! 플친을 통해 지금 바로 보내드려요! 쓩~~">-->
+               </div>
+            </div>
+            #end
+            <div class="layer_foot">
+                <a href="#none" class="btn_close">닫기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

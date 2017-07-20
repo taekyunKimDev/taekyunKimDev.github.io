@@ -1,0 +1,57 @@
+비동기적으로 작은 데이터를 교환하는 통신방법
+특정부분을 전체 리로드하지 않고
+특정부분(변경하고자 하는부분)만 변경이 가능하다.
+
+원리
+브라우저와 서버단에 인터넷으로 탐색을 함
+이벤트 발생시 XMLhttpRequest object 가 만들어지고 서버단으로 전송
+서버에서 object를 실행하고 브라우저에 맞게 data를 만들어서 브라우저에 보내면
+자바스크립트를 이용해 페이지 업데이트함
+-인터넷 표준기준으로 하고있다.
+-브라우저와 플레폼(서버단,맥,클라이언트,리눅스)에 독립적이다.
+
+.open, .send 매서드 시용한다.
+
+var xhttp = new XMLHttpRequest();
+xhttp.open("GET", "ajax_info.txt", true)
+ㄴ open(method, url, async)
+    ㄴ method - get, post
+    ㄴ async - 비동기식으로 전송할것인가?
+ㄴ xhttp.open("GET", "demo_get.asp?t=" + Math.random(), true); => 캐쉬방지
+xhttp.send();
+ㄴ send() - Sends the request to the server (used for GET) => 받기. 사용자의 cash되지 않은것을 사용할때는 반드시 사용해야한다.
+ㄴ send(string) - Sends the request to the server (used for POST) => 보내기
+
+
+
+xhttp.open("POST", url, true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); => 헤더정보
+xhttp.send("fname=Henry&lname=Ford");
+
+responseText - 문자로 데이터를 받겠다.
+responseXML - XML방식으로 받겠다.
+
+function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML =
+            this.responseText;
+       }
+    };
+    xhttp.open("GET", "ajax_info.txt", true);
+    xhttp.send();
+}
+
+readyState	Holds the status of the XMLHttpRequest.
+ㄴ0: request not initialized
+ㄴ1: server connection established
+ㄴ2: request received
+ㄴ3: processing request
+ㄴ4: request finished and response is ready
+
+
+status	200: "OK"
+ㄴ403: "Forbidden"
+ㄴ404: "Page not found"
+ㄴFor a complete list go to the Http Messages Reference

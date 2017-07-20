@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>구글지도 marker</title>
+    <style>
+        #map {
+            width: 600px;
+            height: 600px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+<h3>My Google Maps Demo</h3>
+<div id="map"></div>
+<script>
+    function initMap() {
+        var center = {lat: 37.5203, lng: 127.0313};//위도( Latitude ), 경도( Longitude ) 의 약어
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: center
+        });
+        var marker = new google.maps.Marker({
+            position: center,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoPm7eEso0yxRQSMB2iSm5rTzyvo5EfxU&callback=initMap">
+</script>
+</body>
+</html>

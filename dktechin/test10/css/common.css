@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button
+ {margin:0;padding:0}
+fieldset,img {border:0 none}
+img {vertical-align:top}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle;font-size:100%}
+button {border:0 none;background-color:transparent;cursor:pointer}
+table {border-collapse:collapse;border-spacing:0}
+body {-webkit-text-size-adjust:none}
+input:checked[type='checkbox'] {background-color:#666;-webkit-appearance:checkbox}
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html input[type='button'],input[type='reset'] {-webkit-appearance:none;border-radius:0}
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Malgun Gothic', '맑은 고딕', sans-serif;color:#333}
+a {color:#333;text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+/* 공통 */
+.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+.ir_wa {display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%} 
+.screen_out {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.hide {display:none;clear:both}
+#kakaoIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0}
+/* 공통이미지 */
+.img_comm {display:block;overflow:hidden;font-size:0;background:url(../images/m320/img_comm.png) no-repeat;text-indent:-9999px}
+/* 컨텐츠 공통 */
+.line_g{display:block;width:100%;height:1px;margin-bottom:13px;background-color:#eaeaea}
+/* 공통 텍스트바 */
+.txt_bar {float:left}
+/* 공통 버튼 */
+.btn_comm {overflow:hidden;border:1px solid #acb9c0;border-radius:2px;background-color:#fafafa;background-image:-webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f2f2f2));background-image:linear-gradient(to bottom, #fefefe, #f2f2f2);box-sizing:border-box;text-align:center}
+.btn_comm .img_comm {float:left}
+.btn_comm .btn_txt {float:left}
+/* 공통 동영상 플레이 버튼 */
+.btn_play {width:28px;height:30px;background-position:-72px -20px}
+/* 공통 좋아요버튼 */
+.btn_like .img_comm {width:13px;height:17px;background-position:-104px -20px}
+.btn_like .btn_txt {color:#20a0cb}
+/* 레이아웃 */
+.wrap_music {overflow:hidden;min-width:320px}
+#mFeature {border-bottom:1px solid #2fb2e1;box-shadow:inset 1px 1px 2px 0 #000;-webkit-box-shadow:inset 1px 1px 2px 0 #000}
+/* 헤더 */
+.wrap_music .head_music {padding:6px 5px 6px 6px;background:url(../images/m320/bg_head.png) repeat}
+.wrap_music  .k_head:after {display:block;clear:both;content:''}
+.head_music .tit_logo {float:left}
+.head_music .tit_logo .tit_daum {float:left;width:48px;height:23px;margin-top:4px;background:url(../images/m320/tit_logo.png) no-repeat;background-position:0 0}
+.head_music .tit_logo .ir_wa {font-size:14px;text-indent:0}
+.head_music .tit_logo  .tit_service {float:left;width:39px;height:22px;margin-top:2px;margin-left:3px;background:url(../images/m320/tit_service.png) no-repeat;background-position:0 0}
+.head_music .wrap_util {float:right}
+.head_music .wrap_util .link_daum {float:left;width:34px;height:27px;margin-right:5px;border:1px solid #292a31;border-radius:2px;background-color:#36394a;background-image:-webkit-gradient(linear, left top, left bottom, from(#414558), to(#383a4a));background-image:linear-gradient(to bottom, #414558, #383a4a);box-sizing:border-box}
+.head_music .link_daum .img_comm {display:inline-block;width:14px;height:14px;background-position:-96px 0;margin:6px 0 0 10px} 
+.head_music .wrap_util .link_search {float:left;width:34px;height:27px;border:1px solid #292a31;border-radius:2px;background-color:#36394a;background-image:-webkit-gradient(linear, left top, left bottom, from(#414558), to(#383a4a));background-image:linear-gradient(to bottom, #414558, #383a4a);box-sizing:border-box}
+.head_music .link_search .img_comm {display:inline-block;width:17px;height:17px;background-position:-112px 0;margin:5px 0 0 9px} 
+.head_music .wrap_daum {position:absolute;top:39px;right:0;z-index:998}
+.head_music .wrap_daum li {width:100px;height:20px;line-height:20px;border:2px solid #000;border-radius:2px;background-color:#fff;text-align:center;box-sizing:border-box}/* 스타일 임의로 부여 */
+/* 푸터 */
+.footer_comm {width:100%;margin:0 auto;padding-top:10px;border-top:1px solid #6d7076;font-family:sans-serif;background-color:#f1f1f1;text-align:center;clear:both}
+.footer_comm .list_foot {display:inline-block;width:auto;height:28px;margin:0 auto;font-size:0;text-align:center;*zoom:1}
+.footer_comm .list_foot li {display:inline-block;margin:0 2px}
+.footer_comm .btn_foot {display:inline-block;width:64px;height:25px;border:1px solid #c4c4c4;border-radius:3px;font-size:13px;line-height:26px;background-color:#fbfbfb;background-image:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f6f6f6));background-image:linear-gradient(to bottom, #fff, #f6f6f6);color:#444;letter-spacing:-1px;vertical-align:top}
+.footer_comm .copr_info {display:block;padding:4px 0 6px;font-size:11px;color:#888;clear:both}
+.footer_comm .link_daumcorp {font-size:12px;color:#888}
+/* Gnb */
+.box_gnb {padding:0 5px 0 6px;background:url(../images/m320/bg_head.png) repeat;border-bottom:2px solid #31bcec}
+.list_gnb {overflow:hidden;width:100%;margin:0 auto}
+.list_gnb li {float:left;height:34px;line-height:34px;border:1px solid #262831;border-left:0;border-radius:4px 4px 0 0;background-color:#fbfbfb;background-image:-webkit-gradient(linear, left top, left bottom, from(#4a4f62), to(#343746));background-image:linear-gradient(to bottom, #4a4f62, #343746);text-align:center;box-sizing:border-box;box-shadow:inset 1px 1px 2px 0 #4a4f62;-webkit-box-shadow:inset 1px 1px 2px 0 #4a4f62}
+.list_gnb li:first-child {border-left:1px solid #262831}
+.list_gnb .link_home {width:15%}
+.list_gnb .link_chart {width:26%}
+.list_gnb .link_bar {width:28%}
+.list_gnb .link_app {width:31%}
+.list_gnb .link_snb {display:block;font-size:15px;color:#b4b8d5}
+.list_gnb .gnb_on {border-bottom:0;background-color:#3cc4f2;background-image:-webkit-gradient(linear, left top, left bottom, from(#58d0f9), to(#32bcec));background-image:linear-gradient(to bottom, #58d0f9, #32bcec);box-shadow:inset 1px 1px 2px 0 #56cff7;-webkit-box-shadow:inset 1px 1px 2px 0 #56cff7}
+.list_gnb .gnb_on .link_snb {color:#fff}
+/* 컨텐츠 본문주제 */
+.music_subjcet {position:relative;height:42px;line-height:42px;font-size:14px;background-color:#f0f2f3;border-bottom:1px solid #dce0e2;box-sizing:border-box;text-align:center;color:#000}
+.music_subjcet .link_prev {position:absolute;top:6px;left:6px;width:53px;height:29px;line-height:29px}
+.music_subjcet .link_prev .img_comm {width:5px;height:7px;margin:10px 4px 0 9px;background-position:0 -24px}
+.music_subjcet .link_prev .btn_txt {font-size:13px;color:#2f373f}
+.music_subjcet .tit_music {font-weight:normal;line-height:42px;letter-spacing:1px}
+/* 컨텐츠 본문주제 */
+.music_spacial .spacial_title {overflow:hidden;padding:13px 12px 9px;font-size:12px;border-bottom:2px solid #5c5c5c;color:#666;line-height:18px;letter-spacing:1px}
+.music_spacial .spacial_title .txt_bar {width:1px;height:11px;margin:0 6px 0 5px;font-size:12px;color:#ddd;line-height:21px}
+.music_spacial .spacial_title .txt_broadcast {float:left;color:#20a0cb}
+.music_spacial .spacial_title .txt_date {float:left}
+.music_spacial .spacial_title .txt_program {float:left}
+.music_spacial .spacial_title .txt_name {float:left}
+.music_spacial .spacial_title .txt_title {display:-webkit-box;overflow:hidden;float:left;width:100%;font-size:15px;font-weight:normal;color:#000;line-height:21px;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-overflow:ellipsis}
+/* 컨텐츠 본문 */
+.music_spacial .spacial_view {overflow:hidden;padding-top:13px;font-size:14px;color:#333;line-height:20px}
+.spacial_view .view_title {display:block;padding:0 12px 7px;font-weight:normal;color:#20a0cb;letter-spacing:1px}
+.spacial_view .view_text {padding:0 12px 10px;letter-spacing:1px}
+.spacial_view .view_item {position:relative;width:auto;padding:0 12px 14px}
+.spacial_view .view_item .thumb_spacial {width:100%;height:auto}
+.spacial_view .tit_video {font-style:normal;color:#333}
+.spacial_view .view_video .btn_play {position:absolute;top:50%;left:50%;margin:-14px 0 0 -15px}
+/* 노래더보기부분 */
+.spacial_view .view_info {border-top:1px solid #ebebeb}
+.spacial_view .view_info .music_info {overflow:hidden;position:relative}
+.spacial_view .view_info .num_music {float:left;padding-top:9px;padding-left:16px;padding-right:5px;font-size:15px;color:#666;letter-spacing:1px}
+.spacial_view .view_info .name_music{overflow:hidden;padding:9px 90px 9px 15px}
+.spacial_view .view_info .tit_music {display:-webkit-box;overflow:hidden;font-size:15px;font-weight:normal;line-height:17px;letter-spacing:1px;-webkit-line-clamp:1;-webkit-box-orient:vertical;text-overflow:ellipsis}
+.spacial_view .view_info .txt_music {display:-webkit-box;overflow:hidden;font-size:12px;color:#666;line-height:17px;letter-spacing:1px;-webkit-line-clamp:1;-webkit-box-orient:vertical;text-overflow:ellipsis}
+.spacial_view .view_info .btn_info {position:absolute;top:11px;right:50px;width:32px;height:29px;line-height:27px}
+.spacial_view .btn_info .img_comm {display:inline-block;float:none;width:11px;height:7px;background-position:-32px -24px}
+.spacial_view .view_info .btn_listen {position:absolute;top:11px;right:12px;width:32px;height:29px;line-height:29px}
+.spacial_view .btn_listen .img_comm {display:inline-block;float:none;width:16px;height:12px;background-position:-20px -36px}
+.spacial_view .view_info .desc_music {display:none;float:left;width:100%;padding:10px 12px;position:relative;background-color:#bcd3e6;box-shadow:inset 1px 1px 2px 0 #97b3c8;-webkit-box-shadow:inset 1px 1px 2px 0 #97b3c8;border-top:1px solid #97b3c8;text-align:center;box-sizing:border-box}
+/* 노래가 있을경우 */
+.view_on .btn_listen .img_comm {background-position:0 -36px}
+/* 노래더보기부분 정보*/
+.spacial_view .input_on .desc_music {display:block}
+.spacial_view .view_info .list_desc {overflow:hidden;width:100%}
+.view_info .list_desc li {float:left;width:25%}
+.view_info .desc_music .btn_text {display:block;height:33px;margin-right:4px;line-height:33px}
+.view_info .btn_text .img_comm {display:inline-block;float:none;width:11px;height:13px;margin:0 5px 0 0;background-position:-12px -52px}
+.view_info .desc_music .btn_album {display:block;height:33px;margin-right:4px;line-height:33px}
+.view_info .btn_album .img_comm {display:inline-block;float:none;width:12px;height:12px;margin:0 4px 0 0;background-position:-56px -36px}
+.view_info .desc_music .btn_hear {display:block;height:33px;margin-right:4px;line-height:33px}
+.view_info .btn_hear .img_comm {display:inline-block;float:none;width:16px;height:12px;margin:0 5px 0 0;background-position:-20px -36px}
+.view_info .desc_music .btn_app {display:block;height:33px;line-height:33px}
+.view_info .desc_music .btn_txt {float:none;font-size:13px;color:#d2d2d3}
+/* 펼쳐진 정보에 컨텐츠가 있을경우 */
+.spacial_view .input_on .btn_info .img_comm{background-position:-44px -24px}
+.on .btn_text .btn_txt {color:#20a0cb}
+.on .btn_text .img_comm {background-position:0 -52px}
+.on .btn_album .btn_txt {color:#20a0cb}
+.on .btn_album .img_comm {background-position:-40px -36px}
+.on .btn_hear .btn_txt {color:#20a0cb}
+.on .btn_hear .img_comm {background-position:0 -36px}
+/* 앨범소개 */
+.spacial_view .view_album {overflow:hidden;padding:11px 12px 15px;border-top:1px solid #eaeaea}
+.view_album .img_album {float:left;position:relative;width:94px;height:94px;margin-right:12px}
+.view_album .img_album .img_line {display:block;position:absolute;top:0;left;0;width:94px;height:94px;border:1px solid rgba(0,0,0,0.1);box-sizing:border-box}
+.view_album .desc_album {float:left}
+.view_album .desc_album {float:left;width:60%;font-size:13px}
+.view_album .desc_album dt {float:left;margin-right:9px;color:#666;letter-spacing:1px;line-height:19px}
+.view_album .desc_album dd {overflow:hidden;color:#000;letter-spacing:1px;line-height:19px}
+/* 뷰 부분 좋아요버튼 */
+.music_spacial .spacial_share {overflow:hidden}
+.spacial_share .btn_like {float:left;position:static;height:34px;margin:7px 0 20px 12px;padding-right:15px;line-height:34px}
+.spacial_share .btn_like .img_comm {margin:6px 3px 0 15px}
+/* sns공유하기 */
+.spacial_share .sns_comm {float:right;overflow:hidden;width:173px;margin:7px 12px 20px 0;border:1px solid #bbb;border-radius:3px;background-color:#f9f9f9;background-image:-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#efefef));background-image:linear-gradient(to bottom, #ffffff, #efefef);box-sizing:border-box}
+.spacial_share .sns_comm .basis_sns {float:left;width:75%}
+.spacial_share .sns_comm li {float:left;width:33.33%;border-right:1px solid #bbb;box-sizing:border-box}
+.spacial_share .sns_comm .link_sns {display:block;height:32px;line-height:40px;text-align:center}
+.spacial_share .sns_comm .link_more {float:left;width:25%;height:32px;line-height:34px;text-align:center}
+.sns_comm .link_yozm .img_comm {display:inline-block;width:15px;height:18px;background-position:-36px 0}
+.sns_comm .link_twitter .img_comm {display:inline-block;width:17px;height:17px;background-position:-56px 0}
+.sns_comm .link_chaton .img_comm {display:inline-block;width:17px;height:17px;background-position:-76px 0}
+.sns_comm .link_more .img_comm {display:inline-block;width:11px;height:11px;background-position:-104px -40px}
+/* 관련글 */
+.spacial_involve {border-top:1px solid #ddd}
+.spacial_involve .tit_involve {display:inline-block;margin-top:10px;padding:0 12px;font-weight:normal;;text-decoration:underline}
+.spacial_involve .list_involve {padding:4px 12px 6px;border-bottom:1px solid #eaeaea}
+.spacial_involve .list_involve li {width:100%;box-sizing:border-box;line-height:24px}
+.list_involve .link_involve {display:block;overflow:hidden;position:relative;padding-left:12px;letter-spacing:1px;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal}
+.list_involve .link_involve:before {display:inline-block;position:absolute;top:1px;left:0;width:3px;height:3px;margin:7px 6px 0 3px;background:url(../images/m320/img_comm.png) no-repeat;background-position:-120px -20px;vertical-align:top;content:''}
+.spacial_involve .involve_skill {margin:0 12px;margin-top:20px;margin-bottom:20px}
+.spacial_involve .skill_inner {overflow:hidden;width:100%;border:1px solid #f0f0f0;box-sizing:border-box;vertical-align:top}
+.spacial_involve .involve_skill .link_skill {display:inline-block;float:left;width:33.33%;height:32px;line-height:32px;box-sizing:border-box;vertical-align:top;text-align:center}
+.spacial_involve .involve_skill .link_prev {overflow:hidden;border-right:1px solid #f0f0f0}
+.spacial_involve .involve_skill .link_prev .img_comm {display:inline-block;width:5px;height:7px;margin:11px 5px 0 0;background-position:-16px -24px;vertical-align:top}
+.spacial_involve .involve_skill .link_prev .btn_txt {display:inline-block}
+.spacial_involve .involve_skill .link_next {overflow:hidden;border-right:1px solid #f0f0f0}
+.spacial_involve .involve_skill .link_next .img_comm {display:inline-block;width:5px;height:7px;margin:11px 0 0 5px;background-position:-24px -24px;vertical-align:top}
+.spacial_involve .involve_skill .link_next .btn_txt {display:inline-block}
+/*댓글*/
+.music_cmt .cmt_write {padding:10px 12px 12px;border-top:1px solid #ddd;background-color:#f7f7f7}
+.music_cmt .cmt_write .tit_cmt {display:inline-block;font-weight:normal}
+.music_cmt .num_cmt {margin-left:9px;font-weight:normal;color:#20a0cb;letter-spacing:1px}
+.music_cmt .num_cmt .num_txt {margin-left:1px}
+.music_cmt .cmt_write .tf_cmt {overflow-y:hidden;width:100%;height:28px;margin-top:6px;padding:5px 8px 0;border-radius:4px;border:1px solid #b8b9bd;font-size:15px;resize:none;box-sizing:border-box;box-shadow:inset 1px 1px 2px 0 #c7c7c5;-webkit-box-shadow:inset 1px 1px 2px 0 #c7c7c5;letter-spacing:1px}
+.music_cmt .cmt_view {position:relative;border-top:1px solid #eaeaea}
+.music_cmt .txt_cmt {width:100%;margin-top:2px;color:#000;line-height:20px;letter-spacing:1px}
+.music_cmt .txt_best:before {display:inline-block;content:'best';width:33px;height:16px;margin-bottom:-2px;margin-right:8px;background:url(../images/m320/img_comm.png);background-position:0 0;text-indent:-9999px;vertical-align:text-top}
+.music_cmt .txt_cmt .ico_best,
+.music_cmt .txt_cmt .ico_response{display:none}
+.music_cmt .txt_name, .music_cmt .txt_time {float:left;font-size:12px;color:#999}
+.music_cmt .txt_response {font-size:12px;color:#999}
+.music_cmt .txt_bar {margin:0 7px;color:#e5e5e5}
+.music_cmt .view_inner {overflow:hidden;padding:13px 12px 12px}
+.music_cmt .info_cmt {overflow:hidden}
+.music_cmt .info_skill {overflow:hidden;height:27px;margin-top:5px}
+.music_cmt .btn_comm {border:1px solid #aaa;line-height:27px}
+.music_cmt .cmt_view .fst_response {border-top:0}
+.music_cmt .cmt_view .btn_response {float:left;width:46px;height:27px;margin-right:5px}
+.music_cmt .btn_delete .img_comm {width:7px;height:7px;margin:9px 3px 0 8px;background-position:-52px -52px}
+/* 답글에 대한 답글쓰기 */
+.music_cmt .write_response {position:relative;margin-bottom:-1px;padding:15px 12px;border-top:1px solid #eaeaea;border-bottom:1px solid #eaeaea;z-index:10}
+.music_cmt .write_response .tit_cmt {font-weight:normal;color:#20a0cb;letter-spacing:1px}
+.music_cmt .write_response .box_tf {margin:9px 0 0}
+.music_cmt .write_response .tf_response {width:100%;height:84px;padding:7px 8px;box-shadow:inset 0 1px 4px 0 #c7c7c5;-webkit-box-shadow:inset 0 1px 4px 0 #c7c7c5;border-radius:4px;border:1px solid #b8b9bd;resize:none;box-sizing:border-box}
+.music_cmt .write_response .bytes_inner {display:inline-block;overflow:hidden}
+.write_response .num_bytes .now_bytes {float:left;color:#20a0cb}
+.write_response .num_bytes .txt_slice {float:left}
+.write_response .num_bytes .total_bytes {float:left}
+.write_response .box_skill {display:block;text-align:center}
+.write_response .btn_cancel {position:relative;bottom:0;width:50px;height:31px;margin-right:2px}
+.write_response .btn_cancel .btn_txt {float:none}
+.write_response .btn_submit {position:relative;bottom:0;width:50px;height:31px;background-color:#fbfbfb;background-image:-webkit-gradient(linear, left top, left bottom, from(#50cdf8), to(#3ec1ed));background-image:linear-gradient(to bottom, #50cdf8, #3ec1ed);font-size:15px;color:#fff;box-shadow:inset 1px 1px 2px 0 #50cdf8;-webkit-box-shadow:inset 1px 1px 2px 0 #50cdf8}
+.write_response .btn_submit .btn_txt {float:none}
+/* 댓글에 답글 */
+.music_cmt .response_view {margin-top:-1px;border-top:1px dashed #eaeaea;background-color:#fafafa}
+.music_cmt .fst_view {border-top:1px solid #eaeaea}
+.music_cmt .response_view .txt_cmt:before {display:inline-block;content:'댓글에답글';background:url(../images/m320/img_comm.png);width:10px;height:11px;margin-right:3px;background-position:-28px -52px;text-indent:-9999px;vertical-align:text-top}
+.music_cmt .write_response .num_bytes {height:12px;margin-top:7px;font-size:10px;font-weight:normal;color:#888;text-align:right}
+/* 삭제버튼 */
+.music_cmt .btn_delete {float:left;width:51px;height:27px}
+/* 좋아요 버튼 */
+.music_cmt .btn_like {float:right;height:27px;padding-right:15px}
+.music_cmt .btn_like .img_comm {margin:3px 3px 0 10px}
+/* 댓글 더보기 */
+.cmt_fold {position:relative;height:40px;border-top:1px solid #ddd;border-bottom:1px solid #eaeaea;background-color:#f7f7f7;line-height:40px;box-sizing:border-box}
+.cmt_fold .link_more {display:block;overflow:hidden;width:100%;padding-left:12px;box-sizing:border-box}
+.cmt_fold .link_more .txt_more {float:left;letter-spacing:2px}
+.cmt_fold .link_more .num_cmt {float:left;overflow:hidden;margin-left:3px;font-size:10px;color:#666;line-height:42px}
+.cmt_fold .link_more .num_cmt .txt_brakets, .cmt_fold .link_more .num_cmt .num_now, .cmt_fold .link_more .num_cmt .txt_slice, .cmt_fold .link_more .num_cmt .num_total {float:left;font-weight:normal}
+.cmt_fold .link_more .img_comm {display:inline-block;width:7px;height:5px;margin:17px 0 0 7px;background-position:-64px -24px;vertical-align:top}
+/* 맨위로 */
+.cmt_fold .link_top {position:absolute;top:0;right:0;width:74px;border-left:1px solid #e3e3e3;font-size:12px;color:#666;box-sizing:border-box;text-align:center;z-index:10;letter-spacing:1px}
+.cmt_fold .link_top .img_comm {display:inline-block;width:9px;height:11px;margin:13px 3px 0 0px;background-position:-40px -52px;vertical-align:top}
+/* 광고 */
+#kakaoAd {margin-top:20px;text-align:center}
+#kakaoAd .link_ad {display:block}

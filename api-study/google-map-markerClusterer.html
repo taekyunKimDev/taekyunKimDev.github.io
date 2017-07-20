@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>구글 지도 markerClusterer 연습</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Marker Clustering</title>
+    <style>
+        #map {
+            height: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+
+    function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: {lat: 37.538028, lng: 127.026554}
+        });
+
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        var markers = locations.map(function(location, i) {
+            return new google.maps.Marker({
+                position: location,
+                label: labels[i % labels.length]
+            });
+        });
+
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+    }
+    var locations = [
+        {lat: 37.498311, lng: 127.0265114},
+        {lat: 37.501280, lng: 127.0350475},
+        {lat: 37.504378, lng: 127.0274606},
+        {lat: 37.517033, lng: 127.024600},
+        {lat: 37.551702, lng: 127.0286968},
+        {lat: 37.571264, lng: 127.02153657},
+        {lat: 37.5804724, lng: 127.02258905},
+        {lat: 37.5147685, lng: 127.02391596},
+        {lat: 37.528611, lng: 127.030222},
+        {lat: 37.5150000, lng: 127.0666674},
+        {lat: 37.5150001, lng: 127.066663},
+        {lat: 37.5150002, lng: 127.066664},
+        {lat: 37.5150003, lng: 127.066665},
+        {lat: 37.5150004, lng: 127.066666},
+        {lat: 37.5150005, lng: 127.066667},
+        {lat: 37.5259859, lng: 127.028708},
+        {lat: 37.565015, lng: 127.023858},
+        {lat: 37.5770104, lng: 127.083299},
+        {lat: 37.5773700, lng: 127.025187},
+        {lat: 37.574785, lng: 127.047978},
+        {lat: 37.5919616, lng: 127.0628119},
+        {lat: 37.5530766, lng: 127.0025692},
+        {lat: 37.545118,  lng: 126.974385},
+        {lat: 37.545138,  lng: 126.975385},
+        {lat: 37.513743,  lng: 127.124973},
+        {lat: 37.516743,  lng: 127.124963},
+        {lat: 37.518743,  lng: 127.124673},
+        {lat: 37.527193, lng: 127.0213218},
+        {lat: 37.5430162, lng: 127.0125694},
+        {lat: 37.5334358, lng: 127.029506},
+        {lat: 37.5134358, lng: 127.021315},
+        {lat: 37.5135258, lng: 127.0128000},
+        {lat: 37.524285,  lng: 126.883518},
+        {lat: 37.524285,  lng: 126.883718},
+        {lat: 37.574285,  lng: 126.883718},
+        {lat: 37.599792, lng: 127.0423352}
+    ]
+</script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoPm7eEso0yxRQSMB2iSm5rTzyvo5EfxU&callback=initMap">
+</script>
+</body>
+</html>

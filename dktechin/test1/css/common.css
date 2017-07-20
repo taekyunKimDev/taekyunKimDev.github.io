@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes: none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{background:#fff}
+body,th,td,input,select,textarea,button{font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#000}
+a{color:#333;text-decoration:none}
+a:active{background-color:transparent;text-decoration:underline}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+/* 공통 */
+#kakaoIndex{overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0}
+.ir_pm{display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+.ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.show{display:block}
+.hide{display:none}
+.txt_bar{display: inline-block;margin: 0  14px 0 10px;font-size:11px;color:#e1e1e1;vertical-align: top;}
+/* 공통이미지 */
+.img_mileage{display:block;background:url(../images/img_mileage.gif) no-repeat;vertical-align: top}
+.btn_mileage{display:block;overflow:hidden;font-size:0;background:url(../images/btn_mileage.gif) no-repeat;line-height:0;text-indent:-9999px}
+.tit_mileage{display:block;overflow:hidden;font-size:0;background:url(../images/tit_mileage.gif) no-repeat;line-height:0;text-indent:-9999px}
+.info_mileage{display:block;overflow:hidden;font-size:0;background:url(../images/info_mileage.gif) no-repeat;line-height:0;text-indent:-9999px}
+.tab_mileage{display:block;overflow:hidden;font-size:0;background:url(../images/tab_mileage.gif) no-repeat;line-height:0;text-indent:-9999px}
+.num_mileage{display:block;overflow:hidden;font-size:0;background:url(../images/num_mileage.gif) no-repeat;line-height:0;text-indent:-9999px}
+/* 레이아웃 */
+#kakaoWrap{position:relative;padding-top:30px}
+#kakaoHead{overflow:hidden;position:relative;width:978px;margin:0 auto;margin-top:16px}
+/* 헤드 */
+#kakaoHead #kakaoServiceLogo{display:inline-block;overflow:hidden;margin: 4px 11px 0 6px;}
+#kakaoHead .link_logo{float:left;width:70px;height:33px;background-position: 0 1px;margin-left:10px}
+#kakaoHead .link_txt_mileage{float:left;width:92px;height:24px;background-position: 0 0px}
+#kakaoSearch{overflow:hidden;display:inline-block;vertical-align: top}
+#kakaoSearch .fld_search{float:left}
+#kakaoSearch .inp_search{float:left;width:245px;height:22px;padding:4px 11px 5px 11px ;border:0;background-position:-100px 0}
+#kakaoSearch .btn_search{float:left;width:39px;height:31px;margin-left:4px;background-position: 0 0}
+#kakaoSearch .btn_total_search{float:left;width:54px;height:23px;margin-top:5px;margin-left:9px;background-position: -50px 0}
+.link_shoppinghow{display:inline-block;position:absolute;width:50px;height:20px;background-position: 0 -50px;top:11px;right:0;}
+.box_gnb{position:relative;width:978px;height:38px;margin-top: 15px;background:url(../images/bg_nav.gif) repeat-x;z-index:10;}
+.list_gnb{overflow:hidden}
+.list_gnb li{float:left}
+.list_gnb li .img_mileage{width:100px;height:38px}
+.list_gnb li .link_home{background-position:0 -50px}
+.list_gnb li .link_home:hover,
+.list_gnb .on .link_home{background-position:0 -88px}
+.list_gnb li .link_info{background-position:-100px -50px}
+.list_gnb li .link_info:hover,
+.list_gnb .on .link_info{background-position:-100px -88px}
+.list_gnb li .link_user{background-position:-200px -50px}
+.list_gnb li .link_user:hover,
+.list_gnb .on .link_user{background-position:-200px -88px}
+.list_gnb li .link_event{background-position:-300px -50px}
+.list_gnb li .link_event:hover,
+.list_gnb .on .link_event{background-position:-300px -88px}
+.list_gnb li .link_help{background-position:-400px -50px}
+.list_gnb li .link_help:hover,
+.list_gnb .on .link_help{background-position:-400px -88px}
+.box_gnb .bnr_gnb{position:absolute;width:175px;height:38px;background-position:0 -150px;top:0;right:14px}
+.box_gnb .ir_wa{color:#fff}
+/* 푸터 */
+.kakao_footer{width:978px;margin:0 auto;padding:20px 0;text-align: center}
+.list_service_help{overflow:hidden}
+.list_service_help .link_service_help{display:inline-block;font-size:13px;color:#333}
+.list_service_help .ico_vertical{margin:5px 8px;color:#dedede}
+.txt_copyright{margin-top:7px;;font-size:11px;color:#999;text-align:center}
+/* 미니다음 */
+#wrapMinidaum{position:absolute;width:100%;background:url(../images/bg_head.gif) repeat-x;top:0;left:0;z-index:10;}
+#wrapMinidaum .inner_mini_daum{overflow:hidden;width:978px;height:30px;margin:0 auto}
+#wrapMinidaum .box_rank{float:left;width:295px;margin-right:345px}
+#wrapMinidaum .box_rank .link_rank{display:block;overflow:hidden;width:120px;height:29px;font-size:0;background:url(../images/img_mini_daum.gif) no-repeat;background-position:0 7px;line-height:30px;text-indent:-9999px}
+#wrapMinidaum .box_left{float:right}
+#wrapMinidaum .box_left .name_user{float:left;width:62px}
+#wrapMinidaum .name_user .link_user{display:inline-block;overflow:hidden;width:61px;height:30px;font-size:0;background:url(../images/img_mini_daum.gif) no-repeat;background-position: 1px -19px;vertical-align: top;line-height:0;text-indent:-9999px}
+#wrapMinidaum .name_user .txt_bar{display: inline-block;width: 1px;height: 11px;margin: 8px 0 0 0;font-size: 11px;color: #e1e1e1;vertical-align: top}
+#wrapMinidaum .box_left .link_list{overflow:hidden;float:left}
+.box_left .link_list li{float:left}
+.link_list li .txt_gnb{display:block;overflow:hidden;height:30px;font-size:0;background:url(../images/img_mini_daum.gif) no-repeat;line-height:0;text-indent:-9999px}
+.link_list li .txt_daum{width:45px;background-position:-62px -19px}
+.link_list li .txt_mail{width:29px;background-position:-107px -19px}
+.link_list li .txt_cafe{width:29px;background-position:-136px -19px}
+.link_list li .txt_news{width:28px;background-position:-165px -19px}
+.link_list li .txt_shopping{width:28px;background-position:-193px -19px}
+.link_list li .txt_more{width:52px;background-position:-221px -19px}
+.down_app{float:left;width:64px;vertical-align: top}
+.down_app .btn_down_app{display:inline-block;overflow:hidden;width:57px;height:30px;font-size:0;background:url(../images/img_mini_daum.gif) no-repeat;background-position:-278px -18px;line-height:0;text-indent:-9999px}
+.down_app .txt_bar{margin:8px 0 0 0}
+/* 마일리지 홈컨텐츠 */
+#kakaoContent{width:978px;margin:0 auto;margin-top:9px}
+#kakaoContent #cMain{overflow:hidden}
+#kakaoContent #cMain #mArticle{float:left;width:728px;margin-right:10px;min-height:586px}
+/* 메인배너 */
+.bnr_main{overflow:hidden;position: relative;width:728px;height:401px;margin-bottom:9px;border-bottom:1px solid #ededed}
+.bnr_main .list_main_bnr{overflow:hidden;width:2184px;height:401px;}
+.bnr_main .list_main_bnr li{float:left}
+.bnr_main  .page_bnr{position:absolute;z-index:10;width:50px;height:12px;margin-left:-25px;left:50%;bottom:19px}
+.page_bnr .btn_page{display:inline-block;width:12px;height:12px;margin-right:2px;background-position:-30px -40px}
+.page_bnr .page_on{background-position:-50px -40px}
+.bnr_main .btn_derection{position:absolute;width:37px;height:50px;top:180px;z-index:10}
+.bnr_main .btn_prev{left:0}
+.bnr_main .btn_next{right:0}
+.bnr_main .btn_prev .btn_mileage{width:23px;height:42px;margin-left:14px;margin-top:4px;background-position:-70px -40px;cursor:pointer}
+.bnr_main .btn_next .btn_mileage{width:23px;height:42px;margin-top:4px;background-position:-100px -40px;cursor:pointer}
+.list_service_info{overflow:hidden;width:728px;height:173px;border:1px solid #e2e3e4}
+.list_service_info li{float:left;position:relative;width:223px;height:154px;padding-top:19px;padding-left:19px;border-left:1px solid #e2e3e4}
+.list_service_info li:first-child{border-left:0}
+.list_service_info li .box_tit{display:inline-block;width:125px;height:15px;margin-bottom:14px}
+.list_service_info li .box_txt{display:inline-block;position:absolute;width:85px;height:18px}
+.list_service_info .box_intro{background-position: 0px 0px}
+.list_service_info .box_intro .txt_intro{top:45px;left:17px}
+.list_service_info .box_intro .txt_join{top:65px;left:17px}
+.list_service_info .box_use{background-position: 0 -200px}
+.list_service_info .box_use .txt_use{top:45px;left:17px}
+.list_service_info .box_search{width:221px;background-position: 0 -400px}
+.list_service_info .box_search .txt_search{top:45px;left:17px}
+/* 로그인, 공지사항&FAQ 게시판, 이벤트추가적립혜택 */
+#kakaoContent #cMain #mAside{float:left;width:240px;min-height:586px}
+.box_login{width:238px;height:169px;padding:14px 0 11px 0;border:1px solid #ebebeb;background-color:#fbfbfb}
+/* 로그인중 헤드 */
+.box_login_header{position:relative;height:30px;padding:0 10px 0 19px;border-bottom:1px solid #eeeeef}
+.box_login_header .box_id{font-size:12px;color:#3b3f41}
+.box_login_header .txt_user_id{overflow:hidden;display:inline-block;width:66px;height:19px;font-family:'돋움',dotum,sans-serif;font-weight:bold;text-overflow:ellipsis;vertical-align: middle;white-space: nowrap}
+.box_login_header .btn_logout{position:absolute;top:0;right:10px}
+.btn_logout{width:49px;height:19px;background-position:-110px 0}
+/* 다음마일리지 회원 */
+.box_useing_mileage{overflow:hidden;height: 66px;margin:0 10px 0 19px;border-bottom: 1px solid #eeeeef}
+.box_useing_mileage .box_num_mileage{display:inline-block;overflow:hidden;margin-left:73px}
+.box_useing_mileage .num_mileage, .box_plan_mileage .num_mileage, .box_close_mileage .num_mileage{float:left;height:21px;margin-right:1px;}
+.tit_useing{width:91px;height:12px;margin:13px 2px 8px 0;padding-left:5px;background-position:0 -75px}
+.txt_mil{float:left;width:20px;height:10px;margin-top:10px;margin-left:3px;background-position:0 -150px}
+.box_plan_mileage{border-bottom: 1px solid #eeeeef}
+.box_plan_mileage, .box_close_mileage{overflow:hidden;height:23px;margin:0 10px 0 19px;padding-top:8px}
+.box_plan_mileage .txt_mil,.box_close_mileage .txt_mil{margin-top:5px;margin-left:3px}
+.box_plan_mileage .tit_plan{display:inline-block;width:77px;height:18px;padding-left:5px;background-position:0 -100px}
+.box_plan_mileage .box_num_mileage{overflow:hidden;float:right}
+.box_plan_mileage .txt_mileage{float:right;height:15px}
+.box_close_mileage .tit_close{display:inline-block;width:77px;height:18px;padding-left:5px;background-position:0 -121px}
+.box_close_mileage .box_num_mileage{overflow:hidden;float:right}
+.box_close_mileage .txt_mileage{float:left;height:15px}
+.txt_blue1{width:11px;background-position:0 0}
+.txt_blue2{width:18px;background-position:-22px 0}
+.txt_blue3{width:17px;background-position:-51px 0}
+.txt_blue4{width:18px;background-position:-81px 0}
+.txt_blue5{width:17px;background-position:-111px 0}
+.txt_blue6{width:17px;background-position:-141px 0}
+.txt_blue7{width:18px;background-position:-172px 0}
+.txt_blue8{width:17px;background-position:-200px 0}
+.txt_blue9{width:16px;background-position:-230px 0}
+.txt_blue0{width:17px;background-position:-261px 0}
+.txt_bluecomma{width:9px;background-position:-291px 0}
+.box_plan_mileage .num_mileage,
+.box_close_mileage .num_mileage{width:10px;height:21px}
+.num_black1{background-position:2px -33px}
+.num_black2{background-position:-15px -33px}
+.num_black3{background-position:-35px -33px}
+.num_black4{background-position:-55px -33px}
+.num_black5{background-position:-75px -33px}
+.num_black6{background-position:-95px -33px}
+.num_black7{background-position:-115px -33px}
+.num_black8{background-position:-135px -33px}
+.num_black9{background-position:-156px -33px}
+.num_black0{background-position:-175px -33px}
+.num_blackcomma{width:10px;height:21px;background-position:-195px -33px}
+/* 다음로그인 but 마일리지 비회원 */
+.box_log_off .box_login_cont{margin:0 19px;}
+.box_log_off .box_login_cont .tit_mileage{width:200px;height:60px;margin-top:15px;background-position:0 -375px}
+.box_log_off .box_login_cont .btn_join{width:200px;height:38px;margin-top:12px;background-position:0 -90px}
+/* 다음 로그아웃 */
+.box_out_log .box_top{padding:0 10px 14px 19px;border-bottom:1px solid #eeeeef}
+.box_out_log .box_top .txt_info{width:195px;height:30px;margin-top:5px;background-position: 0 -450px}
+.box_out_log .box_top .btn_login{width:200px;height:38px;margin-top:12px;background-position:0 -130px}
+.box_out_log .box_bottom{padding:15px 10px 14px 19px}
+.box_out_log .box_bottom .txt_mileage_join{width:125px;height:15px;margin-bottom:8px;background-position:0 -500px}
+.box_out_log .box_bottom .txt_daum_join{width:125px;height:15px;background-position:0 -525px}
+/* 공지사항&FAQ 게시판 텝 */
+.box_main_tab{position:relative;width:240px;margin-top:20px;margin-bottom:9px}
+.box_main_tab .list_box_tab{position:absolute;width:240px;margin-top:28px;top:0;left:0}
+.tab_head{overflow:hidden;background:url(../images/bg_tabhead.gif) no-repeat 100% 27px}
+.tab_head .tab_notice{float:left;width:80px;height:28px;background-position: 0 0}
+.tab_head .tab_faq{float:left;width:79px;height:28px;background-position:-80px 0}
+.box_main_tab .tab_notice.on{background-position:0-28px}
+.box_main_tab .tab_notice{background-position:0 0;}
+.box_main_tab .tab_faq.on{background-position:-80px -28px}
+.box_main_tab .tab_faq{background-position:-80px 0}
+.box_main_tab .tab_body{height: 148px;}
+.box_main_tab .list_txt li{width:220px;padding-left:20px;background:url(../images/bg_listdot.gif) no-repeat 10px 10px;line-height:23px}
+.box_main_tab .list_txt li:first-child{margin-top:12px}
+.box_main_tab .link_tab{display:block;overflow:hidden;width:220px;font-size:12px;color:#6f707b;text-overflow:ellipsis;vertical-align: middle;white-space: nowrap;letter-spacing: 1px;}
+.box_main_tab .btn_more{position:absolute;width:35px;height:28px;background-position:0 -55px;top:0;right:5px}
+/* 슬라이드 배너 */
+.bnr_aside{position:relative;width:238px;border:1px solid #ebebeb}
+.bnr_aside .tit_aside_bnr{width:238px;height:31px;border-bottom:1px solid #ebebeb;background-position:10px -165px}
+.bnr_aside .fst_item{border-bottom:1px solid #ebebeb}
+.bnr_aside .aside_bnr_cont{height:70px}
+.bnr_aside .box_controll{overflow:hidden;position:absolute;width: 52px;height:13px;top:10px;right: 10px;}
+.bnr_aside .box_controll .num_page{float:left;margin-right:5px}
+.bnr_aside .num_page{font-family:'verdana';font-size:11px;color:#8a8d95;vertical-align: top;letter-spacing: -2px}
+.bnr_aside .num_page .txt_bar{margin:0 2px;vertical-align: top}
+.bnr_aside .box_controll .btn_prev{float:left;width:12px;height:13px;background-position: 0 -40px}
+.bnr_aside .box_controll .btn_next{float:left;width:13px;height:13px;background-position: -12px -40px}
+/* 마일리지 가맹 */
+.box_service_store{overflow:hidden;width:978px;height:37px;margin-top:50px;background:url(../images/bg_fst_footer.gif) repeat-x} 
+.tit_service_store{display:block;float:left;width:93px;height:37px;background-position: 10px -537px}
+.list_service_store{overflow: hidden;float:left;margin-left:12px}
+.list_service_store{float:left;height:37px;line-height:37px}
+.list_service_store .link_service_store{display:inline-block;height:37px;font-size:13px;color:#666;line-height:39px;}

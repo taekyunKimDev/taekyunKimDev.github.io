@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+input::-ms-clear {display:none}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#000}
+a {color:#333;text-decoration:none}
+a:active, a:hover {background-color:transparent;text-decoration:underline}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+/* 공통 */
+#kakaoIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} 
+.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+.ir_wa {display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%} 
+.screen_out {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.show {display:block}
+.hide {display:none}
+.txt_bar {display: inline-block;width: 1px;height: 10px;margin: 0 7px 0 8px;font-size:10px;vertical-align: top;color:#4b5266}
+/* 공통이미지 */
+.gnb_hope {display:block;overflow:hidden;background:url(../images/gnb_hope.gif) no-repeat}
+.btn_hope {display:block;overflow:hidden;font-size:0;background:url(../images/btn_hope.png) no-repeat;text-indent:-9999px}
+.tit_hope {display:block;overflow:hidden;font-size:0;background:url(../images/tit_hope.png) no-repeat;text-indent:-9999px}
+.img_hope {display:block;overflow:hidden;font-size:0;background:url(../images/img_hope.png) no-repeat;text-indent:-9999px}
+/* 레이아웃 */
+#kakaoWrap {position:relative;width:978px;margin:0 auto;padding-top: 50px}
+#kakaoHead {overflow:hidden;position:relative}
+#kakaoContent {overflow:hidden}
+#mArticle {overflow:hidden}
+/* 희망해 헤더 */
+#kakaoHead .tit_logo {float:left}
+#kakaoServiceLogo {display:block;width:151px;height:65px;background:url(../images/tit_logo.gif) no-repeat}
+#kakaoServiceLogo .ir_wa {padding: 20px 0 0 10px;font-size: 30px}
+#kakaoHead .tit_info {float:right;width:215px;height:37px;margin-top:20px;background-position:0 0}
+#kakaoHead .link_app {float: right;position: absolute;width: 70px;height: 30px;font-size: 12px;font-weight: bold;background-position: 0 -80px;line-height: 30px;color: #444;bottom: 9px;right: 0;text-indent:-9999px}
+#kakaoGnb {float:left;width:978px;height:43px;margin-top: 0px;border-bottom:3px solid #239ed9;background-position: 0 0}
+#kakaoGnb .ir_wa {font-size:17px;height:33px;padding:10px 0 0 5px}
+.list_gnb {overflow:hidden;background:url(../images/gnb_hope.gif) no-repeat}
+.list_gnb li {float:left}
+.list_gnb .link_home {width:75px;height:43px;background-position:0 0}
+.list_gnb .gnb_on .link_home {background-position:0 -43px}
+.list_gnb .link_raising {width:76px;height:43px;background-position:-75px 0}
+.list_gnb .gnb_on .link_raising {background-position:-75px -43px}
+.list_gnb .link_campaign {width:99px;height:43px;background-position:-151px 0}
+.list_gnb .gnb_on .link_campaign {background-position:-151px -43px}
+.list_gnb .link_board {width:114px;height:43px;background-position:-250px 0}
+.list_gnb .gnb_on .link_board {background-position:-250px -43px}
+.list_gnb .link_intro {width:88px;height:43px;background-position:-364px 0}
+.list_gnb .gnb_on .link_intro {background-position:-364px -43px}
+.list_gnb .link_user {width:80px;height:43px;background-position:-452px 0}
+.list_gnb .gnb_on .link_user {background-position:-452px -43px}
+/* 희망해 푸터 */
+#kakaoFoot {overflow:hidden;padding:8px 0 20px;border-top:1px solid #e7e7e7}
+#kakaoFoot .list_service {overflow:hidden;float:left;margin-left:10px}
+#kakaoFoot .list_service li {float:left}
+#kakaoFoot .link_service {font-size:12px;color:#666;letter-spacing: -2px}
+#kakaoFoot .txt_bar {margin-top:2px;color:#cfc5cf}
+#kakaoFoot .list_sponsor {overflow:hidden;float:right;margin-top:5px;margin-right:12px}
+#kakaoFoot .list_sponsor li {float:left;margin-left:18px}
+#kakaoFoot .list_sponsor li .img_sponsor {vertical-align: bottom}
+#kakaoFoot .txt_copyright {float:left;margin-left:10px;font-size:12px;color:#666}
+/* 미니 다음 */
+#wrapMinidaum {position:absolute;width:100%;height:33px;border-bottom:1px solid #eceded;top:0;left:0;text-align:center}
+#wrapMinidaum .inner_minidaum {width:978px;margin:0 auto}
+/* 희망해 홈 본문 */
+.cont_campaign .campaign_view {float:left;width:723px}
+.cont_campaign .campaign_count {float:right;width:255px;height:983px;margin-top:30px;background:url(../images/bg_hope3.jpg) no-repeat}
+.cont_campaign .campaign_board {float: left;position:relative;width: 866px;padding: 65px 0 41px 112px;border-bottom: 1px solid #9f9f9f;background:url(../images/bg_board.jpg) no-repeat;background-color: #f5f7f7;background-position:100% 0}
+.campaign_view .view_title {width:723px;height:343px;background:url(../images/bg_hope1.jpg) no-repeat}
+/*카드*/
+.campaign_view .view_card {overflow:hidden;width:617px;height:619px;padding:5px 55px 46px 51px;background:url(../images/bg_hope2.jpg) no-repeat}
+.campaign_view .list_card {overflow:hidden;margin-right:-22px;margin-top:-30px}
+.campaign_view .view_card li {position:relative;float:left;width:186px;height:293px;margin-top:30px;margin-right:22px;padding:3px 0 0 5px}
+.campaign_view .view_card .front_card {background-color:#fff;text-align:center}
+.view_card .front_card .card_image {display:block;width:182px;height:236px;margin-bottom:10px;padding:2px 2px 0 2px}
+.view_card .front_card .card_title {display:block;margin-bottom:2px;padding:0 2px}
+.view_card .front_card .card_text {display:block;margin-bottom:6px;padding:0 2px}
+.view_card .card_money {display:block;overflow:hidden;height:30px;padding:13px 2px 0 42px;background-color:#55ab7c}
+.view_card .card_money .num_card {float:left;height:18px;background:url(../images/num_card.png) no-repeat}
+.view_card .card_money .num1 {width:6px;background-position:-4px 0}
+.view_card .card_money .num2 {width:10px;background-position: -2px -25px}
+.view_card .card_money .num3 {width:10px;background-position: -2px -50px}
+.view_card .card_money .num4 {width:11px;background-position: -1px -75px}
+.view_card .card_money .num5 {width:9px;background-position: -2px -100px}
+.view_card .card_money .num6 {width:12px;background-position: 0 -125px}
+.view_card .card_money .num0 {width:10px;background-position: -2px -225px}
+.view_card .card_money .num_comma {width:4px;height: 16px;margin-top: 2px;background-position: -5px -240px}
+.view_card .card_money .num_won {width:15px;height: 14px;margin-top: 2px;background-position: 0px -275px}
+.view_card .img_preface {position:absolute;top:0;left:0}
+.view_card .card_finish .img_preface {width:51px;height:65px;background-position:-200px -30px}
+.view_card .card_end .img_preface {width:51px;height:65px;background-position:-200px -100px}
+.view_card .over_card {display:none;position:absolute;width:186px;height:267px;padding-top:24px;background-color:#fcfe32;top:3px;left:5px;z-index:100;text-align:center}
+.view_card li:hover .over_card {display:block}
+.view_card .over_card .card_image {display: block}
+.view_card .over_card .link_view {position:absolute;width:67px;height:67px;background-position: -120px 0;left:22px;bottom:28px}
+.view_card .over_card .link_give {position:absolute;width:67px;height:67px;background-position: -120px -75px;left:104px;bottom:28px}
+.view_card .card_finish .card_money, .view_card .card_end .card_money {background-color:#585858}
+.view_card .card_finish .link_give {background-position: -120px -225px}
+.view_card .card_end .link_give {background-position: -120px -150px}
+/*캠페인총모금액*/
+.cont_campaign .count_raise {height:245px;padding:26px 10px 0 9px}
+.count_raise .total_raise {overflow:hidden}
+.count_raise .total_raise .tit_total {float:left;width:153px;height:25px;margin:0 0 19px 11px;background-position: 0 -50px}
+.count_raise .total_raise .total_money {overflow:hidden;float:left;width:184px;height:42px;margin-bottom:35px;padding:14px 0 0 51px;background:url(../images/bg_board.gif)}
+.count_raise .total_money .num_board {float:left;height:32px;background:url(../images/num_raise.png)}
+.count_raise .total_money .num1 {width:9px;background-position:-13px 0}
+.count_raise .total_money .num2 {width:19px;background-position: -3px -50px}
+.count_raise .total_money .num3 {width:18px;background-position: -4px -100px}
+.count_raise .total_money .num4 {width:20px;background-position: -2px -150px}
+.count_raise .total_money .num5 {width:16px;background-position: -6px -200px}
+.count_raise .total_money .num6 {width:22px;background-position: 0 -250px}
+.count_raise .total_money .num0 {width:17px;background-position: -5px -350px}
+.count_raise .total_money .num_comma {width:7px;height: 25px;margin-top: 7px;background-position: 7px -385px}
+.count_raise .total_money .num_won {width:22px;height: 23px;margin-top: 3px;background-position: -1px -420px}
+.count_raise .info_raise {overflow:hidden;margin-left: 11px}
+.count_raise .info_raise dt {float:left;width: 75px;height:14px;margin-bottom: 9px}
+.count_raise .info_raise dd {float:left;width:140px;margin-bottom: 9px;line-height:14px;text-align:right}
+.info_raise dd .num_info {font-family: '돋움',dotum,sans-serif;font-size:13px;font-weight: bold;text-decoration: underline;color:#fcfe32}
+.info_raise dd .txt_preface {margin-left:5px;color:#fff;text-decoration: none}
+.info_raise .tit_joiner {background-position:0 -75px}
+.info_raise .tit_netizen {background-position:0 -100px}
+.info_raise .tit_daum {background-position:0 -125px}
+.info_raise .tit_date {background-position:0 -150px}
+.info_raise .desc_date{background:url(../images/img_date.png) no-repeat 10px 0;height:13px}
+/*클릭 기부금*/
+.cont_campaign .count_give {padding:25px 20px 29px}
+.count_give .box_tit {padding-bottom:19px;border-bottom:1px dashed #497855}
+.count_give .tit_click {width:104px;height:24px;margin-bottom:4px;background-position: 0 -175px}
+.count_give .info_give {width:174px;height:13px;background-position: 2px -200px}
+.count_give .list_give {overflow:hidden;margin-bottom: 25px}
+.count_give .list_give dt {margin:19px 0 0 4px}
+.count_give .list_give dd {position:relative;margin-left:4px;padding-bottom:12px;border-bottom:1px dashed #498765}
+.count_give .list_give .tit_wish {width:82px;height:15px;margin-bottom:6px;background-position:0 -225px}
+.count_give .list_give .tit_sticker {width:80px;height:15px;margin-bottom:6px;background-position:0 -250px}
+.count_give .list_give .tit_mypeople {width:80px;height:15px;margin-bottom:6px;background-position:0 -275px}
+.count_give .list_give .tit_twitter {width:70px;height:15px;margin-bottom:6px;background-position:0 -300px}
+.count_give .list_give .tit_facebook {width:81px;height:15px;margin-bottom:6px;background-position:0 -325px}
+.count_give .list_give .tit_kakao {width:81px;height:15px;margin-bottom:6px;background-position:0 -350px}
+.count_give .list_give .txt_money {font-family: '돋움',dotum,sans-serif;font-size:12px;font-weight:bold;color:#fcfe32}
+.count_give .list_give .txt_preface {margin-left:5px;font-weight: normal}
+.count_give .list_give .btn_give1000 {position:absolute;width:51px;height:51px;background-position: 0 0;top:-30px;right:0}
+.count_give .list_give .btn_give100 {position:absolute;width:51px;height:51px;background-position: -60px 0;top:-30px;right:0}
+.count_give .list_give .img_mjoin {display: block;position: absolute;width: 73px;height: 38px;top: -20px;right: 7px}
+.count_give .img_love {width:100px;height:29px;margin-left:2px;margin-bottom:12px;background-position:0 0}
+.count_give .img_bokgi {width:122px;height:22px;margin-left:7px;margin-bottom:25px;background-position:-110px 0}
+.count_give .desc_info {width:194px;height:58px;margin-left:4px;background-position: 0 -375px}
+/* 소원등록게시판 */
+.campaign_board .tit_board {width:336px;height:36px;margin-left:9px;margin-bottom:13px;background-position: 0 -450px}
+.campaign_board .txt_board {width:354px;height:16px;margin-left:9px;margin-bottom:15px;background-position: 0 -500px} 
+.campaign_board .box_board {overflow:hidden;position:relative;width:753px}
+.campaign_board .box_board .panel_board{float:left;width:519px;height:46px;padding:10px 0 10px 10px;border:5px solid #db6742;border-right:0;background-color:#fff}
+.campaign_board .tf_hope {overflow-y:hidden;width:519px;height:46px;border:0;font-size:15px;background:none;resize: none}
+.campaign_board .btn_enter {float:left;position: absolute;width:106px;height:76px;background-color:#fff;opacity:0.01;filter: alpha(opacity=1);z-index: 20;right: 0;top: 0}
+.campaign_board .total_board {float:left;margin:10px 400px 0 10px}
+.campaign_board .total_board .now_board {font-weight:bold;color:#db6742}
+.campaign_board .inp_info {float:left;margin-top:10px}
+.campaign_board .inp_info .now_bytes {font-weight: bold}
+.campaign_board .list_board {width:753px;margin-top: 30px}
+.campaign_board .list_board li {overflow:hidden;height:34px;border-bottom:1px solid #e7e7e7;line-height:34px}
+.campaign_board .user_acount {float:left;margin:0 55px 0 13px;padding-top:2px;color:#db6742}
+.campaign_board .user_txt {float:left}
+.campaign_board .write_txt {float:left;margin-right:9px;margin-top:2px;font-family: '굴림',gulim,sans-serif;color:#333}
+.campaign_board .list_board .thumb_board {float:left;width:56px;height:16px;margin:10px 5px 0 0;background-position: 0 -40px}
+.campaign_board .list_board .date_write {float:left;;font-size:10px;color:#b5b5b5}
+
+.campaign_board .paging_comm  {overflow:hidden;width:721px;margin-top:21px;text-align:center}
+.campaign_board .paging_comm .inner_pages  {display:table;display:inline-block;margin:0 auto}
+.campaign_board .paging_comm .link_page  {float:left;padding:0 4px 0 6px;font-weight:bold;font-size:13px;line-height:24px;color:#313131}
+.campaign_board .paging_comm em.link_page  {color:#f56363}
+.campaign_board .paging_comm .btn_hope  {overflow:hidden;float:left;height:13px;margin-top:3px;text-indent:-9999px}
+.campaign_board .paging_comm .txt_bar  {float:left;margin:0 5px 0 0;font-size:21px;line-height:21px;color:#c4c6c6}
+.campaign_board .paging_comm .btn_fst  {width:13px;background-position:0 -60px;cursor: pointer}
+.campaign_board .paging_comm .btn_lst  {width:13px;height:13px;background-position:-20px -60px;cursor: pointer}
+.campaign_board .paging_comm .btn_prev {width:13px;margin:3px 4px 0 3px;background-position:-40px -60px;cursor: pointer}
+.campaign_board .paging_comm .btn_next  {width:13px;margin:3px 0 0 7px;padding-left:3px;background-position:-60px -60px;cursor: pointer}
+/* 희망해 컨텐츠 가이드 */
+.combo_hope {overflow:hidden;height:36px;padding:8px 0;border-top:1px solid #949494}
+.combo_hope .txt_bar {display:block;float:left;width:1px;height:10px;margin:15px 7px 0 8px;font-size:0;background-color:#e7e7e7;text-indent:-9999px}
+.combo_hope .hope_info {float:left;margin-left:10px;border-right:1px solid #e7e7e7}
+.combo_hope .hope_info .tit_info {float:left;width:62px;height:29px;margin-top:5px;margin-right:35px;background-position: 0 -525px}
+.combo_hope .hope_info .link_intro {float:left;width:60px;height:24px;margin-top:8px;margin-right:26px;background-position: -125px -30px}
+.combo_hope .hope_info .link_info {float:left;width:68px;height:24px;margin-top:8px;margin-right:29px;background-position: -125px -60px}
+.combo_hope .hope_info .link_history {float:left;width:60px;height:24px;margin-top:8px;margin-right:26px;background-position: -125px -90px}
+.combo_hope .hope_start {float:left;border-right:1px solid #e7e7e7}
+.combo_hope .hope_start .tit_start {float:left;width:60px;height:28px;margin-top:5px;margin-left:25px;margin-right:27px;background-position: 0 -575px}
+.combo_hope .hope_start .link_enter {float:left;width:68px;height:24px;margin-top:8px;margin-right:29px;background-position: -125px -120px}
+.combo_hope .hope_start .link_join {float:left;width: 68px;height:24px;margin-top:8px;margin-right: 29px;background-position: -125px -150px}
+.combo_hope .hope_start .link_basic {float:left;width: 68px;height:24px;margin-top:8px;margin-right: 26px;background-position: -125px -180px}
+.combo_hope .link_help {float:left;width:52px;height:15px;margin-top:15px;margin-left:18px;background-position:-65px -40px}
+.combo_hope .link_faq {float:left;width:34px;height:15px;margin-top:15px;background-position: -65px -60px}
+.combo_hope .link_notice {float:left;width:53px;height:15px;margin-top:15px;background-position: -65px -85px}

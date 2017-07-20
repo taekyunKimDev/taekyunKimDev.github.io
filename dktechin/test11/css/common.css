@@ -1,0 +1,415 @@
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+input::-ms-clear{display:none}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{background:#fff}
+body,th,td,input,select,textarea,button{font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#000}
+a{color:#333;text-decoration:none}
+a:active, a:hover{background-color:transparent;text-decoration:underline}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+/* 공통 */
+#kakaoIndex{overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} 
+.ir_pm{display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+.ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%} 
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.show{display:block}
+.hide{display:none}
+.txt_bar{display:inline-block;width:1px;height:10px;margin:0 7px 0 8px;font-size:10px;vertical-align:top;color:#4b5266}
+.ico_comm {display:block;overflow:hidden;background:url(../images/ico_comm.gif) no-repeat;line-height:0;text-indent:-9999px;z-index:10}
+.gnb_vote{display:block;overflow:hidden;background:url(../images/gnb_vote.gif) no-repeat}
+.btn_vote{display:block;overflow:hidden;font-size:0;background:url(../images/btn_vote.gif) no-repeat;line-height:0;text-indent:-9999px;z-index:10}
+.tit_vote{display:block;overflow:hidden;font-size:0;background:url(../images/tit_vote.png) no-repeat;line-height:0;text-indent:-9999px}
+/* 공통 강조 */
+.link_emph{font-weight:bold}
+/* 공통 더보기 */
+.link_more{position:absolute;color:#767d8a;font-size:11px;letter-spacing:-1px}
+.link_more .ico_comm{display:inline-block;width:4px;height:5px;background-position:100% -150px}
+/* 공통 페이징(페이징 2개) */
+.paging_type2{display:block;overflow:hidden;width:100%;margin-top:16px;text-align:center}
+.paging_type2 .paging_inner{display:inline-block;margin:0 auto}
+.paging_type2 .btn_prev{float:left;width:15px;height:15px;background-position:0 -65px}
+.paging_type2 .btn_next{float:left;width:15px;height:15px;background-position:-25px -65px}
+.paging_type2 .num_now{float:left;padding:0 2px 0 8px;font-size:9px}
+.paging_type2 .txt_bar{float:left;display:inline;width:4px;height:9px;margin:0}
+.paging_type2 .num_total{float:left;padding:0 7px 0 1px;font-size:9px}
+/* 레이아웃 */
+#kakaoWrap{position:relative;padding-top:65px}
+.head_vote {overflow:hidden;width:978px;margin:0 auto}
+.cont_vote{position:relative}
+#cMain{overflow:hidden;width:978px;margin:29px auto 0;border-bottom:1px solid #63666d;background:url(../images/bg_aside.gif) repeat-y 100% 0}
+#cEtc{overflow:hidden;padding:28px 0 33px 50px;border-top:1px solid #53565b;border-bottom:2px solid #a1a3a7}
+#kakaoFoot{width:978px;margin:22px auto 24px;font-size:11px;text-align:center;color:#7c7c7c;letter-spacing:-1px}
+/* 미니 다음 */
+#wrapMinidaum{position:absolute;width:100%;border-bottom:1px solid #eceded;top:0;left:0;text-align:center}
+#wrapMinidaum .minidaum_inner{width:978px;height:29px;margin:0 auto}
+/* 검색영역 */
+.searchform_comm {overflow:hidden;float:left;margin-top:5px;margin-right:54px;color:#000}
+.searchform_comm .search_info {float:left;width:120px;height:25px;margin:0 4px 0 0;background:url(../images/img_search.gif) no-repeat;background-position:0 0}
+.searchform_comm .tf_keyword {display:inline;float:left;width:99px;height:17px;padding:4px 4px;border:none 0;background-color:transparent;outline:0}
+.searchform_comm .btn_search {width:37px;height:25px;background-position:0 0}
+/* 서제스트 버튼 */
+.searchform_comm .btn_suggest {overflow:hidden;width:13px;height:15px;margin-top:5px;font-size:0;background:url(../images/img_search.gif) no-repeat;background-position:-125px 0;text-indent:-9999px;line-height:0}
+/* 헤더 */
+.head_vote .tit_logo{float:left;margin:8px 6px 0 10px}
+.head_vote .tit_logo #daumLogo{float:left;width:42px;height:17px;margin-right:4px;background:url(../images/tit_logo.gif) no-repeat}
+.head_vote #daumLogo .ir_wa{font-size:14px}
+.head_vote .tit_logo #kakaoServiceLogo{float:left;width:68px;height:17px;background:url(../images/tit_service.gif) no-repeat}
+.head_vote #kakaoServiceLogo .ir_wa{font-size:14px}
+.subjet_vote{float:left}
+.subjet_vote .link_subjet{display:block}
+.subjet_vote .tit_vote{width:308px;height:40px;background-position:0 0}
+.link_boradcast{float:right;width:134px;height:22px;margin-top:8px;margin-right:10px;background-position:0 -50px}
+/* Gnb */
+#kakaoGnb{float:left;margin-top:35px}
+.gnb_vote{overflow:hidden;position:relative;width:978px;height:44px;background:url(../images/gnb_vote.gif) no-repeat;background-position:0 0}
+.gnb_vote li{float:left}
+.gnb_vote li .link_gnb{display:block;height:44px;background:url(../images/gnb_vote.gif) no-repeat}
+.gnb_vote li .link_home{width:71px;background-position:0 0}
+.gnb_vote li .link_news{width:57px;background-position:-71px 0}
+.gnb_vote li .link_research{width:81px;background-position:-128px 0}
+.gnb_vote li .link_candidate{width:57px;background-position:-209px 0}
+.gnb_vote li .link_vs{width:103px;background-position:-266px 0}
+.gnb_vote li .link_issue{width:68px;background-position:-369px 0}
+.gnb_vote li .link_speak{width:69px;background-position:-437px 0}
+.gnb_vote li .link_map{width:65px;background-position:-506px 0}
+.gnb_vote li .link_voteinfo{width:78px;margin-right:129px;background-position:-571px 0}
+.gnb_vote li .link_broadcast{width:38px;background-position:-777px 0}
+.gnb_vote li .link_sponsor{width:79px;background-position:-816px 0}
+.gnb_vote li .link_proofshot{width:83px;background-position:-895px 0}
+/* gnb_on됐을때 */
+.gnb_vote .gnb_on .link_home{background-position:0 -44px}
+.gnb_vote .gnb_on .link_news{background-position:-71px -44px}
+.gnb_vote .gnb_on .link_research{background-position:-128px -44px}
+.gnb_vote .gnb_on .link_candidate{background-position:-209px -44px}
+.gnb_vote .gnb_on .link_vs{background-position:-266px -44px}
+.gnb_vote .gnb_on .link_issue{background-position:-369px -44px}
+.gnb_vote .gnb_on .link_speak{background-position:-437px -44px}
+.gnb_vote .gnb_on .link_map{background-position:-506px -44px}
+.gnb_vote .gnb_on .link_voteinfo{background-position:-571px -44px}
+.gnb_vote .gnb_on .link_broadcast{background-position:-777px -44px}
+.gnb_vote .gnb_on .link_sponsor{background-position:-816px -44px}
+.gnb_vote .gnb_on .link_proofshot{background-position:-895px -44px}
+/* gnb_live */
+.gnb_live li .link_voteinfo{margin-right:94px}
+.gnb_live li .link_broadcast{width:73px;background-position:-742px 0}
+.gnb_live .gnb_on .link_broadcast{width:73px;background-position:-742px -88px}
+.gnb_vote .ico_live{display:none;position:absolute;top:13px;right:198px;width:34px;height:18px;background-position:0 -100px}
+.gnb_live .ico_live{display:block}
+/* 컨텐츠 */
+/* 출구조사 & 지역별 지지율 */
+.cont_vote .vote_poll{height:229px;border-top:1px solid #a8a7ac;border-bottom:1px solid #a8a7ac;background:url(../images/bg_exitpoll.gif) repeat-x}
+.cont_vote .vote_poll .poll_inner{overflow:hidden;width:978px;margin:0 auto}
+/*방송3사출구조사*/
+.vote_poll .poll_inner .view_match{float:left;width:488px;height:228px;border-right:1px solid #cdd4e0}
+.poll_inner .view_match .match_candidate{overflow:hidden;position:relative;width:452px;height:176px;margin-top:10px}
+.view_match .match_candidate .info_match{position:absolute;top:27px;left:155px}
+.match_candidate .info_match .txt_match{font-size:11px;color:#9099ac}
+.match_candidate .info_match .tit_match{width:128px;height:56px;background-position:0 -75px;margin-left:9px;margin-top:1px}
+/* 출구조사 숫자 */
+.vote_poll .candidate_person{float:left;position:relative;width:226px;height:176px}
+.vote_poll .candidate_person .img_person{position:absolute;top:6px;left:36px;z-index:10}
+.vote_poll .candidate_right .img_person{top:8px;left:50px}
+.vote_poll .candidate_person .bg_party{display:block;position:absolute;bottom:-2px;left:0;width:225px;height:54px;background:url(../images/bg_party1.png)}
+.vote_poll .candidate_right .bg_party{right:0;background:url(../images/bg_party2.png)}
+.vote_poll .person_rate{overflow:hidden;position:absolute;bottom:11px;left:83px}
+.vote_poll .person_rate .num_vote{float:left;font-size:0;background:url(../images/num_vote.png) no-repeat;text-indent:-9999px;line-height:0}
+.vote_poll .person_rate .rate_num0{width:16px;height:23px;background-position:0 0}
+.vote_poll .person_rate .rate_num1{width:16px;height:23px;background-position:0 0}
+.vote_poll .person_rate .rate_num2{width:16px;height:23px;background-position:0 0}
+.vote_poll .person_rate .rate_num3{width:16px;height:23px;background-position:0 -75px}
+.vote_poll .person_rate .rate_num4{width:16px;height:23px;background-position:0 -100px}
+.vote_poll .person_rate .rate_num5{width:16px;height:23px;background-position:0 0}
+.vote_poll .person_rate .rate_num6{width:16px;height:23px;background-position:0 0}
+.vote_poll .person_rate .rate_num7{width:16px;height:23px;background-position:0 -175px}
+.vote_poll .person_rate .rate_num8{width:16px;height:23px;background-position:0 -200px}
+.vote_poll .person_rate .rate_num9{width:16px;height:23px;background-position:0 -225px}
+.vote_poll .person_rate .rate_dot{width:6px;height:7px;margin-top:15px;background-position:0 -250px}
+.vote_poll .person_rate .rate_percent{width:18px;height:19px;margin-top:6px;margin-left:3px;background-position:0 -275px}
+.vote_poll .candidate_right .person_rate{bottom:13px;left:77px}
+.vote_poll .candidate_right .rate_numpercent{margin-top:4px;margin-left:4px}
+.vote_poll .view_match .tit_realtime{position:relative;width:452px;margin-top:10px}
+.view_match .tit_realtime .desc_news{font-size:14px;font-weight:bold;text-align:center;color:#3b445a}
+.view_match .tit_realtime .link_match{position:absolute;bottom:0;right:0;font-size:12px;color:#767d8a;letter-spacing:-1px}
+.view_match .tit_realtime .ico_comm{display:inline-block;width:4px;height:5px;margin-left:5px;margin-bottom:1px;background-position:100% -150px}
+/* 지역별 지지율 */
+.vote_poll .poll_inner .view_place{float:right}
+.vote_poll .place_inner{position:relative;width:449px;height:196px;margin-right:2px;margin-top:18px;background:url(../images/bg_graph.png) no-repeat}
+.vote_poll .place_inner .list_place{position:absolute;top:15px;left:97px}
+.place_inner .list_place li{overflow:hidden;width:350px;margin-bottom:7px}
+.list_place .item_graph{float:left;position:relative;height:16px}
+.list_place .txt_rate{position:absolute;color:#fff}
+.list_place .r_graph{margin-right:1px;background:url(../images/bg_rgraph.png) repeat-x}
+.list_place .r_graph .txt_rate{top:2px;right:10px;line-height:13px}
+.list_place .g_graph{margin-right:1px;background:url(../images/bg_ggraph.png) repeat-x}
+.list_place .g_graph .txt_rate{top:2px;left:10px;line-height:13px}
+.list_place .etc_graph{background:url(../images/bg_graph_etc.png) repeat-x}
+.list_place .etc_graph .txt_rate{display:none;top:2px;left:3px;line-height:13px}
+.vote_article{float:left;width:643px;padding:0 35px 119px 0}
+/* 실시간 뉴스 갤러리 */
+.vote_article .vote_major{position:relative;height:245px;padding-left:5px}
+.vote_major .list_major li{margin-bottom:1px}
+.vote_major .list_major .link_news{letter-spacing:-1px}
+.vote_major .list_major .fst_item{margin-bottom:14px}
+.list_major li .tit_major{font-size:15px;color:#000}
+.list_major .fst_item .tit_major{display:block;overflow:hidden;width:580px;font-size:25px;letter-spacing:-1px;text-overflow:ellipsis;word-wrap:normal;white-space:nowrap}
+.list_major li .txt_major{overflow:hidden;width:580px;height:38px;margin-top:2px;font-size:13px;font-weight:normal;color:#666;letter-spacing:-1px}
+.list_major .news_agency{margin-left:5px;font-size:12px;color:#999}
+.vote_major .major_keyword{overflow:hidden;position:absolute;bottom:0;left:5px;height:21px}
+.major_keyword .keyword_view{display:inline-block;margin:0 auto}
+.major_keyword .link_keyword{float:left;line-height:25px}
+.major_keyword .txt_bar{float:left;margin:0 7px 0 7px;line-height:21px;color:#d5d5d5}
+.keyword_view .on{font-weight:bold;color:#1e7ae2;letter-spacing:1px}
+.keyword_view .btn_vote{float:left;width:32px;height:21px}
+.keyword_view .btn_prev{margin-right:10px;background-position:0 -35px;left:0}
+.keyword_view .btn_next{margin-left:10px;background-position:-40px -35px;left:361px}
+.vote_major .sns_comm {position:absolute;right:0;bottom:0;height:24px}
+.sns_comm .sns_comm_inner {position:relative;width:98px;height:24px;background-position:-45px 0}
+.sns_comm .list_sns {overflow:hidden;width:81px;height:23px}
+.sns_comm .list_sns li {float:left}
+.sns_comm .list_sns .btn_sns {float:left;width:27px;height:23px}
+.sns_comm .list_sns .ico_twi {width:14px;height:12px;margin-top:6px;margin-left:8px;background-position:-150px -20px}
+.sns_comm .list_sns .ico_face {width:13px;height:13px;margin-top:6px;margin-left:8px;background-position:-150px -40px}
+.sns_comm .list_sns .ico_mp {width:17px;height:14px;margin-top:5px;margin-left:6px;background-position:-150px 0}
+.sns_comm .link_more {display:block;top:0;right:0;overflow:hidden;width:16px;height:23px;text-indent:-9999px}
+.sns_comm .link_more .ico_more{width:7px;height:4px;margin-top:10px;margin-left:3px;background-position:-175px 0}
+/* 배너광고 */
+.vote_banner{padding-top:32px}
+.vote_banner .link_banner{display:block;width:643px;height:50px}
+/* 최신 여론조사 */
+.vote_research{position:relative;padding-top:28px;border-bottom:1px solid #f3f3f3}
+.vote_research .tit_vote{width:73px;height:13px;background-position:0 -150px;margin-left:4px;margin-bottom:11px}
+.vote_research .link_more{top:28px;right:5px;font-size:13px}
+.vote_research .link_more .ico_comm{margin-left:3px;margin-bottom:1px}
+.vote_research .list_research{overflow:hidden;padding-top:4px;padding-left:9px;border-left:1px solid #4e566b;border-right:1px solid #4e566b;background:url(../images/bg_tit_research.gif) repeat-x}
+.vote_research .list_research li{float:left;height:30px;text-align:center;line-height:31px}
+.list_research li .link_research{padding:0px 17px;font-size:13px;color:#fff;letter-spacing:-1px}
+.list_research li .txt_bar{color:#a0aabd}
+.list_research .on{border-top:1px solid #4e566b;border-right:1px solid #4e566b;border-left:1px solid #4e566b;background-color:#fff}
+.list_research .on .link_research{color:#35384b}
+.list_research .on .txt_bar{display:none}
+.desc_research{padding:0 50px 0 31px;border-left:1px solid #ced1d5;border-right:1px solid #ced1d5;border-bottom:1px solid #a4a8ab}
+.desc_research .tit_graph{margin:17px 0 16px 15px}
+.desc_research .tit_graph .agency{font-weight:bold;color:#555;margin-left:3px;letter-spacing:-2px}
+.desc_research .tit_graph .date{font-size:11px;color:#555;margin-left:6px}
+.desc_research .tit_graph .etc{font-size:11px;color:#9d9d9d;letter-spacing:-2px;margin-left:3px}
+.desc_research .inner_desc{overflow:hidden;margin-left:-66px}
+.desc_research .graph_view{float:left;width:245px;margin-left:66px}
+.desc_research .graph_view .graph_inner{height:174px;background:url(../images/bg_research.png) no-repeat}
+.desc_research .list_graph{overflow:hidden;position:relative;margin-left:62px}
+.desc_research .list_graph li{float:left;position:relative;width:35px;height:160px}
+.desc_research .list_graph .candidate1,.desc_research .list_graph .candidate2{margin-right:22px}
+.desc_research .list_graph .name_person{display:block;position:absolute;bottom:0;left:0;width:35px;font-size:11px;color:#333;text-align:center}
+.desc_research .bar_rate{display:block;position:absolute;left:0;bottom:23px;width:35px}
+.desc_research .bar_rate .rate_inner{position:relative}
+.desc_research .rate_inner .img_candidate{position:absolute;bottom:20px}
+.desc_research .rate_inner .num_rate{display:block;position:absolute;bottom:0;width:35px;font-size:11px;font-weight:bold;text-align:center;line-height:15px}
+.desc_research .candidate1 .bar_rate{background:url(../images/graph_person1.gif) repeat-y}
+.desc_research .candidate1 .num_rate{color:#b23b4a}
+.desc_research .candidate2 .bar_rate{background:url(../images/graph_person2.gif) repeat-y}
+.desc_research .candidate2 .num_rate{color:#5e7a45}
+.desc_research .candidate3 .bar_rate{background:url(../images/graph_person3.gif) repeat-y}
+.desc_research .candidate3 .num_rate{color:#585962}
+/* 오늘의 사진 */
+.vote_photo{position:relative;width:643px;padding-top:27px;padding-bottom:16px}
+.vote_photo .tit_vote{width:62px;height:13px;margin-bottom:11px;margin-left:4px;background-position:0 -175px}
+.vote_photo .list_photo{overflow:hidden;margin-left:-26px}
+.vote_photo .list_photo li{float:left;width:141px;margin-left:26px}
+.vote_photo .link_photo{display:block;overflow:hidden}
+.vote_photo .img_photo{display:block;overflow:hidden;position:relative;width:141px;height:90px}
+.vote_photo .bg_photo{position:absolute;top:0px;left:0px;width:139px;height:88px;border:1px solid #000;z-index:10;opacity:0.2;-moz-opacity:0.2;-khtml-opacity:0.2;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";filter:alpha(opacity=20)}
+.vote_photo .txt_photo{display:block;overflow:hidden;height:30px;margin:8px 15px;font-family:'돋움',dotum,sans-serif;font-size:11px;color:#666;line-height:15px;text-align:center}
+/* 아고라 토론 &지지선언 레이아웃*/
+.vote_section{overflow:hidden;padding:28px 0 29px;border-top:1px solid #b9bbc5;border-bottom:1px solid #b9bbc5}
+.vote_section .link_more{top:-2px;right:0}
+.vote_section .link_more .ico_comm{margin-left:1px;margin-bottom:2px}
+.section_discuss, .section_announce{float:left;position:relative}
+.section_discuss{width:350px;margin-right:37px}
+/* vote_discuss 공통 */
+.list_agora .agency, .list_debate .agency{float:left;margin-left:5px;margin-top:3px;font-size:11px;color:#999;letter-spacing:-1px}
+/* 아고라 토론 */
+.vote_agora{border-bottom:1px solid #f3f3f3}
+.vote_agora .tit_vote{width:80px;height:13px;margin-left:4px;margin-bottom:15px;background-position:0 -200px}
+.vote_agora .tit_vote .link_title{display:block;width:80px;height:13px}
+.vote_agora .list_agora{padding-left:4px}
+.vote_agora .list_agora li{overflow:hidden;line-height:26px}
+.vote_agora .txt_agora {float:left}
+.vote_agora .txt_agora .link_agora{display:block;overflow:hidden;max-width:300px;height:25px;font-size:15px;color:#333;text-overflow:ellipsis;word-wrap:normal;white-space:nowrap;letter-spacing:-1px}
+/* 실시간 토론 */
+.vote_debate .list_debate{padding-top:11px;padding-left:2px}
+.list_debate li{overflow:hidden;line-height:25px}
+.list_debate .emph_txt{float:left;margin-right:5px;font-size:15px;color:#1e7ae2;letter-spacing:-1px;line-height:26px}
+.list_debate .txt_debate{float:left}
+.list_debate .txt_debate .link_debate{display:block;overflow:hidden;max-width:200px;height:25px;font-size:15px;color:#333;text-overflow:ellipsis;word-wrap:normal;white-space:nowrap;letter-spacing:-1px}
+/* 지지선언 */
+.section_announce{width:240px}
+.vote_announce .tit_vote{width:46px;height:12px;margin-bottom:0px;background-position:0 -225px}
+.vote_announce .list_announce{margin-top:-7px}
+.vote_announce .list_announce li{margin-top:22px}
+.vote_announce .link_announce{display:block;overflow:hidden;height:50px}
+.vote_announce .link_announce .img_person{float:left;position:relative;width:50px;height:50px;margin-right:13px}
+.vote_announce .link_announce .bg_photo{display:block;position:absolute;top:0;left:0;width:48px;height:48px;border:1px solid #000;opacity:0.2;-moz-opacity:0.2;-khtml-opacity:0.2;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";filter:alpha(opacity=20)}
+.vote_announce .link_announce .desc_person{display:table-cell;height:50px;vertical-align:middle}
+.vote_announce .desc_person .tit_desc{overflow:hidden;height:36px}
+.vote_announce .desc_person .candidate_name{font-weight:bold;letter-spacing:-1px}
+.vote_announce .desc_person .txt_desc{font-weight:normal;color:#333}
+.vote_announce .desc_person .account_desc{font-size:11px;color:#999;letter-spacing:-1px}
+.vote_announce .desc_person .txt_bar{margin:0 3px;color:#999}
+.vote_announce .desc_person .info_desc{font-size:11px;color:#999;letter-spacing:-1px}
+.vote_announce .link_more{right:-10px}
+/* 정치후원금 */
+.vote_sponsor{overflow:hidden;position:relative;width:643px;padding:30px 0 19px 0;border-bottom:1px solid #b9bbc5}
+.vote_sponsor .sponsor_head{overflow:hidden;margin-left:6px;margin-bottom:12px}
+.vote_sponsor .tit_vote{float:left;width:57px;height:13px;margin-right:10px;background-position:0 -250px}
+.vote_sponsor .tit_info{float:left;margin-top:3px;font-size:11px;text-indent:0;line-height:7px;color:#999}
+.vote_sponsor .tit_info .txt_date{margin-right:4px;font-size:10px;letter-spacing:-1px}
+.vote_sponsor .list_sponsor{overflow:hidden;width:669px;margin-left:-26px}
+.vote_sponsor .list_sponsor li{float:left;width:141px;margin-left:26px}
+.vote_sponsor .img_photo{overflow:hidden;float:left;position:relative;width:141px;height:90px}
+.vote_sponsor .link_photo{display:block;overflow:hidden}
+.vote_sponsor .txt_photo{float:left;margin:8px 3px;font-family:'돋움',dotum,sans-serif;font-size:11px;color:#666;line-height:15px;letter-spacing:-1px;text-align:center}
+.vote_sponsor .img_candidate{display:block;overflow:hidden;position:relative;width:141px;height:90px}
+.vote_sponsor .img_candidate .bg_photo{display:block;position:absolute;top:0;left:0;width:139px;height:88px;border:1px solid #000;opacity:0.2;-moz-opacity:0.2;-khtml-opacity:0.2;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";filter:alpha(opacity=20)}
+.vote_sponsor .tit_sponsor{margin-top:8px;height:20px;line-height:20px}
+.vote_sponsor .tit_sponsor .sponsor_name{float:left;font-size:13px;font-weight:bold;color:#333;letter-spacing:1px}
+.vote_sponsor .tit_sponsor .btn_vote{float:right;width:52px;height:20px;background-position:-80px -35px}
+.vote_sponsor .rate_sponsor{position:relative;width:141px;height:6px;margin-top:6px;background:url(../images/bg_sponsor.gif) no-repeat;background-position:0 0}
+.vote_sponsor .rate_sponsor .bg_rate{display:block;position:absolute;top:0;left:0;height:6px;font-size:0;background:url(../images/bg_sponsor.gif) no-repeat;background-position:0 -6px;text-indent:-9999px;line-height:0}
+.vote_sponsor .acount_sponsor{width:141px;height:20px;margin-top:6px;font-size:12px;line-height:20px;color:#333}
+.vote_sponsor .acount_sponsor .money_acount{font-size:12px;color:#1e7ae2;margin:0 2px 0 3px}
+.vote_sponsor .link_more{top:29px;right:4px;line-height:14px}
+.vote_sponsor .link_more .ico_comm{margin-left:5px;margin-bottom:2px}
+/* 많이 본 대선 뉴스 */
+.vote_many{padding-top:25px}
+.vote_many .tit_vote{width:90px;height:13px;margin-bottom:14px;background-position:0 -275px}
+.vote_many .list_news li{overflow:hidden;margin-bottom:3px}
+.vote_many .list_news .news_image{float:left;position:relative;width:90px;height:60px;margin-right:5px;margin-bottom:9px}
+.vote_many .news_image .link_news{display:block;width:90px;height:60px}
+.vote_many .news_image .bg_photo{display:block;position:absolute;top:0;left:0;width:88px;height:58px;border:1px solid #000;opacity:0.2;-moz-opacity:0.2;-khtml-opacity:0.2;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";filter:alpha(opacity=20)}
+.vote_many .list_news .news_desc{float:left;margin-left:5px}
+.vote_many .list_news .img_desc{width:510px}
+.vote_many .news_desc .news_title{display:block;overflow:hidden;float:left;max-width:565px;font-size:16px;line-height:22px;text-overflow:ellipsis;word-wrap:normal;white-space:nowrap}
+.vote_many .img_desc .news_title{width:510px}
+.vote_many .news_desc .news_text{float:left;width:510px;font-size:13px;letter-spacing:-1px}
+.vote_many .list_news .border_news{padding-bottom:20px;margin-bottom:21px;border-bottom:1px solid #efefef}
+.vote_many .num_rank{float:left;margin-left:-2px;margin-top:3px;margin-right:7px;font-size:0;background:url(../images/rank_many_num.png) no-repeat;text-indent:-9999px;line-height:0;vertical-align:top}
+.vote_many .num_rank1{width:13px;height:11px;margin-top:0px;background-position:0 0}
+.vote_many .num_rank2{width:13px;height:11px;background-position:0 -25px}
+.vote_many .num_rank3{width:13px;height:11px;background-position:0 -50px}
+.vote_many .num_rank4{width:13px;height:11px;background-position:0 -75px}
+.vote_many .num_rank5{width:13px;height:11px;background-position:0 -100px}
+.vote_many .num_rank6{width:13px;height:12px;background-position:0 -125px}
+.vote_many .num_rank7{width:13px;height:11px;background-position:0 -150px}
+.vote_many .num_rank8{width:13px;height:11px;background-position:0 -175px}
+.vote_many .num_rank9{width:13px;height:12px;background-position:0 -200px}
+.vote_many .num_rank10{width:13px;height:11px;background-position:0 -225px}
+.vote_many .agency{float:left;margin-top:3px;margin-left:5px;font-size:11px;color:#999;letter-spacing:-1px}
+/* 어사이드 */
+.vote_aside{float:right;width:300px;padding-top:24px;border-top:1px solid #c7cbce}
+/* 어사이드 타이틀 */
+.vote_aside .tit_vote{height:14px;margin-left:25px;margin-bottom:7px}
+.aside_now .tit_vote{width:86px;background-position:0 -300px}
+.aside_word .tit_vote{width:75px;background-position:0 -325px}
+.aside_talk .tit_vote{width:34px;background-position:0 -350px}
+.aside_social .tit_vote{float:left;width:35px;background-position:0 -375px}
+.aside_cmt .tit_vote{width:100px;background-position:0 -400px}
+/* 공통 순위 */
+.vote_aside .list_rank .num_rank{display:block;overflow:hidden;float:left;margin-top:1px;margin-right:8px;font-size:0;background:url(../images/rank_aside_num.png) no-repeat;line-height:0;text-indent:-9999px}
+.vote_aside .num_rank1 .num_rank{width:6px;height:10px;background-position:0 0}
+.vote_aside .num_rank2 .num_rank{width:6px;height:10px;background-position:0 -25px}
+.vote_aside .num_rank3 .num_rank{width:6px;height:10px;background-position:0 -50px}
+.vote_aside .num_rank4 .num_rank{width:6px;height:10px;background-position:0 -75px}
+.vote_aside .num_rank5 .num_rank{width:6px;height:10px;background-position:0 -100px}
+.vote_aside .num_rank5 .num_rank{width:6px;height:10px;background-position:0 -100px}
+.vote_aside .num_rank6 .num_rank{width:6px;height:10px;background-position:0 -125px}
+.vote_aside .num_rank7 .num_rank{width:6px;height:10px;background-position:0 -150px}
+.vote_aside .num_rank8 .num_rank{width:6px;height:10px;background-position:0 -175px}
+.vote_aside .num_rank9 .num_rank{width:6px;height:10px;background-position:0 -200px}
+/* 광고 */
+.aside_ad{overflow:hidden;width:250px;height:250px;padding:0 25px 25px}
+.aside_ad .link_ad{display:block;width:250px;height:250px}
+/*aside 텝바 */
+.vote_aside{margin-bottom:33px}
+.vote_aside .tab_head{overflow:hidden;width:300px;height:33px}
+.vote_aside .tab_head .tab_vote{float:left;width:75px;height:30px;border-top:2px solid #a7a8ac;border-bottom:1px solid #c7cbce;background-color:#f3f3f5;color:#000;line-height:33px;text-align:center}
+.vote_aside .tab_head .on{border-top:2px solid #58595b;border-bottom:1px solid #fff;background-color:#fff}
+.vote_aside .tab_head .link_vote{display:block;height:31px;border-right:1px solid #c7cbce}
+.tab_head .fst_item .link_vote{border-left:1px solid #c7cbce}
+.tab_head .on .link_vote{color:#1e7ae2}
+/* list_dot */
+.vote_aside .list_dot{overflow:hidden;padding:13px 24px 0 25px}
+.vote_aside .list_dot li{display:block;overflow:hidden;margin-bottom:3px}
+.vote_aside .list_dot .tit_news{overflow:hidden;float:left;width:241px;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal}
+.vote_aside .list_dot .link_news{font-size:13px;color:#222;line-height:19px}
+.vote_aside .list_dot .ico_dot{float:left;width:2px;height:2px;margin-top:7px;margin-right:8px;background-position:0 -125px}
+/* list_rank */
+.vote_aside .list_rank{overflow:hidden;padding:13px 24px 0 25px}
+.vote_aside .list_rank li{display:block;overflow:hidden}
+.vote_aside .list_rank .link_news{font-size:13px;color:#222;line-height:19px}
+.vote_aside .list_rank .tit_news{overflow:hidden;float:left;width:180px;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal}
+.vote_aside .list_rank .move_rank{float:right;width:20px;height:9px;margin-top:5px;padding-right:13px;font-size:11px;letter-spacing:-1px;text-indent:0;text-align:right;line-height:11px}
+.vote_aside .list_rank .rank_up{background-position:100% 0}
+.vote_aside .list_rank .rank_stay{background-position:100% -25px}
+.vote_aside .list_rank .rank_down{background-position:100% -50px}
+.vote_aside .list_rank .rank_new{background-position:100% -75px}
+/* 어사이드 헤드 공통 */
+.vote_aside .aside_head{overflow:hidden;margin-bottom:15px;border-bottom:2px solid #a7a8ac}
+.aside_cmt .aside_head{margin-bottom:13px}
+/* 이시각 주요뉴스 */
+.aside_now{padding-bottom:23px}
+.aside_now .link_news{width:240px}
+/* 실시간 검색어 */
+.aside_word .list_rank li{position:relative;width:250px;margin-bottom:4px;letter-spacing:-1px}
+/* 말말말 */
+.aside_talk{overflow:hidden;position:relative;padding-top:29px;padding-bottom:28px}
+.aside_talk .list_talk{width:250px;margin:0 25px}
+.aside_talk .list_talk li{overflow:hidden;height:53px;margin-bottom:11px}
+.aside_talk li .talk_person{width:38px}
+.aside_talk .talk_person .img_person{display:block}
+.aside_talk .talk_person .name_person{display:block;margin-top:1px;font-size:12px;font-weight:bold;text-align:center;line-height:20px;letter-spacing:-1px}
+.aside_talk li .talk_box{height:50px}
+.aside_talk .talk_person{float:left;margin-right:8px}
+.aside_talk .talk_box{float:left}
+.aside_talk .talk_box .bg_talk{float:left;height:50px;background:url(../images/bg_talk.gif) no-repeat}
+.aside_talk .talk_box .bg1{width:7px;background-position:0 -50px;letter-spacing:-1px}
+.aside_talk .talk_box .bg2{width:171px;height:34px;padding:8px 15px 8px 9px;font-size:13px;background-position:0 0;background-repeat:repeat-x;letter-spacing:-1px;line-height:18px}
+.aside_talk .talk_box .bg3{width:2px;background-position:100% -100px}
+.aside_talk .talk_question .talk_person{float:right;margin-right:0;margin-left:8px}
+.aside_talk .talk_question .talk_box{float:right}
+.aside_talk .talk_question .talk_box .bg1{width:2px;background-position:0 -200px}
+.aside_talk .talk_question .talk_box .bg2{width:171px;height:34px;padding:8px 9px 8px 15px;font-size:13px;background-position:0 0;background-repeat:repeat-x}
+.aside_talk .talk_question .talk_box .bg3{width:7px;background-position:100% -150px}
+.aside_talk .link_more{top:29px;right:25px}
+.aside_talk .link_more .ico_comm{margin-left:3px;margin-bottom:1px}
+/* 소셜픽 */
+.aside_social .time_standard{float:right;margin-right:25px;font-size:11px;color:#999;line-height:22px}
+.aside_social .social_pick{overflow:hidden;margin:0 25px;height:75px}
+.aside_social .social_pick .img_pick{float:left;position:relative;width:108px;height:75px;margin-right:8px}
+.aside_social .img_pick .bg_photo{display:block;position:absolute;top:0;left:0;width:106px;height:73px;border:1px solid #000;opacity:0.2;-moz-opacity:0.2;-khtml-opacity:0.2;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";filter:alpha(opacity=20)}
+.aside_social .social_pick .desc_pick{float:left;width:130px}
+.aside_social .social_pick .tit_pick{display:block;overflow:hidden;max-width:130px;font-weight:bold;line-height:22px;margin-left:3px;letter-spacing:-1px;text-overflow:ellipsis;word-wrap:normal;white-space:nowrap}
+.aside_social .social_pick li{overflow:hidden}
+.aside_social .social_pick .desc_sort{float:left;margin-right:8px;color:#666;letter-spacing:-1px}
+.aside_social .desc_sort .ico_comm{display:inline-block;width:9px;height:8px;margin-right:5px;margin-top:5px;margin-left:2px}
+.aside_social .desc_sort .ico_search{background-position:0 -200px}
+.aside_social .desc_sort .ico_twitter{background-position:0 -175px}
+.aside_social .desc_sort .ico_cmt{background-position:0 -225px}
+.aside_social .social_pick .desc_count{float:left;font-weight:bold;color:#666;line-height:19px;letter-spacing:-1px}
+.aside_social .hit .desc_count{color:#e52d39}
+/* 댓글 많은 대선 뉴스 */
+.aside_cmt{position:relative;padding-bottom:21px;padding-top:25px}
+.aside_cmt .list_dot{padding:0 24px 0 25px}
+.aside_cmt .link_total{position:absolute;top:25px;right:25px;font-size:11px;letter-spacing:-1px;color:#989898}
+.aside_cmt .link_total .ico_comm{display:inline-block;width:4px;height:5px;margin-left:3px;margin-bottom:1px;background-position:100% -150px}
+/* 선거 광고 */
+.vote_aside .link_unfair{display:block;overflow:hidden;width:250px;height:70px;margin:0 25px}
+/*푸터*/
+.link_service{font-size:11px;margin-bottom:12px;color:#666;letter-spacing:-1px;line-height:18px}
+.link_service .txt_bar{width:1px;height:10px;margin:0 4px;font-size:10px;color:#d2d2d2}
+.txt_copyright{display:block;font-size:11px;letter-spacing:0}
+.txt_copyright .link_daum{display:inline-block;color:#7c7c7c}

@@ -1,0 +1,63 @@
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+.blind, .hide {position:absolute;left:0;top:0;visibility:hidden;width:0;height:0;line-height:0;font-size:0;color:transparent;}
+body {font-size:14px; font-family:'³ª´® °íµñ','Nanum Gothic', sans-serif; word-wrap:break-word;-webkit-text-size-adjust:none}
+#wrap{width:100%;position:relative;overflow:hidden;}
+header{background-color:#f1f1f9;position:relative;}
+.header-top{text-align:center;position:relative;height:47px;}
+.header-top h1 img{width:125px;}
+.header-top .btn-nav{position:absolute;top:8px;left:7px;}
+.header-top .btn-nav img{width:38px;}
+.header-top .btn-search{position:absolute;top:8px;right:7px;}
+.header-top .btn-search img{width:38px;}
+.header-top h1{padding-top:10px;}
+/* main-nav */
+header nav{width:100%;position:absolute;bottom:-45px;left:0;}
+header nav .main-nav{}
+header nav .main-nav:after{content:"";display:block;clear:both;}
+header nav .main-nav li{width:20%;float:left;text-align:center;height:45px;background-color:#050607;opacity:0.8;}
+header nav .main-nav li a{font-size:14px;line-height:45px;color:#5c5c5c;display:block;}
+header nav .main-nav li.nav-on a{color:#ffffff;}
+
+/*main-sub-nav*/
+nav.nav-main-sub{width:100%;}
+nav.nav-main-sub .main-sub-nav{}
+nav.nav-main-sub .main-sub-nav:after{content:"";display:block;clear:both;}
+nav.nav-main-sub .main-sub-nav li{width:20%;float:left;text-align:center;height:45px;background-color:#050607;opacity:0.8;}
+nav.nav-main-sub .main-sub-nav li a{font-size:14px;line-height:45px;color:#5c5c5c;display:block;}
+nav.nav-main-sub .main-sub-nav li.nav-on a{color:#ffffff;}
+
+.cont01{background:url('../img/bg-cont01.jpg') no-repeat top center;background-size:100% 100%;width:100%;text-align:center;height:505px;}
+.cont01 .afc-info{padding-top:97px;}
+.cont01 .afc-info .afc-info-title{font-size:32px; color:#fff;margin-bottom:9px;}
+.cont01 .afc-info .afc-info-txt{color:#fff;font-size:12px;line-height:19px;}
+.cont01 .afc-schedule{display:inline-block;padding:15px;background-color:#131413;opacity:0.7;margin:0 auto;text-align:center;margin-top:15px;}
+.cont01 .afc-schedule .afc-schedule-team{font-size:16px ;color:#fffd5e;width:100%;font-weight:bold;line-height:16px;}
+.cont01 .afc-schedule .afc-schedule-info ul{text-align:center;display:inline-block;padding-top:8px;}
+.cont01 .afc-schedule .afc-schedule-info ul:after{content:"";display:block;clear:both;}
+.cont01 .afc-schedule .afc-schedule-info ul li{color:#fff;font-size:13px;float:left;background:url('../img/vertical-bar.jpg') no-repeat left center;background-size:1px;padding:0 5px;}
+.cont01 .afc-schedule .afc-schedule-info ul li:first-child{background:none;padding-left:0;}
+.cont01 .afc-schedule .afc-schedule-info ul li:last-child{padding-right:0;}
+
+.cont02{background:url('../img/bg-cont02.jpg') no-repeat top center;background-size:100% 100%;width:100%;text-align:center;height:596px;}
+.cont02 .list-broad{position:relative;margin:0 auto;width:280px;text-align:left;overflow:hidden;}
+.cont02 .list-broad h2{color:#fff;font-size:16px;margin-top:30px;text-align:left;display:inline-block;}
+.cont02 .list-broad .btn-more{display:inline-block;text-align:center;border:1px solid #fff;width:42px;height:16px;margin-top:30px;margin-left:123px;;font-size:9px;color:#fff;line-height:16px;}
+.cont02 .list-broad ul{display:inline-block;margin-top:11px;}
+.cont02 .list-broad ul li{width:138px;float:left;margin-bottom:18px;}
+.cont02 .list-broad ul li:nth-child(odd){padding-right:4px;}
+.cont02 .list-broad ul li a .img-broad{position:relative;}
+.cont02 .list-broad ul li a .img-broad img{width:138px;}
+.cont02 .list-broad ul li a .img-broad .btn-play{position:absolute;width:32px;bottom:10px;left:10px;}
+.cont02 .list-broad ul li a .txt-broad{background-color:#000;padding:9px;}
+.cont02 .list-broad ul li a .txt-broad span{display:block;text-align:left;}
+.cont02 .list-broad ul li a .txt-broad .broad-title{color:#fff;font-size:9px;}
+.cont02 .list-broad ul li a .txt-broad .broad-match{color:#fff;font-size:9px;}
+.cont02 .list-broad ul li a .txt-broad .broad-day{font-size:6px;color:#c5c5c5;padding-top:7px;}
+
+.footer{}
+.footer .footer-inner{background-image:url('../img/bg-footer-ball.png'), url('../img/bg-footer.jpg');background-repeat:no-repeat;background-position:center center, top center;background-size:187px 43px,100% 100%;width:100%;text-align:center;height:313px;}
+.footer .footer-inner .sns{padding-top:50px;}
+.footer .footer-inner .sns li{display:inline-block;padding:0 10px;}
+.footer .footer-inner .sns li.sns-twitter img{margin-top:6px;}
+.footer .footer-inner .sns li img{width:57px;}
+

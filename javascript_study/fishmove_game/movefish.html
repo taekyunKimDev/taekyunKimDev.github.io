@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>물고기 잡기 게임</title>
+    <style>
+        .info {
+            font-size: 14pt;
+        }
+        #start {
+            font-size:14pt;
+        }
+        .panel {
+            width:600px;
+            height:400px;
+            position: relative;
+            border:2px solid #000;
+            margin-top:10px;
+        }
+
+        .panel #fish {
+            position: absolute;
+            left:250px;
+            top:150px;
+        }
+    </style>
+    <script src="jquery-1.11.0.min.js"></script>
+    <script>
+        var count=0;
+        var playing= "";
+        var $score = "";
+        var $fish = "";
+        $(document).ready(function(){
+            startGame();
+            $fish = $("#fish");
+            $fish.click(function(){
+                addScore();
+            });
+        });
+        function addScore(){
+            $score = $("#score");
+            if(playing==true){
+                // 점수 증가
+                count++;
+                $score.text(count);
+                moveFish();
+             }
+        }
+        function startGame(){
+            $("#start").click(function(){
+                playing=true;
+                setInterval(function(){
+                    moveFish();
+                },1000)
+            });
+        }
+        function moveFish(){
+            $fish = $("#fish");
+            var locationX = parseInt(Math.random()*(600-120));
+            var locationY = parseInt(Math.random()*(400-70));
+            if(playing==true){
+                $fish.css({
+                    top:locationY,
+                    left:locationX
+                });
+            }         
+        }
+        // 게임을 5초후에 종료시켜 줍니다.
+        setTimeout(function(){
+            playing=false;
+            alert("게임이 종료 되었습니다. 당신의 점수는"+count+"점입니다.")
+        },10000)
+    </script>
+</head> 
+<body>
+    <div>
+        <button id="start">게임 시작</button>
+        현재점수 <span id="score">0</span>
+    </div>   
+    
+    <div class="panel">
+        <img src="fish1.png" id="fish">      
+    </div>
+    <br/>
+    <strong>설명</strong>
+    <ol style="margin:0;padding:0">
+        <li>1. 일정 시간 동안 누가 많이 물고기를 클릭하는지 알아보는 간단한 게임입니다.</li>
+        <li>2. 물고기 클릭 시 점수를 1점 증가시킨 후 화면에 출력해 주세요.</li>
+        <li>3. 물고기 위치를 0.5초마다 한 번씩 랜덤하게 움직이도록 해주세요</li>
+        <li>4. 10초 후 게임이 종료</li>
+    </ol>        
+</body>
+</html>
+
+

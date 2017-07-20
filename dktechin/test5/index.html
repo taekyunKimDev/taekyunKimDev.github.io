@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>캐쉬충전 | 다음</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<link rel="stylesheet"  type="text/css" href="css/common.css">
+</head>
+<body>
+<div id="kakaoIndex">
+	<a href="#kakakoGnb">메뉴 바로가기</a>
+	<a href="#kakaoBody">본문 바로가기</a>
+</div>
+<div id="kakaoWrap" class="wrap_cash">
+	<header id= "kakaoHead" class="head_cash">
+		<div class="k_head">
+			<h1 class="tit_cash">
+				<a id="kakaoLogo" class="link_logo"><img src="images/m640/tit_logo.png" width="47" height="20" alt="DAUM"></a>
+				<a id="kakaoServiceLogo" class="link_service">
+                    <span class="ir_wa">캐쉬충전</span>
+				</a>
+			</h1>
+		</div>
+		<div class="gnb_cash">
+			<a href="#none" class="link_gnb"><!-- 활성화시 gnb_on클래스 추가 -->
+			    <span class="ico_cash">캐쉬충전 주요 메뉴 펼치기</span><!-- 활성화시 텍스트 메뉴접기로 변경 -->
+			</a>
+			<!-- 가상의 메뉴 -->
+			<nav class="view_gnb">
+			    <h2 class="screen_out">캐쉬충전 메뉴</h2>
+				<ul id="kakakoGnb" class="list_gnb">
+					<li>
+						<a href="#none">메뉴1</a>
+					</li>
+					<li>
+						<a href="#none">메뉴2</a>
+					</li>
+					<li>
+						<a href="#none">메뉴3</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- 가상의 메뉴 -->
+		</div>
+	</header>
+	<hr class="hide">
+	<main id="kakaoContent" class="cont_cash">
+		<article id="mArticle">
+			<h2 id="kakaoBody" class="screen_out">캐쉬충전 본문</h2>
+			<div class="user_data">
+				<span class="ico_cash"></span>
+				<strong class="tit_user">내 캐쉬</strong>
+				<span class="num_user">500,000<span class="txt_won">원</span></span>
+				<a href="#none" target="_blank" class="link_history">내 결제내역</a>
+			</div>
+			<div class="group_data">
+				<form action="#none">
+					<fieldset>
+						<legend class="screen_out">캐쉬 충전 금액 및 수단 선택</legend>
+						<div class="box_choice data_money">
+							<div class="view_subject">
+								<h3 class="tit_view">충전금액 선택</h3>
+								<a href="#none" class="link_limit"><span class="ico_cash"></span>결제수단별 한도</a>
+								<span class="txt_limit">한도는 없습니다.</span>
+							</div>
+							<div class="view_info">
+								<div class="info_sort">
+									<input type="radio" id="moneyMore" name="chk1" class="inp_radio" checked>
+									<label for="moneyMore" class="lab_money">
+									    <span class="ico_cash"></span>금액선택
+									</label>
+									<div class="bg_money inp_cash">
+										<label for="optMoney" class="screen_out">선택</label>
+										<select name="opt_money" id="optMoney" class="opt_money">
+											<option value="10,000">10,000</option>
+											<option value="20,000">20,000</option>
+											<option value="30,000">30,000</option>
+										</select>
+									</div>
+									<span class="txt_won">원</span>
+								</div>
+								<div class="info_sort">
+									<input type="radio" id="moneyDirect" name="chk1" class="inp_radio">
+									<label for="moneyDirect" class="lab_money">
+									    <span class="ico_cash"></span>직접입력
+									</label>
+									<input type="text" id="moneyText" class="inp_cash tf_text">
+									<label for="moneyText" class="screen_out">금액입력(숫자만입력)</label>
+									<span class="txt_won">원</span>
+								</div>
+							</div>
+						</div>
+						<div class="box_choice data_method">
+							<div class="view_subject">
+								<h3 class="tit_view">결제수단 선택</h3>
+								<a href="#none" class="link_warn"><span class="ico_cash"></span>주의사항</a>
+								<span class="txt_warn">주의해주세요.</span>
+							</div>
+							<div class="view_info">
+								<div class="info_sort">
+									<input type="radio" id="methodPhone" name="chk2" class="inp_radio" checked>
+									<label for="methodPhone" class="lab_method">
+									    <span class="ico_cash"></span>휴대폰
+									</label>
+								</div>
+								<div class="info_sort">
+									<input type="radio" id="methodCard" name="chk2" class="inp_radio">
+									<label for="methodCard" class="lab_method">
+									    <span class="ico_cash"></span>신용카드
+									</label>
+								</div>
+								<div class="info_sort">
+									<input type="radio" id="methodDaum" name="chk2" class="inp_radio">
+									<label for="methodDaum" class="lab_method">
+									    <span class="ico_cash"></span>Daum간편결제
+									</label>
+								</div>
+								<div class="info_sort">
+									<input type="radio" id="methodBankbook" name="chk2" class="inp_radio">
+									<label for="methodBankbook" class="lab_method">
+									    <span class="ico_cash"></span>무통장입금
+									</label>
+								</div>
+								<div class="info_sort">
+									<input type="radio" id="methodEtc" name="chk2" class="inp_radio">
+									<label for="methodEtc" class="lab_method"><span class="ico_cash"></span></label>
+									<div class="inp_cash bg_method">
+										<label for="optMethod" class="screen_out">기타 방법선택</label>
+										<select name="opt_method" id="optMethod" class="opt_method">
+											<option value="도서문화상품권">도서문화상품권</option>
+											<option value="기타1">기타1</option>
+											<option value="기타2">기타2</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="data_check">
+							<input type="checkbox" id="agreeCheck" class="inp_check">
+							<label for="agreeCheck" class="lab_check chk_on"><span class="ico_cash"></span>결제정보 수집 및 이용에 동의합니다.</label>
+						</div>
+						<div class="data_function">
+							<button type="button" class="btn_cancel">취소</button>
+							<button type="submit" class="btn_submit">다음 ></button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</article>
+	</main>
+	<hr class="hide">
+	<footer id="kakaoFoot" class="footer_comm">
+        <h2 class="screen_out">서비스 이용 정보</h2>
+        <ul class="list_foot">
+            <li><a href="#none" class="btn_foot">Daum</a></li>
+            <li><a href="#none" class="btn_foot">로그인</a></li>
+            <li><span class="btn_foot btn_off">PC화면</span></li> 
+            <li><a href="#none" class="btn_foot">전체보기</a></li>
+        </ul>
+        <div class="footer_etc">
+			<a href="#none" class="link_cc">고객센터</a>
+			<a href="tel:1588-3321" class="link_call">전화 1588-3321</a>
+		</div>
+        <small class="copr_info"><a href="#none" class="link_daumcorp">&copy; Daum</a></small>
+    </footer>
+</div>
+</body>
+</html>

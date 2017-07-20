@@ -1,0 +1,191 @@
+<!doctype html>
+<html amp lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:a02:41Z",
+        "image": [
+          "logo.jpg"
+        ]a
+      }
+
+    </script>
+    <style amp-boilerplate>body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @-moz-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @-ms-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @-o-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }</style>
+    <noscript>
+        <style amp-boilerplate>body {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none
+        }</style>
+    </noscript>
+    <style amp-custom>
+        *{
+            padding:0;
+            margin:0;
+        }
+        body {
+            background-color: white;
+        }
+        h1{text-align:center;padding:20px 0;}
+        amp-img {
+            background-color: gray;
+            border: 1px solid black;
+        }
+        .list-test{
+            border-top:2px solid #000;
+        }
+        li{
+            list-style:none;
+            padding:20px 2%;
+            border-bottom: 1px solid #d2d2d2;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        /**/
+        li .img{flex:1 1 auto;width:40%;}
+        li .desc{max-width:60%;align-items: center;margin-left:20px;}
+        li .desc .title{display:block;margin-bottom:20px;}
+        li .desc .text{}
+        .big-img{display:block;}
+        .big-img .img{width:100%;}
+        .no-img .desc,.big-img .desc{max-width:100%;margin-top:20px;margin-left:0;}
+        .right-img .desc{margin-right:20px;}
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+<body>
+<h1>AMP 테스트</h1>
+<ul class="list-test">
+    <li>
+        <span class="img">
+            <span class="inner-img">
+                <amp-img src="test.jpg" alt="subinChoi" height="765" width="510"
+                                              layout="responsive"></amp-img>
+            </span>
+        </span>
+        <div class="desc">
+            <div class="inner-desc">
+                <strong class="title">이것은 테스트입니다.</strong>
+                <amp-fit-text class="text">테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트</amp-fit-text>
+            </div>
+        </div>
+    </li>
+    <li class="big-img">
+        <span class="img">
+            <span class="inner-img"><amp-img src="test.jpg" alt="subinChoi" height="765" width="510"
+                                              layout="responsive"></amp-img></span>
+        </span>
+        <div class="desc">
+            <div class="inner-desc">
+                <strong class="title">이것은 테스트입니다.</strong>
+                <amp-fit-text class="text">테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트</amp-fit-text>
+            </div>
+        </div>
+    </li>
+    <li class="no-img">
+        <div class="desc">
+            <div class="inner-desc">
+                <strong class="title">이것은 테스트입니다.</strong>
+                <amp-fit-text class="text">테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트</amp-fit-text>
+            </div>
+        </div>
+    </li>
+    <li class="right-img">
+        <div class="desc">
+            <div class="inner-desc">
+                <strong class="title">이것은 테스트입니다.</strong>
+                <amp-fit-text class="text">테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트</amp-fit-text>
+            </div>
+        </div>
+        <span class="img">
+            <span class="inner-img"><amp-img src="test.jpg" alt="subinChoi" height="765" width="510"
+                                              layout="responsive"></amp-img></span>
+        </span>
+    </li>
+    <li>
+        <span class="img">
+            <span class="inner-img"><amp-img src="test.jpg" alt="subinChoi" height="765" width="510"
+                                              layout="responsive"></amp-img></span>
+        </span>
+        <div class="desc">
+            <div class="inner-desc">
+                <strong class="title">이것은 테스트입니다.</strong>
+                <amp-fit-text class="text" max-font-size="24">테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트</amp-fit-text>
+            </div>
+        </div>
+    </li>
+    <li>
+        <span class="img">
+            <span class="inner-img"><amp-img src="test.jpg" alt="subinChoi" height="765" width="510"
+                                              layout="responsive"></amp-img></span>
+        </span>
+        <div class="desc">
+            <div class="inner-desc">
+                <strong class="title">이것은 테스트입니다.</strong>
+                <amp-fit-text class="text" max-font-size="24">테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트</amp-fit-text>
+            </div>
+        </div>
+    </li>
+</ul>
+</body>
+</html>

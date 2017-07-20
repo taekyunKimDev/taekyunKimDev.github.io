@@ -1,0 +1,670 @@
+$font-base:#333;
+$font-rank:#ff3300;
+$font-title:#4a6a99;
+$font-num:#7db435;
+$font-author:#999;
+$font-white:#fff;
+$font-bestSeller-num:#7db435;
+$font-gulim:'굴림','gulim';
+$font-dotum:'돋움','dotum';
+$font-arial:'arial';
+$text-indent:-9999px;
+#wrap{
+    width:954px;
+    *width:1000px;
+    margin:0 auto;
+    padding:21px 21px 0 25px;
+}
+#container{
+    overflow:hidden;
+    background:url("../images/bg_wrap.gif") no-repeat center bottom;
+    
+    .content,
+    .aside{
+        float:left;
+    }
+    
+    .content{
+        width:692px;
+        margin-right:12px;
+        
+        
+        &:after{
+            clear: both;
+        }
+
+        .top-content,
+        .bottom-left,
+        .bottom-center,
+        .bottom-right{
+            float:left;
+        }
+
+        .bottom-left{
+            width:135px;
+            margin-right:12px;
+        }
+
+        .bottom-center{
+            width:311px;
+            margin-right:15px;
+        }
+
+        .bottom-right{
+            width:219px;
+        }
+        .top-content{
+            margin-bottom:19px;
+        }
+
+
+        .box-today-book{
+            width:692px;
+
+            &:after{
+                clear:both;
+            }
+
+            .left-today-book,
+            .right-today-book{
+                float:left;
+
+            }
+
+            .left-today-book{
+                width:285px;
+                height:113px;
+                padding:164px 0 0 177px;
+                background:url("../images/bg_top.jpg") no-repeat left top;
+                ul.left-todaBook-info{
+                    margin-bottom:30px;
+
+                    li:first-child{
+                        margin-bottom:3px;
+                    }
+                    .label{
+                        color:$font-white;
+                        background:url("../images/bg_label.gif") no-repeat top center;
+                        display:inline-block;
+                        width:59px;
+                        height:16px;
+                        font-size:11px;
+                        letter-spacing:-1px;
+                        font-family:'dotum', '돋움';
+                        text-align:center;
+                        line-height: 16px;
+                        margin-right:7px;
+                    }
+
+                    .txt{
+                        color:$font-base;
+                        display:inline-block;
+                        line-height: 1.42875;
+                    }
+                }
+                ul.other-book{
+                    li{
+                        color:$font-white;
+                        font-size:12px;
+                        padding-left:2px;
+                    }
+                    &:first-child{
+                        margin-bottom:3px;
+                    }
+                }
+
+            }
+
+            .right-today-book{
+                width:230px;
+                background:url("../images/bg_top.jpg") no-repeat right top;
+                padding-top:38px;
+                height:239px;
+
+                ul{
+
+                    li{
+                        padding:9px 18px 8px 26px;
+                        height:60px;
+                        *width:186px;
+                        *height:77px;
+                        //border-top:1px solid #e2e2e2;
+                        overflow:hidden;
+                        span{
+                            display:block;
+                            float:left;
+                            &.img-today-book{
+                                margin-right:10px;
+                            }
+                            &.title-today-book{
+                                color:$font-title;
+                                width:128px;
+                                font-weight:bold;
+
+                            }
+
+                            &.txt-today-book{
+                                color:$font-base;
+                                width:128px;
+                                font-family: $font-gulim;
+                                font-size:12px;
+                                letter-spacing: -1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .cate-book{            
+            position:relative;
+            height:171px;
+            background:url("../images/bg_cate_bottom.png") no-repeat bottom left;
+            
+            ul.box-cate-list{
+                padding-top:25px;
+                width:133px;
+                height:142px;
+                *height:167px;
+                border-left:1px solid #9cbbd7;
+                border-right:1px solid #9cbbd7;
+                overflow: hidden;
+                
+                li.list-cate{
+                    position:absolute;
+                    left:0;
+                    top:0;
+                    width:135px;
+                    
+                    
+                    .btn-cate{
+                        display:inline-block;                        
+                        height:25px;
+                        background:url("../images/tab_onoff.gif") no-repeat;
+                        position:absolute;
+                        text-indent: -9999px;
+                        
+                        &.btn-domestic{
+                            width:67px;
+                            background-position: 0 -25px;
+                            left:0;
+                        }
+                        
+                        &.btn-oversea{
+                            width:68px;
+                            background-position: -68px -25px;
+                            left:67px;
+                        }
+                    }
+                 
+                    ul.list-menu{
+                        padding-top:0;
+                        border-right:0;
+                        border-left:0;
+                        position:absolute;
+                        left:1px;
+                        top:25px;
+                        width: 127px;
+                        border-left: 3px solid #d3e1ec;
+                        border-right: 3px solid #d3e1ec;
+                        padding: 13px 0 14px;
+                        display:none;
+                        height:115px;
+                        *height:142px;
+                        
+                        li{
+                            padding-left:21px;
+                            background:url("../images/ico_leftmenu.gif") no-repeat 12px center;
+                            margin: 1px 0;
+                        }
+                    }
+                    &.cate-active{
+                        button.btn-domestic{
+                            background-position: 0 0px;                            
+                        }
+                        
+                        button.btn-oversea{                            
+                            background-position: -67px 0px;                            
+                        }
+                        ul.list-menu{
+                            display:block;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-left-ad{
+            width:135px;
+            height:291px;
+            background:#f0efeb;
+            margin-top:5px;
+        }
+        .box-bloger-news{
+            padding-bottom:16px;
+            ul{
+                margin-top:11px;
+                
+                li{
+                    
+                    overflow:hidden;
+                    padding-left:5px;
+                    position:relative;
+                    background:url("../images/ico_list.gif") no-repeat left center;
+                    margin-bottom:4px;
+                    a{
+                        display:block;
+                        overflow:hidden;
+                    }
+                    span{
+                        display:block;
+                        float:left;
+                        
+                        &.news-img{
+                            margin-right:10px;
+                            width:70px;
+                            height:53px;
+                        }
+                        &.news-title{
+                            color:$font-base;
+                            font-family: $font-gulim;
+                        }
+                        &.news-txt{
+                            width:200px;
+                        }
+                        em.news-author{
+                            color:$font-author;
+                            height:18px;
+                            margin-left:25px;
+                            font-size:11px;
+                            letter-spacing:-1px;
+                            font-family: $font-dotum;
+                        }
+                        
+                    }
+                    
+                    &.first-item{
+                        background:none;
+                        margin-bottom:16px;
+                        
+                        span.news-title{
+                            color:$font-title;
+                            width:220px;
+                            
+                        }
+                        span.news-txt{
+                            width:220px;
+                            font-size:12px;
+                            font-family: $font-gulim;
+                            color:#6d6d6d;    
+                            
+                            em.news-author{
+                                margin-left:20px;
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                    
+                    
+                }
+            }
+        }
+        .box-bestSeller{
+            margin:3px 0 2px;
+            height:171px;
+            
+            ul{
+                padding:10px 0 0 5px;
+                li{
+                    margin-bottom:5px;
+                    padding-left:26px;
+                    background:url("../images/ico_number01.gif") no-repeat 5px top;
+                    &.list01{
+                        background-position:5px 0; 
+                        
+                        span.best-seller-txt{
+                            color:$font-title !important;
+                            vertical-align: top;
+                            font-family: $font-gulim;
+                        }
+                    }
+                    &.list02{
+                        background-position:5px -25px; 
+                    }
+                    &.list03{
+                        background-position:5px -50px; 
+                    }
+                    &.list04{
+                        background-position:5px -75px; 
+                    }
+                    &.list05{
+                        background-position:5px -100px; 
+                    }
+                    a{
+                        display:block;
+                        position:relative;
+                        
+                        span.best-seller-txt{
+                            color:$font-base;
+                            display:inline-block;
+                            height:18px;
+                            line-height: 1.42857;
+                            vertical-align: top;
+                            font-family: $font-gulim;
+                        }
+                        span.rank-bestSeller-ico{
+                            display:inline-block;
+                            width:6px;
+                            position:absolute;
+                            padding-left:10px;
+                            height:18px;
+                            right:0;
+                            top:0;
+                            font-size: 11px;
+                            font-family: $font-arial;
+                            color:$font-rank;
+                            background:url("../images/ico_updown.gif") no-repeat;
+                            
+                            &.ico-up{background-position:0 5px !important;}
+                            &.ico-stay{background-position:0 -19px;}
+                            &.ico-down{background-position:0 -43px;}
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        
+        
+        
+        .box-best-reader{
+            line-height:1.42857;
+            
+            ul{
+                border:1px solid #ddd;
+                padding:4px 12px;
+                
+                li{
+                    border-top:1px solid #efefef;
+                    margin-bottom:7px;
+                    
+                    &:first-child{
+                        border-top:0;
+                        margin-top:0;
+                    }
+                    p{
+                        margin-top:8px;
+                    }
+                    span{
+                        display:inline-block;
+                        
+                        
+                    }
+                    
+                    span.num{
+                        padding-left:15px;
+                        background:url("../images/ico_content01.gif") no-repeat left center;
+                        color:$font-num;
+                        font-size:11px;
+                        font-family: $font-dotum;
+                        width:39px;
+                        *width:54px;
+                        
+                    }
+                    span.author{
+                        margin-left:10px;
+                        color:$font-author;
+                    }
+                    
+                    
+                }
+            }
+        }
+        .box-click-previewBook{
+            padding:0 5px 5px;
+            background-color:#f0f0f0;
+            width:209px;
+            *width:219px;
+            position:relative;
+            margin-top:28px;
+            h2{
+                span{
+                        background: url("../images/title.gif") no-repeat;
+                        width: 94px;
+                        height: 13px;
+                        margin-top: 7px;
+                        display: inline-block;
+                        background-position: 0 -75px;
+                        text-indent: -9999px;
+                }
+            }
+            .preview-book-inner{
+                background-color:#fff;
+                overflow:hidden;
+                padding:10px 12px 4px;
+                
+                div{
+                    float:left;
+                    
+                    &.book-img{
+                        width:54px;
+                        margin-right:12px;
+                        
+                        .btn-preivew{
+                            display:block;
+                            margin-top:5px;
+                        }
+                    }
+                    &.book-preview{
+                        width:119px;
+                    }
+                    &.book-txt{
+                        width:185px;
+                        margin-top:10px;
+                        
+                        span{
+                            display:block;
+                            text-align: center;
+                            
+                            &.preview-title{
+                                
+                            }
+                            
+                            &.preview-info{
+                                color:$font-author;
+                                font-size:11px;
+                                letter-spacing: -1px;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            .btn-more{
+                position:absolute;
+                top:10px;
+                right:11px;
+            }
+        }
+        .left-today-book h2,
+        .right-today-book h2,
+        .box-bloger-news h2,
+        .box-bestSeller h2,
+        .box-best-reader h2{
+            text-indent: $text-indent;
+        }
+
+        .box-bloger-news h2,
+        .box-bestSeller h2,
+        .box-best-reader h2,{
+            background:url("../images/title.gif") no-repeat;        
+        }
+
+        .box-bloger-news h2,
+        .box-bestSeller h2{
+            border-bottom:2px solid #d6d5d3;
+            height:28px;
+            line-height:28px;
+        }
+
+        .box-bloger-news h2{
+            background-position:0 10px;
+        }
+
+        .box-bestSeller h2{
+            background-position:0 -16px;
+        }
+        .box-best-reader h2{
+            background-position: 0 -43px;
+            height:26px;
+        }
+
+        .box-click-previewBook h2{
+            height:26px;
+            background-color:#f0f0f0;
+            
+        }
+    }
+    
+    .aside{
+        width:250px;
+        h2{
+            font-family: $font-gulim;
+            font-size:12px;
+            color:$font-title;
+            margin-bottom:1px;
+        }
+        .box-book-aside{
+            background-color:#f1f1f1;
+            overflow:hidden;
+            padding-bottom:103px;
+            *height:512px;
+            
+            .rank-book-review{
+                padding:20px 10px 15px;
+                overflow:hidden;
+                
+                ul{
+                    float:left;
+                    li{
+                        overflow:hidden;
+                        padding-left:10px;
+                        width:220px;
+                        margin-bottom:4px;
+                        
+                        
+                        span{
+                            display:block;
+                            float:left;
+                            width:190px;
+                            
+                            &.review-title{
+                                background:url("../images/ico_number02.gif") no-repeat left 2px;
+                                padding-left:20px;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        &.rank2 .review-title{
+                            background-position:left -23px;
+                        }
+                        &.rank3 .review-title{
+                            background-position:left -48px;
+                        }
+                        &.rank4 .review-title{
+                            background-position:left -73px;
+                        }
+                        &.rank5 .review-title{
+                            background-position:left -98px;
+                        }
+                        
+                        &.first-item{
+                            background:#fff;
+                            padding:9px;
+                            width:212px;
+                            height:60px;
+                            border:1px solid #e9e9e9;
+                            overflow:hidden;
+                            margin-bottom:8px;
+                            
+                            span{
+                                
+                                &.review-img{
+                                    margin-right:8px;
+                                    width:42px;
+                                    height:60px;
+                                }
+                                
+                                &.review-title{
+                                    width:136px;
+                                }
+                                
+                                &.review-txt{
+                                    width:156px;
+                                }
+                            }
+                        }
+                        
+                        
+                       
+                    }
+                }
+            }
+            
+            .book-propose{
+                padding: 5px 10px 15px;
+                overflow: hidden;
+                
+                ul{
+                    border:1px solid #dedede;
+                    overflow:hidden;
+                    
+                    li{
+                        float:left;
+                        width:95px;
+                        *width:113px;
+                        *height:143px;
+                        padding:7px 9px 8px;
+                        background:#fff;
+
+                        span{
+                            display:block;
+                            text-align:center;
+
+                            &.propose-txt{
+                            padding:0 12px;
+                            width:71px;
+                            *width:95px;
+                            font-size:12px;
+                            font-family: $font-gulim;
+                            letter-spacing: -1px;
+
+                            }
+                            &.propose-author{
+                                color:$font-author;
+                                font-family: $font-dotum;
+                                font-size:11px;
+                                letter-spacing: -1px;
+                            }
+                        }
+                            
+                        
+                        &.first-item{
+                            border-right:1px solid #dedede;
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}
+#footer{
+    background:url("../images/bg-top-footer.jpg") no-repeat top left;
+    padding:13px 0 30px;
+    color:#646464;
+    
+    
+}

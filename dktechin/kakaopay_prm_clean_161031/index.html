@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Kakaopay</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<style type="text/css">
+/* reset */
+html{overflow-y:scroll;height:100%}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none;vertical-align:top}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+input::-ms-clear{display:none}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{height:100%;background:#2f2f2f}
+body,th,td,input,select,textarea,button{font-size:14px;font-family:Apple SD Gothic Neo, 'Apple SD 산돌고딕 Neo', NanumGothic, '나눔고딕', ng, sans-serif;color:#222}
+a{color:#222;text-decoration:none}
+a:active, a:hover{text-decoration:underline}
+a:active{background-color:transparent}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+/* global */
+.ir_pm{display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+.ir_wa{display:block;overflow:hidden;position:relative;width:100%;height:100%;z-index:-1}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.show{display:block}
+.hide{display:none}
+/* 카카오페이x터널 프로모션 */
+.prm_pay #kakaoHead{position:relative}
+.prm_pay #kakaoHead .tit_pay{position:absolute;left:0;top:6.8%;z-index:10}
+.prm_pay #kakaoHead .top_movie{position:absolute;left:0;top:8.5%}
+.prm_pay #kakaoHead .movie_light{position:absolute;left:0;top:0;z-index:10}
+.prm_pay{min-width:320px}
+.prm_pay .img_pay{display:block;width:100%}
+/* 슬라이드 */
+.prm_pay .pay_evt1{position:absolute;left:0;right:0;bottom:4.2%;height:49%}
+.pay_evt1 .list_movie{overflow:hidden;position:absolute;left:0;top:0;width:400%;height:100%}
+.pay_evt1 .list_movie li{float:left;position:relative;width:25%}
+.pay_evt1 .img_movie{display:block;padding:0 12%}
+.pay_evt1 .img_movie .link_movie{display:block;position:absolute;left:12%;right:12%;top:0;z-index:30;width:auto;height:100%}
+.prm_pay .img_bg{position:absolute;left:9%;top:0;width:83%}
+.pay_evt1 .movie_thumb{padding-top:4%}
+.pay_evt1 .movie_info{padding-top:7%}
+/* 슬라이드내버튼 */
+.pay_evt1 .btn_movie{position:absolute;top:0;width:10%;height:100%;font-size:0px;line-height:0;text-indent:-9999px;z-index:20}
+.pay_evt1 .ico_arr{position:absolute;left:30%;top:38%;width:42%}
+.pay_evt1 .btn_right .ico_arr{left:30%}
+.pay_evt1 .btn_left{left:0}
+.pay_evt1 .btn_right{right:0}
+.pay_evt3 .link_open{display:block;width:100%;height:100%}
+.pay_evt3 .img_open{display:none}
+.pay_evt3.on .img_open{display:block}
+.pay_evt3.on .img_close{display:none}
+.prm_pay .pay_evt4{position:relative}
+.pay_evt4 .link_sns{overflow:hidden;position:absolute;top:22%;width:19%;height:20%;font-size:0px;line-height:0;text-indent:-9999px}
+.pay_evt4 .link_talk{left:10.5%}
+.pay_evt4 .link_story{left:30.5%}
+.pay_evt4 .link_facebook{right:30%}
+.pay_evt4 .link_twiter{right:10%}
+</style>
+</head>
+<body>
+<div id="kakaoPromotion" class="prm_pay">
+	<div id="kakaoHead">
+	    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/tit_pay.png" class="img_pay tit_pay" alt="카카오페이에서 좋은 영화를 만나다">
+		<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/pay_head.png" class="img_pay" alt="">
+		<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/fin_1031.gif" class="img_pay top_movie" alt="GOOD MOVIE">
+		<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/bg_light.png" class="img_pay movie_light" alt="">
+		<h1 class="screen_out">GOOD MOVIE pay x 가려진 시간</h1>		
+		<div class="ir_pm pay_evt1">
+			<h2 class="screen_out">이벤트 사진 및 영상 슬라이드</h2>
+			<ul class="list_movie" style="left:-300%"><!-- 슬라이드시 left값으로 -100%씩 컨트롤 -->
+				<li>
+					<span class="img_movie">
+						<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/movie_thumb1.png" class="img_pay" alt="과연.. 이 이야기를 네가 믿어줄까?">
+					</span>
+				</li>
+				<li>
+					<span class="img_movie">
+						<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/movie_thumb2.png" class="img_pay" alt="내 이름은 여성민. 13살. 어른의 모습이지만...">
+					</span>
+				</li>
+				<li>
+					<span class="img_movie">
+					    <img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/movie_thumb3.png" class="img_pay" alt="갑자기 변해버린 모습에 나도 너무 당황스러운데...">
+					</span>
+				</li>
+				<li>
+					<span class="img_movie">
+						<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/movie_thumb4.png" class="img_pay" alt="갑자기 아이에서 어른이 된 강동원? 지금 바로 확인 하세요!">
+						<a href="#none" class="link_movie">동영상링크영역</a>
+					</span>
+				</li>
+			</ul>
+			<a href="#none" class="btn_movie btn_left"><!-- 첫페이지일시 display:none -->
+				<span class="ico_arr">
+					<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/arr_left.png" class="img_pay" alt="이전으로">
+				</span>
+			</a>
+			<a href="#none" class="btn_movie btn_right"><!-- 마지막 페이지일시 display:none -->
+				<span class="ico_arr">
+					<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/arr_right.png" class="img_pay" alt="다음으로">
+				</span>
+			</a>
+		</div>
+	</div>
+	<hr class="hide">
+	<div id="kakaoContent">
+		<div class="ir_pm pay_evt2">
+			<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/pay_event_161031.png" class="img_pay" alt="">
+			<h2>이벤트 안내</h2>
+			<strong>영화예매권 500매</strong>
+			<p>카카오페이를 사용하면,행운메세지가 자동 발송 됩니다. 카드간편결제,송금 청구서 신청, 멤버십 가입 시 (1인 최대 4회)</p>
+		</div>
+		<div class="ir_pm pay_evt3 on"><!-- 공지사항 펼침시 클래스 on부여 -->
+			<a href="#none" class="link_open">
+				<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/btn_close.png" class="img_pay img_close" alt="꼭 확인해주세요">
+				<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/btn_open.png" class="img_pay img_open" alt="꼭 확인해주세요">
+			</a>
+			<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/pay_notice.png" class="img_pay img_open" alt="">
+			<h2>이벤트 공지사항</h2>
+			<h3>01. 행운 메세지 발송</h3>
+			<ul>
+				<li>이벤트 기간 11/7(월)~11/20(일)</li>
+				<li>이벤트 기간 내 서비스 사용시 최초 1회 자동 발송</li>
+				<li>
+					1인당 최대 4회, 카카오페이 플러스친구로 발송
+					<em>카드간편결제 : 결제 시 1회</em>
+					<em>청구서 :신청 시 1회</em>
+					<em>멤버십 : 가입 시 1회</em>
+					<em>머니결제 : 결제 시 1회</em>
+				</li>
+				<li>행운 메세지 방송 기간 : 11/7(월) 11:00:00 ~ 11/20일 23:59:59</li>
+				<li>오후 20:00부터-오전 07:59까지 서비스 사용 시 익일 오전 08:00 ‘행운메시지’ 일괄 발송 (내부 메시지 정책) </li>
+				<li>카카오페이 플러스친구 마케팅 동의자만 발송</li>
+				<li>이벤트 이전 서비스 사용/탈퇴/가입 등 사용이력과 관계없이 이벤트 기간 내 서비스 최초사용 시 발송</li>
+			</ul>
+			<h3>02.예매권 당첨</h3>
+			<ul>
+				<li>행운 메세지는 즉석 당첨형식으로 당첨 시 영화 예매권 바로 지급 (1인 2매) </li>
+				<li>해당 예매권은 영화(가려진 시간)전용 예매권으로 타 영화 예매 불가</li>
+				<li>예매권 사용처 사정에 따라 변경사항이 있을 수 있으며 이는 본 이벤트에서 책임지지 않음</li>
+			</ul>
+			<h3>03.이벤트 주의사항</h3>
+			<ul>
+				<li>해당 이벤트는 당사 및 영화사 사정에 따라 조기 종료될 수 있음</li>
+				<li>카카오페이 카드간편결제 서비스 문의 : 1661-5702 </li>
+				<li>그외 카카오페이 서비스 문의 : 1644-7405</li>
+			</ul>
+		</div>
+		<div class="ir_pm pay_evt4">
+			<img src="http://m1.daumcdn.net/img-contents/event/promotion/161031_kakaopay/pay_foot.png" class="img_pay" alt="">
+			<h2>sns 공유하기</h2>
+			<ul class="list_share">
+				<li>
+					<a href="#none" class="link_sns link_talk">카카오톡</a>
+				</li>
+				<li>
+					<a href="#none" class="link_sns link_story">카카오스토리</a>
+				</li>
+				<li>
+					<a href="#none" class="link_sns link_facebook">페이스북</a>
+				</li>
+				<li>
+					<a href="#none" class="link_sns link_twiter">트위터</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="kakaoFoot">
+		<small class="screen_out">Kakaopay</small>
+	</div>
+</div>
+</body>
+</html>

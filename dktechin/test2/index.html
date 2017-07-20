@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="title" content="채널 관리 | 마이피플">
+<title>마이피플 채널관리</title>
+<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div id="kakaoIndex"><!-- 웹접근성용 바로가기 링크 모음 -->
+     <a href="#kakaoGnb">메뉴 바로가기</a> 
+     <a href="#kakaoBody">본문 바로가기</a>       
+</div>
+<div id="kakaoWrap" class="people_type1"><!-- position:relative 적용 / 레이아웃 관련 클래스 적용 -->
+    <div id="kakaoHead" class="people_header" role="banner">
+        <h1 class="logo_people"><a href="#none" class="img_people"><span class="ir_wa">마이피플</span></a></h1>
+        <h2 class="tit_cate"><a href="#none" class="tit_people"><span class="ir_wa">채널관리</span></a></h2>
+        <div class="box_user">
+            <div class="name_user"><span>마이피플</span>님</div>
+            <span class="txt_bar">|</span>
+            <div class="link_list">
+                <a href="" class="link_txt">바로가기</a>
+                <ul>
+                    <li>
+                        <a href="#none"></a>
+                        <a href="#none"></a>
+                        <a href="#none"></a>
+                        <a href="#none"></a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn_people btn_logout"><span class="ir_wa">로그아웃</span></button>
+        </div>
+    </div>
+    <hr class="hide">
+  
+    <div id="kakaoContent" class="people_content" role="main"><!-- 대메뉴별(폴더명) 관련 클래스 적용 -->
+        <!-- 알아서 구성 -->
+        <div id="mFeature" class="people_gnb">
+            <div id="kakaoGnb" role="navigation">
+               <h3 class="screen_out">마이피플 관리 메뉴</h3>
+                <ul class="gnb_people">
+                    <li class="menu_home">
+                        <a href="#none" class="tit_people"><span class="ir_wa">처음으로</span></a>
+                    </li>
+                    <li class="menu_channel">
+                        <a href="#none" class="tit_people"><span class="ir_wa">채널</span></a>
+                        <a href="#none" class="sub_menu">채널목록</a>
+                        <a href="#none" class="sub_menu sub_on">채널개설</a>
+                    </li>
+                    <li class="menu_message">
+                        <a href="#none" class="tit_people"><span class="ir_wa">채널 메시지</span></a>
+                        <a href="#none" class="sub_menu">새 메시지 작성</a>
+                        <a href="#none" class="sub_menu">전체 메시지</a>
+                    </li>
+                    <li class="menu_event">
+                        <a href="#none" class="tit_people"><span class="ir_wa">이벤트</span></a>
+                        <a href="#none" class="sub_menu">이벤트 목록</a>
+                        <a href="#none" class="sub_menu">이벤트 등록</a>
+                    </li>
+                    <li class="menu_data">
+                        <a href="#none" class="tit_people"><span class="ir_wa">채널 통계</span></a>
+                        <a href="#none" class="sub_menu">구독통계</a>
+                        <a href="#none" class="sub_menu">메시지 통계</a>
+                        <a href="#none" class="sub_menu">이벤트 통계</a>
+                    </li>
+                    <li class="menu_board">
+                        <a href="#none" class="tit_people"><span class="ir_wa">의견 게시판</span></a>
+                    </li>
+                    <li class="menu_acount">
+                        <a href="#none" class="tit_people"><span class="ir_wa">계정</span></a>
+                        <a href="#none" class="sub_menu">시스템 관리</a>
+                        <a href="#none" class="sub_menu">채널 관리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="mArticle" class="people_article">
+            <h3 id="kakaoBody" class="screen_out">마이피플 관리페이지 본문</h3>
+            <h4 class="ir_pm tit_people tit_launching">채널 개설</h4>
+            <div class="channel_launching">
+                <ul class="tab_launching">
+                    <li class="tab_on">
+                        <strong class="tab_people btn_basic"><a href="#none" class="link_tab">기본정보</a></strong>
+                    </li>
+                    <li>
+                        <strong class="tab_people btn_info"><a href="#none" class="link_tab">운영정보</a></strong>
+                    </li>
+                    <li>
+                        <strong class="tab_people btn_manage"><a href="#none" class="link_tab">채널관리</a></strong>
+                    </li>
+                </ul>
+                <div class="view_launching">
+                    <form action="#none">
+                        <fieldset>
+                            <legend class="screen_out">채널 개설 기본정보</legend>
+                            <ul class="list_basic">
+                                <li class="basic_name">
+                                    <div class="tit_form"><strong>채널 이름</strong></div>
+                                    <div class="desc_form">
+                                        <label for="channelName" class="lab_txt">한글,영문,숫자만 입력해주세요</label>
+                                        <span class="txt_count">0/30자</span>
+                                        <input type="text" id="channelName" class="tf_text">
+                                        <button type="button" class="btn_people btn_overlap"><span class="ir_wa">중복확인</span></button>
+                                    </div>
+                                </li>
+                                <li class="basic_acount">
+                                    <div class="tit_form"><strong>채널 아이디</strong></div>
+                                    <div class="desc_form">
+                                        <label for="channelAcount" class="lab_txt">영문,숫자만 입력해주세요</label>
+                                        <span class="txt_count">0/30자</span>
+                                        <input type="text" id="channelAcount" class="tf_text">
+                                        <button type="button" class="btn_people btn_overlap"><span class="ir_wa">중복확인</span></button>
+                                    </div>
+                                </li>
+                                <li class="basic_open">
+                                    <div class="tit_form"><strong>검색 공개</strong></div>
+                                    <div class="desc_form">
+                                        <input type="radio" id="searchOpen" name="chkOpen" class="inp_radio screen_out">
+                                        <label for="searchOpen" class="lab_radio btn_people checked ">공개</label>
+                                        <input type="radio" id="searchClose" name="chkOpen" class="inp_radio screen_out">
+                                        <label for="searchClose" class="lab_radio btn_people">비공개</label>
+                                        <span class="txt_info">(비공개 선택 시 마이피플 채널 검색결과에서 노출되지 않습니다.)</span>
+                                    </div>
+                                </li>
+                                <li class="basic_cate">
+                                    <div class="tit_form"><strong>카테고리</strong></div>
+                                    <div class="desc_form">
+                                        <div class="box_select">                                         
+                                            <a href="#none" class="btn_people btn_selected"></a>
+                                            <ul class="list_option">
+                                                <li><a href="#none"></a></li>
+                                                <li><a href="#none"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="basic_intro">
+                                    <div class="tit_form"><strong>소개글</strong></div>
+                                    <div class="desc_form">
+                                        <textarea name="" id="introText" class="tf_text" cols="30" rows="10"></textarea>
+                                        <label for="introText" class="txt_count">0/30자</label>
+                                    </div>
+                                </li>
+                                <li class="basic_image">
+                                    <div class="tit_form"><strong>대표 이미지</strong></div>
+                                    <div class="desc_form">
+                                        <span class="img_preview">
+                                            <img src="images/temp/80x86.gif" alt="80x86사이즈 이미지">
+                                            <!-- <span class="test_text">가나다라마바</span> -->
+                                        </span>
+                                        <span class="box_file">
+                                            <input type="text" id="porfileImg" class="tf_text" title="이미지 경로">
+                                            <label for="porfileImg" class="txt_info">가로 150px, 용량 1mb 이내 (jpg,gif,png,bmp)</label>
+                                            <label for="imageSelect" class="btn_people btn_search">찾아보기</label>
+                                            <input type="file" id="imageSelect" class="inp_file screen_out">
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basic_homepage">
+                                    <div class="tit_form"><strong>홈페이지</strong></div>
+                                    <div class="desc_form">
+                                        <label for="txtHomepage" class="txt_count">0/20자</label>
+                                        <input type="text" id="txtHomepage" class="tf_text">
+                                    </div>
+                                </li>
+                                <li class="basic_set">
+                                    <div class="tit_form"><strong>채널 상세 설정</strong></div>
+                                    <div class="desc_form">
+                                        <div class="set_select">
+                                            <input type="radio" id="detailOpen" name="chkOpen" class="inp_radio screen_out">
+                                            <label for="detailOpen" class="lab_radio btn_people checked ">사용</label>
+                                            <input type="radio" id="detailClose" name="chkOpen" class="inp_radio screen_out">
+                                            <label for="detailClose" class="lab_radio btn_people">미사용</label>
+                                        </div>                                                    
+                                        <div class="set_standard">
+                                            <span class="tit_text">1. 상세 설정 기준</span>
+                                            <input type="text" id="txtStandard" class="tf_text">    
+                                        </div>                                                    
+                                        <div class="set_item">
+                                            <span class="tit_text">2. 상세 설정 항목</span>
+                                            <div class="item_set">
+                                                <input type="text" id="txtItem1" class="tf_text">
+                                                <label for="txtItem1" class="screen_out">채널 상세설정 항목</label>
+                                                <button type="button" class="btn_people btn_add"><span class="ir_wa">추가</span></button>
+                                            </div>
+                                            <div class="item_set">                            
+                                                <input type="text" id="txtItem2" class="tf_text">
+                                                <label for="txtItem2" class="screen_out">채널 상세설정 항목</label>
+                                                <button type="button" class="btn_people btn_add"><span class="ir_wa">추가</span></button>
+                                            </div>
+                                        </div>                                                
+                                    </div>
+                                </li>
+                                <li class="basic_comment">
+                                    <div class="tit_form"><strong>의견보내기</strong></div>
+                                    <div class="desc_form">
+                                        <input type="checkbox" id="commentSend" class="inp_chk screen_out">
+                                        <label for="commentSend" class="lab_txt"><span class="btn_people checked">허용함</span></label>
+                                    </div>
+                                </li>
+                                <li class="basic_send">
+                                    <div class="tit_form"><strong>메시지 발송 주기</strong></div>
+                                    <div class="desc_form">
+                                        <span class="txt_info">월</span>                 
+                                        <div class="send_form">                                         
+                                            <a href="#none" class="btn_people btn_selected"></a>
+                                            <ul class="list_option">
+                                                <li><a href="#none"></a></li>
+                                                <li><a href="#none"></a></li>
+                                            </ul>
+                                        </div>
+                                        <span class="txt_info">회 허용</span>
+                                    </div>
+                                </li>
+                                <li class="basic_list">
+                                    <div class="tit_form"><strong>목록 노출</strong></div>
+                                    <div class="desc_form">
+                                        <input type="radio" id="listOpen" name="chkOpen" class="inp_radio screen_out">
+                                        <label for="listOpen" class="lab_radio btn_people checked ">공개</label>
+                                        <input type="radio" id="selectClose" name="chkOpen" class="inp_radio screen_out">
+                                        <label for="selectClose" class="lab_radio btn_people">비공개</label>
+                                        <input type="radio" id="selectNew" name="chkOpen" class="inp_radio screen_out">
+                                        <label for="selectNew" class="lab_radio btn_people">NEW</label>
+                                        <input type="radio" id="selectHot" name="chkOpen" class="inp_radio screen_out">
+                                        <label for="selectHot" class="lab_radio btn_people">HOT</label>
+                                    </div>
+                                </li>                                            
+                                <li class="basic_kind">
+                                    <div class="tit_form"><strong>채널 종류</strong></div>
+                                    <div class="desc_form">
+                                        <input type="radio" id="selectAlliance" name="chkOpen" class="inp_radio screen_out">
+                                        <label for="selectAlliance" class="lab_radio btn_people checked ">제휴</label>
+                                        <input type="radio" id="selectNormal" name="chkOpen" class="inp_radio screen_out">
+                                        <label for="selectNormal" class="lab_radio btn_people">일반</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="group_btn">
+                                <button type="submit" class="btn_people btn_enter"><span class="ir_wa">완료</span></button>
+                                <button type="cancel" class="btn_people btn_cancel"><span class="ir_wa">취소</span></button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- kakaoBody 본문바로가기 링크임 - 페이지별 위치 및 element 명은 서비스에 맞게 변경하여 사용-->
+        </div>
+    </div>
+</div>
+</body>
+</html>

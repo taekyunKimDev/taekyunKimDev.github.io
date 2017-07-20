@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes: none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+input::-ms-clear{display:none}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{background:#fff}
+body,th,td,input,select,textarea,button{font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#000}
+a{color:#333;text-decoration:none}
+a:active{background-color:transparent;text-decoration:underline}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+/* 공통 */
+#kakaoIndex{overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0}
+.ir_pm{display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+.ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.show{display:block}
+.hide{display:none}
+.txt_bar{display: inline-block;width: 1px;height: 11px;margin: 5px  4px 0 5px;font-size:11px;vertical-align: top;color:#4b5266}
+.btn_people{display:block;overflow:hidden;background:url(../images/btn_people.gif) no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
+.tit_people{display:block;overflow:hidden;background:url(../images/tit_people.gif) no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
+body{background:url(..//images/bg_gnb_right.gif) repeat-y 0 0}
+.people_type1{position:relative;min-width:980px}
+/* 헤더 */
+.people_header{overflow:hidden;width:100%;height:35px;padding-top:7px;background:url(../images/bg_header.gif) repeat-x}
+.people_header .logo_people{float:left;width:94px;height:24px;margin-left:13px;}
+.people_header .logo_people .img_people{display:block;width:94px;height:24px;background:url(../images/logo_people.gif) no-repeat;vertical-align: top}
+.people_header .tit_people{float:left;width:62px;height:24px;margin-left:3px;background-position: 0 -20px}
+.people_header .box_user{float:right;height:24px;}
+.people_header .name_user{display:inline-block;font-family: '굴림',gulim,sans-serif;font-size:12px;font-weight:bold;color:#b6bac5;line-height:25px;letter-spacing: 1px}
+/*.gnb_user .txt_user_id{font-size:12px;font-weight:bold;color:#b6bac5;}*/
+.people_header .link_list{display:inline-block;margin-top:1px;padding-right:20px;}
+.people_header .link_list .link_txt{font-family: '돋움',dotum,sans-serif;font-size:11px;background-position:43px -26px;color:#b6bac5;line-height:24px}
+.people_header .btn_logout{display:inline-block;width:52px;height:20px;margin:2px 9px 0 2px;background-position:0 0}
+/* 컨텐츠 */
+.people_content{overflow:hidden;width:980px;}
+
+/* gnb */
+.people_gnb{float:left;width:138px;padding:12px 17px 0 15px}
+.gnb_people li{padding:16px 0 0 5px;background:url(../images/bg_gnb_list.gif) no-repeat}
+.gnb_people .tit_people{overflow:hidden}
+.gnb_people li .sub_menu{display:block;padding-top:5px;font-family: '돋움',dotum;font-size:12px;color:#444}
+.gnb_people li .sub_on{padding-top:3px;font-weight:bold;color:#53abe7;text-decoration: underline}
+.gnb_people .menu_home{padding-bottom: 16px;background-position:0 46px}
+.gnb_people .menu_channel{padding-bottom: 16px;background-position:0 86px}
+.gnb_people .menu_message{padding-bottom: 16px;background-position:0 86px}
+.gnb_people .menu_event{padding-bottom: 16px;background-position:0 86px}
+.gnb_people .menu_data{padding-bottom: 16px;background-position:0 113px}
+.gnb_people .menu_board{padding-bottom: 16px;background-position:0 46px}
+.gnb_people .menu_acount{padding-bottom: 16px;background-position:0 86px}
+.gnb_people .menu_home .tit_people{width:50px;height:13px;margin-bottom:2px;background-position: 0 -75px}
+.gnb_people .menu_channel .tit_people{width:25px;height:13px;margin-bottom:2px;background-position: 0 -100px}
+.gnb_people .menu_message .tit_people{width:67px;height:13px;margin-bottom:2px;background-position: 0 -125px}
+.gnb_people .menu_event .tit_people{width:38px;height:13px;margin-bottom:2px;background-position: 0 -150px}
+.gnb_people .menu_data .tit_people{width:55px;height:13px;margin-bottom:2px;background-position: 0 -175px}
+.gnb_people .menu_board .tit_people{width:68px;height:13px;padding-top:10px;background-position: 0 -200px}
+.gnb_people .menu_acount .tit_people{width:26px;height:13px;margin-bottom:2px;background-position: 0 -225px}
+.gnb_people .menu_board{padding-top:16px}
+.gnb_people .menu_board .ir_wa{margin-top:-12px}
+/* section */
+.people_article{float:left;width:779px;min-height:1200px;padding:27px 0 0 29px}
+.people_article .tit_launching{width:67px;height:17px;background-position:2px -50px}
+.people_lnb_list{margin-top:13px;border-top:2px solid #585f6f}
+.tab_launching{overflow:hidden;position:relative;margin-top: 13px;border-top: 2px solid #585f6f;background:url(../images/bg_tab.gif) repeat-x 0}
+.tab_launching li{float:left}
+.tab_launching li .tab_people{display:block;width:96px;height:34px;border-left:1px solid #cdcdcd;font-family: '굴림',gulim,sans-serif;font-size:12px;color:#888;text-align:center;line-height:34px;letter-spacing: -1px}
+.tab_launching li .link_tab{display:block;}
+.tab_launching .tab_on .tab_people{font-weight:bold;background:url(../images/bg_tab_active.gif) repeat-x 0 0}
+.tab_launching .tab_on .tab_people .link_tab{color:#53abe7}
+.list_basic{border-bottom:1px solid #c7c7c7}
+.view_launching .list_basic li{overflow:hidden;width:779px;padding-bottom:16px;border-bottom:1px solid #f4f4f4}
+.list_basic li .tit_form{float:left;width:118px;padding:16px 0 0 26px;font-family:'돋움',dotum,sans-serif;font-size:11px;font-weight:bold;color:#333}
+.list_basic .basic_name .tit_form{padding:24px 0 0 26px}
+.list_basic li .desc_form{position:relative;float:left;padding:13px 0 0 53px;width:581px}
+.basic_name .desc_form{padding:20px 0 0 51px}
+.desc_form .tf_text{height:19px;border: 1px solid #cacaca}
+.desc_form .lab_txt,.desc_form .lab_radio{font-size:11px;color:#8e8e8e}
+.desc_form .txt_count{display:inline-block;margin-left:5px;font-family:'돋움',dotum,sans-serif;font-size:11px;color:#8e8e8e}
+.desc_form .btn_overlap{display:inline-block;width:61px;height:21px;margin-left:5px;background-position:0 -70px}
+.view_launching .basic_name .desc_form{padding-top:20px;padding-bottom:13px}
+.view_launching .basic_acount .desc_form{padding-top:11px;padding-bottom:13px}
+.basic_name .desc_form .tf_text, .basic_acount .desc_form .tf_text{width:360px;}
+.basic_name .desc_form .lab_txt{position: absolute;top:47px;left:53px;letter-spacing:0}
+.basic_acount .desc_form .lab_txt{position: absolute;top:38px;left:52px;letter-spacing:0}
+.list_basic .basic_acount .tit_form{padding:14px 0 0 26px;}
+.basic_name .txt_count{position:absolute;top:22px;right:178px}
+.basic_acount .txt_count{position:absolute;top:13px;right:178px}
+.basic_name .btn_people{margin-left:46px}
+.basic_acount .btn_people{margin-left:46px}
+.view_launching .list_basic .basic_open{padding-bottom:12px}
+.list_basic .basic_open .tit_form{padding:14px 0 0 26px;}
+.list_basic .basic_open .desc_form{padding-top:14px}
+.basic_open .inp_radio{left:-9999px}
+.basic_open .lab_radio{display:inline-block;color:#000;margin-right:13px;padding-left:18px; font-size:12px;background-position:0 -123px}
+.basic_open .checked{background-position:0 -98px}
+.basic_open .txt_info{margin-left:-9px;vertical-align: top;letter-spacing: -1px;color:#8e8e8e}
+.list_basic .basic_cate .tit_form{padding:19px 0 0 27px;}
+.basic_cate .tit_form{padding-top:12px}
+.view_launching .basic_cate .desc_form{padding-bottom:0;padding-top:20px}
+.basic_cate .box_select{position:relative;width:122px;height:19px;margin-top:-4px;padding-right:18px;border:1px solid #ccc;}
+.basic_cate .box_select .btn_selected{position: absolute;width: 18px;height: 21px;background: url(../images/btn_people.gif) no-repeat -60px 0px;top: -1px;right: 0}
+.basic_cate .list_option li{border:0;}
+.list_basic .basic_intro .tit_form{padding:19px 0 0 27px;}
+.list_basic .basic_intro .desc_form{padding-top:16px}
+.basic_intro .tf_text{width:359px;height:66px;border:1px solid #cacaca;resize:none}
+.basic_intro .txt_count{position:absolute;top:71px;right:179px;vertical-align: bottom}
+.list_basic .basic_image .desc_form{overflow:hidden;padding-top:16px}
+.list_basic .basic_image .tit_form{padding:14px 0 0 26px;}
+.basic_image .tf_text{display:block;float:left;width:195px;margin-left:18px;;vertical-align: top}
+.basic_image .img_preview{display:block;overflow:hidden;float:left;position:relative;width:82px;height:88px;margin-left:1px;text-align:center}
+.basic_image .box_file{display:block;float:left;}
+.basic_image .txt_info{position:absolute;top:42px;left:151px;color:#8e8e8e}
+.basic_image .btn_search{display:block;float:left;width:61px;height:21px;margin-left:4px;background-position:-70px -70px;text-indent: -9999px;cursor:pointer}
+.basic_image .inp_file{left:-9999px}
+.basic_image .test_text{display:block;width:80px;height:16px;position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;}
+.list_basic .basic_homepage .tit_form{padding:19px 0 0 26px;}
+.list_basic .basic_homepage .desc_form{padding-top:16px;}
+.basic_homepage .tf_text{width:359px}
+.basic_homepage .txt_count{position:absolute;top:19px;right:179px;vertical-align: bottom}
+.list_basic .basic_set .desc_form{padding-top:14px}
+.view_launching .list_basic .basic_set{overflow:hidden;padding-bottom:12px}
+.list_basic .basic_set .tit_form{padding:14px 0 0 27px;}
+.set_select{float:left;width:583px;margin-bottom:4px}
+.set_select .inp_radio{left:-9999px}
+.set_select .lab_radio{display:inline-block;color:#000;padding-left:19px;margin-right:12px;font-size:12px;background-position:0 -123px}
+.set_select .checked{background-position:0 -98px}
+.set_standard{float:left;width:220px}
+.set_standard .tit_text{float:left;margin-right:8px;margin-left:-2px;margin-top:2px;font-size:12px;color:#333}
+.set_standard .tf_text{float:left;width:115px}
+.set_item{overflow:hidden;float:left;width:322px;margin-left:16px}
+.set_item .tit_text{float:left;margin-top:2px;font-size:12px}
+.set_item .lab_txt{display:block;float:left;width:95px;color:#333}
+.set_item .item_set{float:right;width:220px;margin:0 0 4px;}
+.set_item .fst_item{margin-left:0;margin-top:0}
+.set_item .tf_text{float:left;width:143px}
+.set_item .btn_add{float:left;width:47px;height:21px;margin-left:4px;background-position:-90px 0}
+.view_launching .list_basic .basic_comment{padding-bottom:13px}
+.list_basic .basic_comment .tit_form{padding:15px 0 0 27px;}
+.list_basic .basic_comment .desc_form{padding-top:14px;}
+.basic_comment .inp_chk{left:-9999px}
+.basic_comment .btn_people{font-size:13px;color:#333;width:40px;height:15px;padding-left:19px;background-position:-74px -124px}
+.basic_comment .checked{background-position:-75px -98px}
+.view_launching .list_basic .basic_send{padding-bottom:12px;}
+.list_basic .basic_send{padding-bottom:16px}
+.list_basic .basic_send .tit_form{padding:19px 0 0 26px;}
+.list_basic .basic_send .desc_form{padding-top:15px}
+.basic_send .txt_info{display:inline-block;margin-top: 4px;font-size:12px;color:#333;vertical-align: top}
+.basic_send .send_form{position: relative;display: inline-block;width: 54px;height: 19px;margin-left:4px;margin-right:6px;padding-right: 17px;border: 1px solid #ccc}
+.basic_send .send_form .btn_selected{position: absolute;width: 18px;height: 21px;background: url(../images/btn_people.gif) no-repeat -60px 0px;top: -1px;right: 0}
+.basic_send .list_option{position:absolute;}
+.basic_send .list_option li{border:0}
+.view_launching .list_basic .basic_list{padding-bottom:11px;}
+.list_basic .basic_list .tit_form{padding:15px 0 0 27px;}
+.list_basic .basic_list .desc_form{padding-top:13px}
+.basic_list .inp_radio{left:-9999px}
+.basic_list .lab_radio{display:inline-block;color:#000;margin-right:12px;padding-left:17px;font-size:13px;background-position:0 -123px;vertical-align: middle}
+.basic_list .checked{background-position:0 -98px}
+.view_launching .list_basic .basic_kind{padding-bottom:9px}
+.list_basic .basic_kind .tit_form{padding:14px 0 0 27px;}
+.list_basic .basic_kind .desc_form{padding-top:13px;}
+.basic_kind .inp_radio{left:-9999px}
+.basic_kind .lab_radio{display:inline-block;margin-right:12px;padding-left:17px;font-size:13px;background-position:0 -122px;vertical-align: middle;color:#000}
+.basic_kind .checked{background-position:0 -97px}
+.group_btn{border-top:1px solid #f4f4f4;text-align:center}
+.group_btn .btn_people{display:inline-block;margin-top:17px}
+.group_btn .btn_enter{width:60px;height:30px;margin-right:1px;margin-left:5px;background-position:-20px -30px}
+.group_btn .btn_cancel{width:60px;height:30px;background-position:-90px -30px}
