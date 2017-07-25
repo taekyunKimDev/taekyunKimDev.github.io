@@ -29,19 +29,19 @@ address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 .popup_bless.active{display:block;}
 .popup_bless .inner-popup{}
 /* 마블 시작 */
-.event_content{min-width:1472px;height:2138px;background:url(../img/bg_mable.jpg) no-repeat top center}
-.event_content .header_mable{position:relative;}
-.event_content .header_mable .tit_service{position:absolute;top:75px;left:62px;}
-.event_content .header_mable .tit_event{padding-top:75px;text-align:center;}
-.event_content .content_mable{width:1472px;margin: 0 auto;padding-top: 230px;}
-.content_mable .inner_content{position:relative;min-height:1200px;}
-.content_mable .inner_content .ico_runner{display:block;position:absolute;top: 0;left:680px;width:124px;height:270px;background:url(../img/img_runner.png) no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
-.content_mable .inner_content .area_dice{position:absolute;top:350px;left:50%;margin-left:-228px;}
-.content_mable .area_dice .inner_dice{position:relative;width:457px;height:410px;text-align:center}
-.content_mable .area_dice .btn_dice{width:323px;margin:0 auto;text-align:center;}
-.content_mable .btn_dice .ico_dice{display:inline-block;margin:0 auto;font-size:0;line-height:0;text-indent:-9999px;background:url(../img/btn_dice.png) no-repeat}
-.content_mable .btn_dice .ico_off{width:281px;height:316px;background-position:0 -25px}
-.content_mable .btn_dice .ico_on{display:none;width:323px;height:365px;margin-top:-25px;background-position:-281px 0;}
+.event_content{min-width:1472px;height:2138px;background:url(../img/bg_marble.jpg) no-repeat top center}
+.event_content .header_marble{position:relative;}
+.event_content .header_marble .tit_service{position:absolute;top:75px;left:62px;}
+.event_content .header_marble .tit_event{padding-top:75px;text-align:center;}
+.event_content .content_marble{width:1472px;margin: 0 auto;padding-top: 230px;}
+.content_marble .inner_content{position:relative;min-height:1200px;}
+.content_marble .inner_content .ico_horse{display:block;position:absolute;top: 0;left:680px;width:124px;height:270px;background:url(../img/img_runner.png) no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
+.content_marble .inner_content .area_dice{position:absolute;top:350px;left:50%;margin-left:-228px;}
+.content_marble .area_dice .inner_dice{position:relative;width:457px;height:410px;text-align:center}
+.content_marble .area_dice .btn_dice{width:323px;margin:0 auto;text-align:center;}
+.content_marble .btn_dice .ico_dice{display:inline-block;margin:0 auto;font-size:0;line-height:0;text-indent:-9999px;background:url(../img/btn_dice.png) no-repeat}
+.content_marble .btn_dice .ico_off{width:281px;height:316px;background-position:0 -25px}
+.content_marble .btn_dice .ico_on{display:none;width:323px;height:365px;margin-top:-25px;background-position:-281px 0;}
 .area_dice .btn_dice:hover .ico_off{display:none;}
 .area_dice .btn_dice:hover .ico_on{display:block;}
 
@@ -58,7 +58,7 @@ address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 
 /* 마블 끝 */
 /* 마블 팝업 시작 */
-.popup_mable{background-color:rgba(26,8,41,0.95);}
-.popup_mable .inner_popup{width:1200px;margin:0 auto;text-align:center;}
-.popup_mable .inner_popup .btn_identify{width:175px;height:70px;background:url(../img/btn_identify.png) no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
+.popup_marble{background-color:rgba(26,8,41,0.95);}
+.popup_marble .inner_popup{width:1200px;margin:0 auto;text-align:center;}
+.popup_marble .inner_popup .btn_identify{width:175px;height:70px;background:url(../img/btn_identify.png) no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
 /* 마블 팝업 끝 */
