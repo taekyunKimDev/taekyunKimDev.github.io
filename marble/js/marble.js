@@ -1,9 +1,8 @@
 // 데이터 구성
-// 각 셀의 top 기준 x좌표
-// 각 셀의 left 기준 y좌표
+// 각 셀의 left 기준 x좌표
+// 각 셀의 top 기준 y좌표
 // 당첨 선물 이미지 src
 // 당첨 선물 alt
-
 var data = [
   {
     y:15,
@@ -220,12 +219,9 @@ var data = [
   }
 ];
 
-
+/* 객체화 코드 시작 */
 var horse = {
   $ico: $(".ico_horse"),
-  // move: function(index) {
-  //   this.$ico.css({left:data[index].x,top:data[index].y});
-  // },
   move: function(x, y, callback) {
     this.$ico.css({left:x,top:y});
     callback;
@@ -264,7 +260,6 @@ var dice = {
         clearInterval(interval);
         callback && callback(_this.currentNumber);
       }
-      // cnt++
     },64);
   }
 };
@@ -293,19 +288,19 @@ var marble = {
   numberCompletions : 0, // 완주 횟수
   numberDiceChance : 20, // 주사위 사용가능 횟수
   currentNumber : dice.currentNumber,
+  totalPlayEvent : 0,
   $numberChance : $('.inner_dice .num_txt'),
   setChance: function() {
     this.$numberChance.html(this.numberDiceChance);
   },
   setHorsePosition : function(number) {
-    var movedPositionNumber = this.horsePosition + number;//number 주사위갯수, 말이 움직일 포지션 값
-    this.horseTotalMoveNumber += movedPositionNumber; // 말의 총 이동 횟수
-    // 36이상일때 0부터 다시시작하는지 체크해볼것
-    if(movedPositionNumber >= data.length) { //만약 말의 움직일 포지션 값이 판의 수 보다 클 경우
-      this.horsePosition = movedPositionNumber - data.length; //말의 포지션 값에서 판의 크기 만큼 뺀 위치가 말의 최종 위치가 된다.
-      this.numberCompletions++; //그의미는 말이 한바퀴를 돌았다는 의미가 되니까 주행 횟수를 1 증가 시킨다.
+    var movedPositionNumber = this.horsePosition + number;
+    this.horseTotalMoveNumber += movedPositionNumber;
+    if(movedPositionNumber >= data.length) {
+      this.horsePosition = movedPositionNumber - data.length;
+      this.numberCompletions++;
     }else{
-      this.horsePosition = movedPositionNumber; //말의 움직일 포지션이 판의 수 보다 작으면 그냥 말이 이동할 위치이다.
+      this.horsePosition = movedPositionNumber;
     }
   },
   init: function () {
@@ -319,8 +314,9 @@ var marble = {
       _this.numberDiceChance -= 1;
       _this.setChance();
       dice.show();
-      dice.play(function() {
-        _this.setHorsePosition(dice.currentNumber);
+      dice.play(function(number) {
+        _this.totalPlayEvent += 1;
+        _this.setHorsePosition(number);
         horse.move(
           data[_this.horsePosition].x,
           data[_this.horsePosition].y,
@@ -332,7 +328,6 @@ var marble = {
       });
     });
     popup.$close.click(function(){
-      console.log(1);
       popup.hide();
       dice.hide();
     });
@@ -340,19 +335,21 @@ var marble = {
 };
 
 marble.init();
+/* 객체화 코드 끝 */
 
 
+/* 객체화 안한 코드 시작 */
 // var dicePosition =[0, -136, -272, -408, -544, -680];
 // var horsePosition = 0; // 말의 현재 판에서의 index 수
 // var horseTotalMoveNumber = 0; // 말이동 총 칸수
 // var numberCompletions = 0; // 완주 횟수
 // var numberDiceChance = 20; // 주사위 사용가능 횟수
 // var numberDice = 0;
-
+//
 // function setDiceChance() {
 //   $('.inner_dice .num_txt').html(numberDiceChance);
 // }
-
+//
 // function setHorsePosition(number) {
 //   var movedPositionNumber = horsePosition + number;//number 주사위갯수, 말이 움직일 포지션 값
 //   horseTotalMoveNumber += movedPositionNumber; // 말의 총 이동 횟수
@@ -364,7 +361,7 @@ marble.init();
 //     horsePosition = movedPositionNumber; //말의 움직일 포지션이 판의 수 보다 작으면 그냥 말이 이동할 위치이다.
 //   }
 // }
-
+//
 // function running(callback) { //클릭
 //   setHorsePosition(numberDice);
 //   horseMove(horsePosition);
@@ -375,8 +372,6 @@ marble.init();
 // function horseMove(index) {
 //   $(".ico_horse").css({left:data[index].x,top:data[index].y});
 // }
-//
-
 //
 // function randomDiceNumber() {  // 랜덤주사위숫자 1~6
 //   numberDice = Math.ceil(Math.random()*6);
@@ -404,8 +399,6 @@ marble.init();
 //     // cnt++
 //   },64);
 // }
-
-
 //
 // function showDice() {///
 //   $('.btn_dice').css({'display' : 'none'});
@@ -415,14 +408,13 @@ marble.init();
 //   $('.dice_on').css({'display' : 'none'});
 //   $('.btn_dice').css({'display' : 'block'});
 // }
-
 //
 // function showPopup() {
-//   $('.popup_mable').css({'display' : 'block'});
+//   $('.popup_marble').css({'display' : 'block'});
 // }
 //
 // function hidePopup() {
-//   $('.popup_mable').css({'display' : 'none'});
+//   $('.popup_marble').css({'display' : 'none'});
 // }
 //
 // function changePopupImg(index) {
@@ -434,7 +426,6 @@ marble.init();
 //     });
 // }
 //
-
 // $(function(){
 //   setDiceChance();
 //   $('.btn_dice').click(function(){
@@ -451,10 +442,10 @@ marble.init();
 //         changePopupImg(horsePosition);
 //       });
 //     });
-//
 //   });
 //   $('.btn_identify').click(function(){
 //     hidePopup();
 //     hideDice();
 //   });
 // });
+/* 객체화 안한 코드 끝 */
