@@ -1,5 +1,20 @@
-require(['js/data.js','js/horse.js','js/dice.js','js/popup.js', 'js/marble.js'],
-    function(data,horse,dice,popup,marble) { 
-        marbleController.init();
+requirejs.config({
+  baseUrl: 'js/app',
+  paths: {
+    data: 'data',
+    horse: 'horse',
+    dice: 'dice',
+    popup: 'popup',
+    marble: 'marble'
+  },
+  shim:{
+    'marble': {
+      deps: ['data', 'horse', 'dice','popup']
+    }
+  }
+});
+requirejs(['marble'],
+    function(marble) {
+        marble.init();
     }
 );
