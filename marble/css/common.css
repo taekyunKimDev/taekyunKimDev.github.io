@@ -41,7 +41,7 @@ address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 .content_marble .area_dice .btn_dice{position:absolute;top:0;left:50%;margin-left:-161px;width:323px;margin:0 auto;text-align:center;}
 .content_marble .btn_dice .ico_dice{display:block;margin:0 auto;font-size:0;line-height:0;text-indent:-9999px;background:url(../img/btn_dice.png) no-repeat}
 .content_marble .btn_dice .ico_off{width:281px;height:316px;background-position:0 0}
-.content_marble .btn_dice .ico_on{display:none;width:323px;height:365px;margin-top:-25px;background-position:-281px 0;}
+.content_marble .btn_dice .ico_on{display:none;width:323px;height:365px;background-position:-281px 0;}
 .area_dice .btn_dice:hover .ico_off{display:none;}
 .area_dice .btn_dice:hover .ico_on{display:block;}
 
