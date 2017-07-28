@@ -3,7 +3,7 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
 fieldset,img{border:0 none}
 dl,ul,ol,menu,li{list-style:none}
-blockquote, q{quotes: none}
+blockquote, q{quotes:none}
 blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
 input,select,textarea,button{vertical-align:middle}
 button{border:0 none;background-color:transparent;cursor:pointer}
@@ -14,8 +14,8 @@ a:active{background-color:transparent;text-decoration:underline}
 address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 
 /* 공통 */
-#blessIndex a{display: block;position: absolute;top: -100px;left: 0;z-index: 500;width: 100%;height: 40px;line-height: 40px;font-size: 14px;text-align: center;}
-#blessIndex a:hover, #blessIndex a:focus, #blessIndex a:active {top: 0;background:#efefef;}
+#blessIndex a{display:block;position:absolute;top:-100px;left:0;z-index:500;width:100%;height:40px;line-height:40px;font-size:14px;text-align:center;}
+#blessIndex a:hover, #blessIndex a:focus, #blessIndex a:active {top:0;background:#efefef;}
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px}
 
 /* 레이아웃 */
@@ -27,17 +27,16 @@ address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 #footer .inner_footer{width:1200px;height:96px;margin:0 auto;}
 .popup_bless{display:none;position:absolute;top:39px;left:0;bottom:0;right:0;width:100%;}
 .popup_bless.active{display:block;}
-.popup_bless .inner-popup{}
 /* 마블 시작 */
 .event_content{min-width:1472px;height:2138px;background:url(../img/bg_marble.jpg) no-repeat top center}
 .event_content .header_marble{position:relative;}
 .event_content .header_marble .tit_service{position:absolute;top:75px;left:62px;}
 .event_content .header_marble .tit_event{padding-top:75px;text-align:center;}
-.event_content .content_marble{width:1472px;margin: 0 auto;padding-top: 230px;}
+.event_content .content_marble{width:1472px;margin:0 auto;padding-top:230px;}
 .content_marble .inner_content{position:relative;min-height:1200px;}
-.content_marble .inner_content .ico_horse{display:block;position:absolute;top: 0;left:680px;width:124px;height:270px;background:url(../img/img_runner.png) no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
-.content_marble .inner_content .area_dice{position:absolute;top: 320px;left:50%;margin-left:-228px;}
-.content_marble .area_dice .inner_dice{position:relative;width:457px;height:410px;text-align:center;padding-top: 30px;}
+.content_marble .inner_content .ico_horse{display:block;position:absolute;top:0;left:680px;width:124px;height:270px;background:url(../img/img_runner.png) no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
+.content_marble .inner_content .area_dice{position:absolute;top:320px;left:50%;margin-left:-228px;}
+.content_marble .area_dice .inner_dice{position:relative;width:457px;height:410px;text-align:center;padding-top:30px;}
 .content_marble .area_dice .btn_dice{position:absolute;top:0;left:50%;margin-left:-161px;width:323px;text-align:center;}
 .content_marble .btn_dice .ico_dice{display:block;margin:0 auto;font-size:0;line-height:0;text-indent:-9999px;background:url(../img/btn_dice.png) no-repeat}
 .content_marble .btn_dice .ico_off{width:281px;height:316px;background-position:0 0}
@@ -45,16 +44,14 @@ address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 .area_dice .btn_dice:hover .ico_off{display:none;}
 .area_dice .btn_dice:hover .ico_on{display:block;}
 
-.area_dice .inner_dice .dice_on{display:none;position: absolute;top: -25px;left: 50%;margin-left: -161px;width:323px;height:250px;padding-top:115px;background:url(../img/bg_dice.png) no-repeat}
+.area_dice .inner_dice .dice_on{display:none;position:absolute;top:0;left:50%;margin-left:-161px;width:323px;height:250px;padding-top:115px;background:url(../img/bg_dice.png) no-repeat}
 .inner_dice .dice_on .ico_num{display:block;width:227px;height:136px;margin-left:48px;background:url(../img/ico_dice.png) no-repeat;}
 
 .area_dice .inner_dice .info_desc{display:block;position:absolute;bottom:0;left:0;width:100%;text-align:center;}
 .area_dice .info_desc .inner_info{display:inline-block;width:305px;height:87px;background:url(../img/bg_description.png) no-repeat;}
-.area_dice .info_desc .desc_tit{margin: 20px 0 7px;font-size: 24px;color: #fff;line-height: 25px;}
+.area_dice .info_desc .desc_tit{margin:20px 0 7px;font-size:24px;color:#fff;line-height:25px;}
 .area_dice .info_desc .desc_tit .num_txt{margin-left:5px;}
 .area_dice .info_desc .desc_txt{font-size:15px;color:#e6f8ff;opacity:0.46;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=46)"}
-
-
 
 /* 마블 끝 */
 /* 마블 팝업 시작 */
