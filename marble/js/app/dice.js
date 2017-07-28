@@ -3,6 +3,7 @@ define('dice',[],
     return {
       currentNumber: 0,
       $play: $('.btn_dice'),
+//        $ico: $('.ico_dice'),
       $dice: $('.dice_on'),
       $number: $('.ico_num'),
       numberPosition :[0, -136, -272, -408, -544, -680],
@@ -14,6 +15,12 @@ define('dice',[],
           'background-position': "0px " + this.numberPosition[index]+"px"
         });
       },
+//        addClass: function() {
+//            this.$ico.addClass('ico_on');
+//        },
+//        removeClass: function() {
+//            this.$ico.removeClass('ico_on');
+//        },
       show: function () {
         this.$play.css({'display' : 'none'});
         this.$dice.css({'display' : 'block'});
