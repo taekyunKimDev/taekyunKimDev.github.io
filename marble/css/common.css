@@ -36,8 +36,8 @@ address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 .event_content .content_marble{width:1472px;margin: 0 auto;padding-top: 230px;}
 .content_marble .inner_content{position:relative;min-height:1200px;}
 .content_marble .inner_content .ico_horse{display:block;position:absolute;top: 0;left:680px;width:124px;height:270px;background:url(../img/img_runner.png) no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
-.content_marble .inner_content .area_dice{position:absolute;top:350px;left:50%;margin-left:-228px;}
-.content_marble .area_dice .inner_dice{position:relative;width:457px;height:410px;text-align:center}
+.content_marble .inner_content .area_dice{position:absolute;top: 320px;left:50%;margin-left:-228px;}
+.content_marble .area_dice .inner_dice{position:relative;width:457px;height:410px;text-align:center;padding-top: 30px;}
 .content_marble .area_dice .btn_dice{width:323px;margin:0 auto;text-align:center;}
 .content_marble .btn_dice .ico_dice{display:inline-block;margin:0 auto;font-size:0;line-height:0;text-indent:-9999px;background:url(../img/btn_dice.png) no-repeat}
 .content_marble .btn_dice .ico_off{width:281px;height:316px;background-position:0 -25px}
