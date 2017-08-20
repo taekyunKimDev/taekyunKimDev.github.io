@@ -310,12 +310,12 @@
 	.fancybox-nav:hover span,
 	.fancybox-close,
 	.fancybox-close:hover {
-		background: transparent;	
+/*		background: transparent;	*/
 	}
 	
 	.fancybox-close i {
-		left: 70px;
-		top: 10px;	
+		left: 26px;
+        top: 21px;
 	}
 }
 
