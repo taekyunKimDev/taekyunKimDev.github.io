@@ -1,6 +1,6 @@
 {
   "profile":{
-    "img":"../images/taekyunKim.jpg",
+    "img":"./dist/images/taekyunKim.jpg",
     "img-text":"김태균",
     "name":"김태균",
     "birth":"1989년 02월 07일",
@@ -11,15 +11,15 @@
   "photo":{
     "img":[
       {
-        "url":"./images/picture_owl.png",
+        "url":"./dist/images/picture_owl.png",
         "text":"올빼미"
       },
       {
-        "url":"./images/picture_dragonfly.png",
+        "url":"./dist/images/picture_dragonfly.png",
         "text":"잠자리"
       },
       {
-        "url":"./images/picture_iguana.png",
+        "url":"./dist/images/picture_iguana.png",
         "text":"이구아나"
       }
     ]
