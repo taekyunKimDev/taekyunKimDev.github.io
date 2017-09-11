@@ -11,15 +11,15 @@
   "photo":{
     "img":[
       {
-        "url":"../images/picture_owl.png",
+        "url":"./images/picture_owl.png",
         "text":"올빼미"
       },
       {
-        "url":"../images/picture_dragonfly.png",
+        "url":"./images/picture_dragonfly.png",
         "text":"잠자리"
       },
       {
-        "url":"../images/picture_iguana.png",
+        "url":"./images/picture_iguana.png",
         "text":"이구아나"
       }
     ]
