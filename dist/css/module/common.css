@@ -334,7 +334,8 @@ input[type="time"] {
 }
 
 .box_select .inner_select select {
-  width: 100%;
+  float: left;
+  width: 85%;
   font-size: 12px;
   color: #999;
 }
@@ -345,11 +346,10 @@ input[type="time"] {
 
 .box_select .ico_arrow {
   display: block;
-  position: absolute;
-  top: 5px;
-  right: 0;
+  float: right;
   width: 17px;
   height: 10px;
+  margin-top: 3px;
   background: url(../img/ico_arrow_on.png) no-repeat;
   background-size: cover;
 }
