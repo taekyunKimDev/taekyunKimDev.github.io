@@ -1,0 +1,125 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 25px;
+  height: 9px;
+  padding: 3px 0;
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.switch_input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.switch_input:checked ~ .switch_trough {
+  background: #d8d8d8;
+}
+
+.switch_input:checked ~ .switch_trough:before {
+  opacity: 5;
+}
+
+.switch_input:checked ~ .switch_trough:after {
+  opacity: 1;
+}
+
+.switch_input:checked ~ .switch_handle {
+  left: 0;
+  background: #c9338b;
+}
+
+.switch_group {
+  display: inline-block;
+  width: 100%;
+}
+
+/* No Label */
+
+.switch.no_label {
+  width: 25px;
+}
+
+.switch.no_label > .switch-input:checked ~ .switch_handle {
+  left: 16px;
+}
+
+.switch.no_label > .switch_trough {
+  font-size: 0;
+}
+
+/*----- Switch Trough -----*/
+
+.switch_trough {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 11px;
+  text-transform: uppercase;
+  background: #d8d8d8;
+  border-radius: inherit;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-property: opacity background;
+  transition-property: opacity background;
+}
+
+.switch_trough:before,
+.switch_trough:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
+  line-height: 1;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.switch_trough:before {
+  content: attr(data-off);
+  right: 11px;
+  color: #aaa;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.switch_trough:after {
+  content: attr(data-on);
+  left: 11px;
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+/*----- Switch Handle -----*/
+
+.switch_handle {
+  position: absolute;
+  top: 1px;
+  left: 16px;
+  width: 13px;
+  height: 13px;
+  background: #bcbcbc;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.switch_handle:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=switch.css.map */
