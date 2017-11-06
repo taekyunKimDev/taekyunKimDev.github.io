@@ -330,14 +330,23 @@ input[type="time"] {
   float: left;
 }
 
+.box_select .inner_select {
+  padding-right: 25px;
+}
+
+.box_select .box_arrow {
+  right: 0;
+  top: 0;
+}
+
 /* 셀렉트박스 끝 */
 
 /* 체크박스 시작 */
 
 .box_check input[type="checkbox"] {
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   background: url(../img/ico_chk_off.png) no-repeat;
   background-size: cover;
 }
@@ -345,6 +354,21 @@ input[type="time"] {
 .box_check input[type="checkbox"]:checked {
   background: url(../img/ico_chk_on.png) no-repeat;
   background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+  .box_check input[type="checkbox"] {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/x2/ico_chk_off.png) no-repeat;
+    background-size: cover;
+  }
+
+  .box_check input[type="checkbox"]:checked {
+    background: url(../img/x2/ico_chk_on.png) no-repeat;
+    background-size: cover;
+  }
 }
 
 /* 체크박스 끝 */

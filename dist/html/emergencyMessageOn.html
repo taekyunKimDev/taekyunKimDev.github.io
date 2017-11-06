@@ -137,51 +137,74 @@
 <script type="text/javascript" src="../js/lib/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="../js/lib/palette-color-picker.min.js"></script>
 <script>
+    var DATE = new Date();
+    function leadingZeros(n, digits) {
+        var zero = '';
+        n = n.toString();
+
+        if (n.length < digits) {
+            for (i = 0; i < digits - n.length; i++)
+                zero += '0';
+        }
+        return zero + n;
+    }
     $(document).ready(function(){
-            $('[name="unique-name-1"]').paletteColorPicker({
-                colors: [
-                    {"block": "#333"},
-                    {"gray": "#666"},
-                    {"primary_light": "#F8BBD0"},
-                    {"accent": "#CDDC39"},
-                    {"primary_text": "#212121"},
-                    {"secondary_text": "#727272"},
-                    {"divider": "#B6B6B6"},
-                    {"secondary_text": "#727272"},
-                    {"secondary_text": "#727272"},
-                    {"secondary_text": "#727272"}
-                ],
-                // Add custom class to the picker
-                custom_class: 'double',
-                // Force the position of picker's bubble
-                position: 'downside', // default -> 'upside'
-                // Where is inserted the color picker's button, related to the input
-                insert: 'after', // default -> 'before'
-                // Don't add clear_btn
-                clear_btn: 'last', // null -> without clear button, default -> 'first'
-                // Timeout for the picker's fade out in ms
-                timeout: 2000, // default -> 2000
-                // Forces closin all bubbles that are open before opening the current one
-                close_all_but_this: false, // default is false
-                // Sets the input's background color to the selected one on click
-                // seems that some users find this useful ;)
-                set_background: '#727272', // default is false
+        $('[name="unique-name-1"]').paletteColorPicker({
+            colors: [
+                {"block": "#333"},
+                {"gray": "#666"},
+                {"primary_light": "#F8BBD0"},
+                {"accent": "#CDDC39"},
+                {"primary_text": "#212121"},
+                {"secondary_text": "#727272"},
+                {"divider": "#B6B6B6"},
+                {"secondary_text": "#727272"},
+                {"secondary_text": "#727272"},
+                {"secondary_text": "#727272"}
+            ],
+            // Add custom class to the picker
+            custom_class: 'double',
+            // Force the position of picker's bubble
+            position: 'downside', // default -> 'upside'
+            // Where is inserted the color picker's button, related to the input
+            insert: 'after', // default -> 'before'
+            // Don't add clear_btn
+            clear_btn: 'last', // null -> without clear button, default -> 'first'
+            // Timeout for the picker's fade out in ms
+            timeout: 2000, // default -> 2000
+            // Forces closin all bubbles that are open before opening the current one
+            close_all_but_this: false, // default is false
+            // Sets the input's background color to the selected one on click
+            // seems that some users find this useful ;)
+            set_background: '#727272', // default is false
 
-                // Events
-                // Callback on bubbl show
-                onbeforeshow_callback: function( what ) {
-                    console.log(what);
-                },
+            // Events
+            // Callback on bubbl show
+            onbeforeshow_callback: function( what ) {
+                console.log(what);
+            },
 
-                // Callback on change value
-                onchange_callback: function( clicked_color ) {
-                    console.log(clicked_color);
-                }
-            });
+            // Callback on change value
+            onchange_callback: function( clicked_color ) {
+                console.log(clicked_color);
+            }
+        });
 
-            $('.swatch').click(function(){
-                $('.palette-color-picker-bubble').hide()
-            })
+        $('.swatch').click(function(){
+            $('.palette-color-picker-bubble').hide()
+        })
+
+
+        var date = leadingZeros(DATE.getFullYear(), 4) + '-' +leadingZeros(DATE.getMonth() + 1, 2) + '-' +leadingZeros(DATE.getDate(), 2);
+        var nextDate = leadingZeros(DATE.getFullYear(), 4) + '-' +leadingZeros(DATE.getMonth() + 1, 2) + '-' +leadingZeros(DATE.getDate()+1, 2);
+        var time = leadingZeros(DATE.getHours(), 2) + ':' +leadingZeros(DATE.getMinutes(), 2);
+        var nextTime = leadingZeros(DATE.getHours()+1, 2) + ':' +leadingZeros(DATE.getMinutes(), 2);
+        console.log(nextDate);
+        $('#startDate').val(date);
+        $('#startTime').val(time);
+        $('#endDate').val(nextDate);
+        $('#endTime').val(nextTime);
+
 
     })
 </script>
