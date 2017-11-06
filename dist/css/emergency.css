@@ -306,7 +306,7 @@ select {
   float: left;
 }
 
-input[type="data"],
+input[type="date"],
 input[type="time"] {
   border: 1px solid #333;
 }
