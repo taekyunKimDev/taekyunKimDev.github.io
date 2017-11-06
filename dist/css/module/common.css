@@ -196,47 +196,6 @@ select {
   clear: both;
 }
 
-.box_arrow {
-  position: absolute;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.box_arrow .ico_arrow {
-  display: inline-block;
-  position: relative;
-  margin: 0 0 0 8px;
-  padding: 0;
-  width: 0;
-  height: 0;
-  border: 9px solid transparent;
-  border-left-color: #666;
-}
-
-.box_arrow .ico_arrow:before,
-.box_arrow .ico_arrow:after {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 0;
-  height: 0;
-}
-
-.box_arrow .ico_arrow:before {
-  left: -30px;
-  margin-top: -10px;
-  border: 10px solid transparent;
-  border-right-color: #fff;
-}
-
-.box_arrow .ico_arrow:after {
-  left: -20px;
-  margin-top: -17px;
-  border: 17px solid transparent;
-  border-left-color: #fff;
-}
-
 /* 레이아웃 시작*/
 
 .header {
@@ -270,7 +229,7 @@ select {
   position: absolute;
   bottom: 29px;
   right: 20px;
-  overflow: hidden;
+  padding-bottom: 5px;
 }
 
 .header .box_input .tit_inp {
@@ -291,6 +250,8 @@ select {
 
 .row_input {
   width: 100%;
+  height: 30px;
+  margin-top: 10px;
   display: block;
   clear: both;
   content: '';
@@ -298,45 +259,99 @@ select {
 
 .row_input label {
   display: block;
-  clear: both;
-  content: '';
+  height: 30px;
+}
+
+.row_input input[type="text"] {
+  font-size: 12px;
+  color: #999;
+  text-align: right;
 }
 
 .row_input .box_input {
   float: left;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #000;
 }
+
+.row_input.row_divide .box_input {
+  width: 48%;
+  margin-left: 2%;
+}
+
+.row_input.row_divide .box_input:first-child {
+  margin-left: 0;
+}
+
+.row_input .tit_inp {
+  font-size: 10px;
+  line-height: 20px;
+  color: #bcbcbc;
+}
+
+.row_input .tit_inp ~ span {
+  float: right;
+}
+
+/* 달력 시작*/
 
 input[type="date"],
 input[type="time"] {
-  border: 1px solid #333;
+  width: 100%;
+  height: 100%;
 }
 
-.tit_inp {
+.box_date {
+  height: 30px;
+}
+
+.box_date label {
   float: left;
+  width: 48%;
+  margin-left: 2%;
 }
 
-.tit_inp ~ span {
-  float: left;
+.box_date label:first-child {
+  margin-left: 0;
 }
 
-.box_input {
-  position: relative;
+.box_date label .inner_date {
+  width: 60%;
 }
+
+/* 달력 끝 */
 
 /* 셀렉트박스 시작 */
 
 .box_select .tit_inp {
-  font-size: 10px;
   float: left;
 }
 
 .box_select .inner_select {
-  padding-right: 25px;
+  width: 53%;
+  height: 30px;
 }
 
-.box_select .box_arrow {
+.box_select .inner_select select {
+  width: 100%;
+  font-size: 12px;
+  color: #999;
+}
+
+.box_select .inner_select.off .ico_arrow {
+  background: url(../img/ico_arrow_off.png) no-repeat;
+}
+
+.box_select .ico_arrow {
+  display: block;
+  position: absolute;
+  top: 5px;
   right: 0;
-  top: 0;
+  width: 17px;
+  height: 10px;
+  background: url(../img/ico_arrow_on.png) no-repeat;
+  background-size: cover;
 }
 
 /* 셀렉트박스 끝 */

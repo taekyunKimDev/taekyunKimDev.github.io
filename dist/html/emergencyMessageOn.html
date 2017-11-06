@@ -30,14 +30,15 @@
                     <div class="box_input box_select">
                         <label for="sel1">
                             <strong class="tit_inp">Program Group</strong>
-                            <span class="inner_select">
-                            <select name="" id="sel1">
-                                <option value="">편성 그룹을 선택해주세요</option>
-                            </select>
-                            <span class="box_arrow">
+                            <span class="inner_input inner_select off">
+                                <select name="" class="inp_sel" id="sel1">
+                                    <option value="1">편성 그룹을 선택해주세요</option>
+                                    <option value="2">편성 그룹을 선택해주세요</option>
+                                    <option value="3">편성 그룹을 선택해주세요</option>
+                                    <option value="4">편성 그룹을 선택해주세요</option>
+                                </select>
                                 <i class="ico_arrow"></i>
                             </span>
-                        </span>
                         </label>
                     </div>
                 </div>
@@ -45,13 +46,14 @@
                     <div class="box_input box_select">
                         <label for="sel2">
                             <strong class="tit_inp">Program Group</strong>
-                            <span class="inner_select">
-                            <select name="" id="sel2">
-                                <option value="">편성 그룹을 선택해주세요</option>
-                            </select>
-                            <span class="box_arrow">
+                            <span class="inner_input  inner_select off">
+                                <select name="" class="inp_sel" id="sel2">
+                                    <option value="">편성 그룹을 선택해주세요</option>
+                                    <option value="">편성 그룹을 선택해주세요</option>
+                                    <option value="">편성 그룹을 선택해주세요</option>
+                                    <option value="">편성 그룹을 선택해주세요</option>
+                                </select>
                                 <i class="ico_arrow"></i>
-                            </span>
                         </span>
                         </label>
                     </div>
@@ -60,57 +62,57 @@
                     <div class="box_input box_text">
                         <label for="inpText1">
                             <strong class="tit_inp">Message</strong>
-                            <span class="inner_text">
+                            <span class="inner_input inner_text">
                                 <input id="inpText1" type="text" placeholder="메세지를 입력하세요.">
                             </span>
                         </label>
                     </div>
                 </div>
-                <div class="row_input">
+                <div class="row_input row_divide">
                     <div class="box_input box_color">
                         <label for="inpColor">
                             <strong class="tit_inp">Color</strong>
-                            <span class="inner_color">
-                                <input id="inpColor" type="text" style="display:none;" name="unique-name-1"value="block">
+                            <span class="inner_input inner_color">
+                                <input id="inpColor" type="text" style="display:none;" name="unique-name-1" value="block">
                             </span>
                         </label>
                     </div>
                     <div class="box_input box_check">
                         <label for="chkRepeat">
                             <strong class="tit_inp">Repeat Yn</strong>
-                            <span class="inner_color">
+                            <span class="inner_input">
                                 <input id="chkRepeat" type="checkbox" class="chk_repeat">
                             </span>
                         </label>
                     </div>
                 </div>
                 <div class="row_input">
-                    <div class="box_input box_check">
+                    <div class="box_input box_date">
                         <label for="startDate">
                             <strong class="tit_inp">Start Day</strong>
-                            <span class="inner_color">
+                            <span class="inner_input inner_date">
                                 <input id="startDate" type="date" class="inp_date" value="2017-11-06">
                             </span>
                         </label>
                         <label for="startTime">
                             <strong class="tit_inp">Start Time</strong>
-                            <span class="inner_color">
+                            <span class="inner_input inner_date">
                                 <input id="startTime" type="time" class="inp_time" value="12:00">
                             </span>
                         </label>
                     </div>
                 </div>
                 <div class="row_input">
-                    <div class="box_input box_check">
+                    <div class="box_input box_date">
                         <label for="endDate">
                             <strong class="tit_inp">End Day</strong>
-                            <span class="inner_color">
+                            <span class="inner_input inner_date">
                                 <input id="endDate" type="date" class="inp_date" value="2017-11-06">
                             </span>
                         </label>
                         <label for="endTime">
                             <strong class="tit_inp">End Time</strong>
-                            <span class="inner_color">
+                            <span class="inner_input inner_date">
                                 <input id="endTime" type="time" class="inp_time" value="13:00">
                             </span>
                         </label>
@@ -138,6 +140,10 @@
 <script type="text/javascript" src="../js/lib/palette-color-picker.min.js"></script>
 <script>
     var DATE = new Date();
+    var date = leadingZeros(DATE.getFullYear(), 4) + '-' +leadingZeros(DATE.getMonth() + 1, 2) + '-' +leadingZeros(DATE.getDate(), 2);
+    var nextDate = leadingZeros(DATE.getFullYear(), 4) + '-' +leadingZeros(DATE.getMonth() + 1, 2) + '-' +leadingZeros(DATE.getDate()+1, 2);
+    var time = leadingZeros(DATE.getHours(), 2) + ':' +leadingZeros(DATE.getMinutes(), 2);
+    var nextTime = leadingZeros(DATE.getHours()+1, 2) + ':' +leadingZeros(DATE.getMinutes(), 2);
     function leadingZeros(n, digits) {
         var zero = '';
         n = n.toString();
@@ -192,21 +198,22 @@
 
         $('.swatch').click(function(){
             $('.palette-color-picker-bubble').hide()
-        })
+        });
 
-
-        var date = leadingZeros(DATE.getFullYear(), 4) + '-' +leadingZeros(DATE.getMonth() + 1, 2) + '-' +leadingZeros(DATE.getDate(), 2);
-        var nextDate = leadingZeros(DATE.getFullYear(), 4) + '-' +leadingZeros(DATE.getMonth() + 1, 2) + '-' +leadingZeros(DATE.getDate()+1, 2);
-        var time = leadingZeros(DATE.getHours(), 2) + ':' +leadingZeros(DATE.getMinutes(), 2);
-        var nextTime = leadingZeros(DATE.getHours()+1, 2) + ':' +leadingZeros(DATE.getMinutes(), 2);
-        console.log(nextDate);
         $('#startDate').val(date);
         $('#startTime').val(time);
         $('#endDate').val(nextDate);
         $('#endTime').val(nextTime);
 
-
-    })
+        $('.inp_sel').click(function(){
+           if($(this).parent('.inner_select').hasClass('off')){
+               $(this).parent('.inner_select').removeClass('off');
+               return false;
+           }else{
+               $(this).parent('.inner_select').addClass('off');
+           }
+        });
+    });
 </script>
 </body>
 </html>
