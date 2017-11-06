@@ -289,6 +289,36 @@ select {
   margin-top: 1px;
 }
 
+.row_input {
+  width: 100%;
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.row_input label {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.row_input .box_input {
+  float: left;
+}
+
+input[type="data"],
+input[type="time"] {
+  border: 1px solid #333;
+}
+
+.tit_inp {
+  float: left;
+}
+
+.tit_inp ~ span {
+  float: left;
+}
+
 .box_input {
   position: relative;
 }
