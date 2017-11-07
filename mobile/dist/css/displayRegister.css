@@ -88,6 +88,13 @@ button {
   font-family: NanumBarun, HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif;
 }
 
+select,
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  background: none;
+}
+
 button {
   border: 0 none;
   background-color: transparent;
@@ -264,7 +271,8 @@ select {
   margin-top: 10px;
 }
 
-.row_input input[type="text"] {
+.row_input input[type="text"],
+.row_input input[type="number"] {
   font-size: 14px;
   color: #999;
   text-align: left;
@@ -794,6 +802,10 @@ input[type="time"] {
 
 .area_listBody .row_divide .inner_text {
   width: 30%;
+}
+
+.area_listBody .inner_text {
+  width: 60%;
 }
 
 .area_listBody .inner_text input {

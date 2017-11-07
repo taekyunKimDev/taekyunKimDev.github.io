@@ -88,6 +88,13 @@ button {
   font-family: NanumBarun, HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif;
 }
 
+select,
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  background: none;
+}
+
 button {
   border: 0 none;
   background-color: transparent;
