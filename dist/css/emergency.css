@@ -250,7 +250,7 @@ select {
 
 .row_input {
   width: 100%;
-  height: 30px;
+  height: 45px;
   margin-top: 10px;
   display: block;
   clear: both;
@@ -259,8 +259,8 @@ select {
 
 .row_input label {
   display: block;
-  height: 60px;
-  margin-top: 23px;
+  height: 30px;
+  margin-top: 10px;
 }
 
 .row_input input[type="text"] {
@@ -273,8 +273,8 @@ select {
   float: left;
   position: relative;
   width: 100%;
-  height: 60px;
-  border-bottom: 1px solid #000;
+  height: 45px;
+  border-bottom: 1px solid #b2b2b2;
 }
 
 .row_input.row_divide .box_input {
