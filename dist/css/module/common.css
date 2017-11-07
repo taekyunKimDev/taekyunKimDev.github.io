@@ -388,6 +388,14 @@ input[type="time"] {
     background: url(../img/x2/ico_chk_on.png) no-repeat;
     background-size: cover;
   }
+
+  .box_select .ico_arrow {
+    background: url(../img/x2/ico_arrow_on.png) no-repeat;
+  }
+
+  .box_select .off .ico_arrow {
+    background: url(../img/x2/ico_arrow_off.png) no-repeat;
+  }
 }
 
 /* 체크박스 끝 */
