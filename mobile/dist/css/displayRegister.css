@@ -801,6 +801,7 @@ input[type="time"] {
   height: 100%;
   text-align: right;
   color: #000;
+  vertical-align: top;
 }
 
 .color_header .box_color {
