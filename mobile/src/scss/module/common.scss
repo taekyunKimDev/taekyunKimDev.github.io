@@ -155,37 +155,40 @@ input[type="time"]{
     float:left;
   }
   .inner_select{
+    position:relative;
     width:60%;
     height:30px;
     select{
-      float:left;
-      width:85%;
+      float:right;
+      //width:85%;
+      padding-right:20px;
       font-size:14px;
       color:#333;
     }
     &.off{
-      .ico_arrow{
+      &:after{
         background:url(../img/ico_arrow_off.png) no-repeat;
         background-size:cover;
       }
     }
+    &:after{
+      display:block;
+      position:absolute;
+      top: 7px;
+      right:0;
+      content: '';
+      width:8px;
+      height:5px;
+      background:url(../img/ico_arrow_on.png) no-repeat;
+      background-size:cover;
+    }
   }
-  .ico_arrow{
-    display:block;
-    float:left;
-    width:8px;
-    height:5px;
-    margin-top:6px;
-    margin-left:10px;
-    background:url(../img/ico_arrow_on.png) no-repeat;
-    background-size:cover;
 
-  }
 }
 .disable_area_input{
   .box_select{
     .inner_select{
-      .ico_arrow{
+       &:after{
         background:url(../img/ico_arrow_disable.png) no-repeat;
         background-size:cover;
       }
@@ -208,44 +211,7 @@ input[type="time"]{
     }
   }
 }
-@media
-only screen and (-webkit-min-device-pixel-ratio:1.5),
-only screen and (min-device-pixel-ratio:1.5),
-only screen and (min-resolution:1.5dppx)  {
-  .box_check{
-    input[type="checkbox"]{
-      display:block;
-      width: 18px;
-      height:18px;
-      background:url(../img/x2/ico_chk_off.png) no-repeat;
-      background-size:cover;
-      &:checked{
-        background:url(../img/x2/ico_chk_on.png) no-repeat;
-        background-size:cover;
-      }
-    }
-  }
-  .box_select{
-    .ico_arrow{
-      background:url(../img/x2/ico_arrow_on.png) no-repeat;
-    }
-    .off{
-      .ico_arrow{
-        background:url(../img/x2/ico_arrow_off.png) no-repeat;
-      }
-    }
-  }
-  .disable_area_input{
-    .box_select{
-      .inner_select{
-        .ico_arrow{
-          background:url(../img/x2/ico_arrow_disable.png) no-repeat;
-          background-size:cover;
-        }
-      }
-    }
-  }
-}
+
 /* 체크박스 끝 */
 
 /* 버튼 시작 */
@@ -340,3 +306,44 @@ only screen and (min-resolution:1.5dppx)  {
 
 }
 /* 비활성화 끝 */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:1.5dppx)  {
+  .box_check{
+    input[type="checkbox"]{
+      display:block;
+      width: 18px;
+      height:18px;
+      background:url(../img/x2/ico_chk_off.png) no-repeat;
+      background-size:cover;
+      &:checked{
+        background:url(../img/x2/ico_chk_on.png) no-repeat;
+        background-size:cover;
+      }
+    }
+  }
+  .box_select{
+    .ico_arrow{
+      background:url(../img/x2/ico_arrow_on.png) no-repeat;
+      background-size:cover;
+    }
+    .off{
+      .ico_arrow{
+        background:url(../img/x2/ico_arrow_off.png) no-repeat;
+        background-size:cover;
+      }
+    }
+  }
+  .disable_area_input{
+    .box_select{
+      .inner_select{
+        .ico_arrow{
+          background:url(../img/x2/ico_arrow_disable.png) no-repeat;
+          background-size:cover;
+        }
+      }
+    }
+  }
+}

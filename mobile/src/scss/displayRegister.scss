@@ -140,3 +140,14 @@
     }
   }
 }
+@media
+only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:1.5dppx)  {
+  .color_header{
+    .palette-color-picker-button{
+      background:url(../img/x2/ico_color.png) no-repeat;
+      background-size:cover;
+    }
+  }
+}
