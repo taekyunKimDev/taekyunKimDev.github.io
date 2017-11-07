@@ -329,7 +329,7 @@ input[type="time"] {
 }
 
 .box_select .inner_select {
-  width: 53%;
+  width: 60%;
   height: 30px;
 }
 
@@ -429,6 +429,12 @@ input[type="time"] {
 
 .area_btnFull button {
   width: 100%;
+}
+
+.fixed_button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 /* 버튼 끝 */

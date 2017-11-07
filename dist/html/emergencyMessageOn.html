@@ -127,7 +127,7 @@
             </div>
         </div>
 
-        <div class="area_btn area_btnFull">
+        <div class="area_btn area_btnFull fixed_button">
             <div class="inner_btn">
                 <button class="btn_fill">전송</button>
             </div>
@@ -149,8 +149,7 @@
         n = n.toString();
 
         if (n.length < digits) {
-            for (i = 0; i < digits - n.length; i++)
-                zero += '0';
+            for (i = 0; i < digits - n.length; i++) zero += '0';
         }
         return zero + n;
     }
@@ -213,6 +212,9 @@
                $(this).parent('.inner_select').addClass('off');
            }
         });
+        $('.switch_input').click(function(){
+            if($(this))
+        })
     });
 </script>
 </body>
