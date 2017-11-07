@@ -347,7 +347,7 @@ input[type="time"] {
 .box_date label {
   float: right;
   width: 48%;
-  margin-left: 2%;
+  margin-left: 4%;
 }
 
 .box_date label:first-child {
