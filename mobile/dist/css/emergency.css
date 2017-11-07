@@ -340,9 +340,6 @@ input[type="time"] {
   padding-left: 10%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .box_date {
@@ -400,6 +397,11 @@ input[type="time"] {
   background-size: cover;
 }
 
+.disable_area_input .box_select .inner_select .ico_arrow {
+  background: url(../img/ico_arrow_disable.png) no-repeat;
+  background-size: cover;
+}
+
 /* 셀렉트박스 끝 */
 
 /* 체크박스 시작 */
@@ -438,6 +440,11 @@ input[type="time"] {
   .box_select .off .ico_arrow {
     background: url(../img/x2/ico_arrow_off.png) no-repeat;
   }
+
+  .disable_area_input .box_select .inner_select .ico_arrow {
+    background: url(../img/x2/ico_arrow_disable.png) no-repeat;
+    background-size: cover;
+  }
 }
 
 /* 체크박스 끝 */
@@ -446,6 +453,7 @@ input[type="time"] {
 
 .area_btn {
   text-align: center;
+  height: 60px;
 }
 
 .area_btn .inner_btn {
@@ -460,6 +468,29 @@ input[type="time"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
+}
+
+.area_btn .inner_btn button:disabled {
+  background-color: #d7d7d7;
+}
+
+.area_btn.area_divide {
+  margin: 20px 0 5px;
+}
+
+.area_btn.area_divide .inner_btn {
+  width: 100%;
+  height: 60px;
+}
+
+.area_btn.area_divide button {
+  float: left;
+  width: 49%;
+  margin-left: 2%;
+}
+
+.area_btn.area_divide button:first-child {
+  margin-left: 0;
 }
 
 .btn_fill {

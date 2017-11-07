@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>디스플레이 등록</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/displayRegister.css">
+    <link rel="stylesheet" href="../css/lib/palette-color-picker.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="header" class="header color_header">
+        <h1 class="tit_header">디스플레이<br/>등록</h1>
+        <p class="txt_disPlayNum">총 <em>12개</em>의 디스플레이가 있습니다.</p>
+        <div class="box_color">
+            <input id="inpColor" type="text" style="display:none;" name="unique-name-2">
+        </div>
+    </div>
+    <div id="container" class="container">
+        <div class="inner_container">
+            <ul class="list_display">
+                <li>
+                    <div>
+                        <div class="area_listHead">
+                            <a href="javascript:;" class="link_player">
+                                <span class="num_display">1</span>
+                                <div class="head_display">
+                                    <strong>AE:43:DE:5F:BF:AD</strong>
+                                    <p>선택을 누르면 디스플레이에 컬러로 반응합니다.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="area_listBody">
+                            <div class="area_input">
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText1">
+                                            <strong class="tit_inp">X 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText1" type="text" value="320">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText2">
+                                            <strong class="tit_inp">Y 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText2" type="text" value="600">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText3">
+                                            <strong class="tit_inp">W 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText3" type="text" value="1920">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText4">
+                                            <strong class="tit_inp">H 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText4" type="text" value="1080">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText5">
+                                            <strong class="tit_inp">From ID</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText5" type="text"  value="Digital">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText6">
+                                            <strong class="tit_inp">Name</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText6" type="text" value="titan">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_divide">
+                                    <div class="inner_btn">
+                                        <button class="btn_line">선택</button>
+                                        <button class="btn_line">확인</button>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_btnFull ">
+                                    <div class="inner_btn">
+                                        <button class="btn_fill">전송</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="area_listHead">
+                            <a href="javascript:;" class="link_player">
+                                <span class="num_display">1</span>
+                                <div class="head_display">
+                                    <strong>AE:43:DE:5F:BF:AD</strong>
+                                    <p>선택을 누르면 디스플레이에 컬러로 반응합니다.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="area_listBody">
+                            <div class="area_input">
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText1">
+                                            <strong class="tit_inp">X 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText1" type="text" value="320">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText2">
+                                            <strong class="tit_inp">Y 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText2" type="text" value="600">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText3">
+                                            <strong class="tit_inp">W 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText3" type="text" value="1920">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText4">
+                                            <strong class="tit_inp">H 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText4" type="text" value="1080">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText5">
+                                            <strong class="tit_inp">From ID</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText5" type="text"  value="Digital">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText6">
+                                            <strong class="tit_inp">Name</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText6" type="text" value="titan">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_divide">
+                                    <div class="inner_btn">
+                                        <button class="btn_line">선택</button>
+                                        <button class="btn_line">확인</button>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_btnFull ">
+                                    <div class="inner_btn">
+                                        <button class="btn_fill">전송</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="area_listHead">
+                            <a href="javascript:;" class="link_player">
+                                <span class="num_display">1</span>
+                                <div class="head_display">
+                                    <strong>AE:43:DE:5F:BF:AD</strong>
+                                    <p>선택을 누르면 디스플레이에 컬러로 반응합니다.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="area_listBody">
+                            <div class="area_input">
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText1">
+                                            <strong class="tit_inp">X 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText1" type="text" value="320">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText2">
+                                            <strong class="tit_inp">Y 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText2" type="text" value="600">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText3">
+                                            <strong class="tit_inp">W 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText3" type="text" value="1920">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText4">
+                                            <strong class="tit_inp">H 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText4" type="text" value="1080">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText5">
+                                            <strong class="tit_inp">From ID</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText5" type="text"  value="Digital">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText6">
+                                            <strong class="tit_inp">Name</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText6" type="text" value="titan">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_divide">
+                                    <div class="inner_btn">
+                                        <button class="btn_line">선택</button>
+                                        <button class="btn_line">확인</button>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_btnFull ">
+                                    <div class="inner_btn">
+                                        <button class="btn_fill">전송</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="area_listHead">
+                            <a href="javascript:;" class="link_player">
+                                <span class="num_display">1</span>
+                                <div class="head_display">
+                                    <strong>AE:43:DE:5F:BF:AD</strong>
+                                    <p>선택을 누르면 디스플레이에 컬러로 반응합니다.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="area_listBody">
+                            <div class="area_input">
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText1">
+                                            <strong class="tit_inp">X 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText1" type="text" value="320">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText2">
+                                            <strong class="tit_inp">Y 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText2" type="text" value="600">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText3">
+                                            <strong class="tit_inp">W 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText3" type="text" value="1920">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText4">
+                                            <strong class="tit_inp">H 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText4" type="text" value="1080">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText5">
+                                            <strong class="tit_inp">From ID</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText5" type="text"  value="Digital">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText6">
+                                            <strong class="tit_inp">Name</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText6" type="text" value="titan">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_divide">
+                                    <div class="inner_btn">
+                                        <button class="btn_line">선택</button>
+                                        <button class="btn_line">확인</button>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_btnFull ">
+                                    <div class="inner_btn">
+                                        <button class="btn_fill">전송</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="area_listHead">
+                            <a href="javascript:;" class="link_player">
+                                <span class="num_display">1</span>
+                                <div class="head_display">
+                                    <strong>AE:43:DE:5F:BF:AD</strong>
+                                    <p>선택을 누르면 디스플레이에 컬러로 반응합니다.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="area_listBody">
+                            <div class="area_input">
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText1">
+                                            <strong class="tit_inp">X 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText1" type="text" value="320">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText2">
+                                            <strong class="tit_inp">Y 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText2" type="text" value="600">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText3">
+                                            <strong class="tit_inp">W 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText3" type="text" value="1920">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText4">
+                                            <strong class="tit_inp">H 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText4" type="text" value="1080">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText5">
+                                            <strong class="tit_inp">From ID</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText5" type="text"  value="Digital">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText6">
+                                            <strong class="tit_inp">Name</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText6" type="text" value="titan">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_divide">
+                                    <div class="inner_btn">
+                                        <button class="btn_line">선택</button>
+                                        <button class="btn_line">확인</button>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_btnFull ">
+                                    <div class="inner_btn">
+                                        <button class="btn_fill">전송</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="area_listHead">
+                            <a href="javascript:;" class="link_player">
+                                <span class="num_display">1</span>
+                                <div class="head_display">
+                                    <strong>AE:43:DE:5F:BF:AD</strong>
+                                    <p>선택을 누르면 디스플레이에 컬러로 반응합니다.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="area_listBody">
+                            <div class="area_input">
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText1">
+                                            <strong class="tit_inp">X 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText1" type="text" value="320">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText2">
+                                            <strong class="tit_inp">Y 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText2" type="text" value="600">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText3">
+                                            <strong class="tit_inp">W 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText3" type="text" value="1920">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText4">
+                                            <strong class="tit_inp">H 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText4" type="text" value="1080">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText5">
+                                            <strong class="tit_inp">From ID</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText5" type="text"  value="Digital">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText6">
+                                            <strong class="tit_inp">Name</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText6" type="text" value="titan">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_divide">
+                                    <div class="inner_btn">
+                                        <button class="btn_line">선택</button>
+                                        <button class="btn_line">확인</button>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_btnFull ">
+                                    <div class="inner_btn">
+                                        <button class="btn_fill">전송</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="area_listHead">
+                            <a href="javascript:;" class="link_player">
+                                <span class="num_display">1</span>
+                                <div class="head_display">
+                                    <strong>AE:43:DE:5F:BF:AD</strong>
+                                    <p>선택을 누르면 디스플레이에 컬러로 반응합니다.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="area_listBody">
+                            <div class="area_input">
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText1">
+                                            <strong class="tit_inp">X 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText1" type="text" value="320">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText2">
+                                            <strong class="tit_inp">Y 좌표</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText2" type="text" value="600">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input row_divide">
+                                    <div class="box_input box_text">
+                                        <label for="inpText3">
+                                            <strong class="tit_inp">W 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText3" type="text" value="1920">
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="box_input box_text">
+                                        <label for="inpText4">
+                                            <strong class="tit_inp">H 크기</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText4" type="text" value="1080">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText5">
+                                            <strong class="tit_inp">From ID</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText5" type="text"  value="Digital">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row_input">
+                                    <div class="box_input box_text">
+                                        <label for="inpText6">
+                                            <strong class="tit_inp">Name</strong>
+                                            <span class="inner_input inner_text">
+                                                <input id="inpText6" type="text" value="titan">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_divide">
+                                    <div class="inner_btn">
+                                        <button class="btn_line">선택</button>
+                                        <button class="btn_line">확인</button>
+                                    </div>
+                                </div>
+                                <div class="area_btn area_btnFull ">
+                                    <div class="inner_btn">
+                                        <button class="btn_fill">전송</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/lib/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/lib/palette-color-picker.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[name="unique-name-2"]').paletteColorPicker({
+            colors: [
+                {"block": "#333"},
+                {"gray": "#666"},
+                {"primary_light": "#F8BBD0"},
+                {"accent": "#CDDC39"},
+                {"primary_text": "#212121"},
+                {"secondary_text": "#727272"},
+                {"divider": "#B6B6B6"},
+                {"secondary_text": "#727272"},
+                {"secondary_text": "#727272"},
+                {"secondary_text": "#727272"}
+            ],
+            // Add custom class to the picker
+            custom_class: 'double',
+            // Force the position of picker's bubble
+            position: 'downside', // default -> 'upside'
+            // Where is inserted the color picker's button, related to the input
+            insert: 'after', // default -> 'before'
+            // Don't add clear_btn
+            clear_btn: 'last', // null -> without clear button, default -> 'first'
+            // Timeout for the picker's fade out in ms
+            timeout: 2000, // default -> 2000
+            // Forces closin all bubbles that are open before opening the current one
+            close_all_but_this: false, // default is false
+            // Sets the input's background color to the selected one on click
+            // seems that some users find this useful ;)
+            set_background: '#727272', // default is false
+
+            // Events
+            // Callback on bubbl show
+            onbeforeshow_callback: function( what ) {
+                console.log(what);
+            },
+
+            // Callback on change value
+            onchange_callback: function( clicked_color ) {
+                console.log(clicked_color);
+            }
+        });
+
+        $('.link_player').click(function(){
+            $(this).toggleClass('on');
+            $(this).parents('li').toggleClass('active');
+        });
+
+        $('.swatch').click(function(){
+            $('.palette-color-picker-bubble').hide()
+        });
+
+    });
+</script>
+</body>
+</html>

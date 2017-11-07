@@ -1,0 +1,140 @@
+@import "module/common.scss";
+@import "module/switch.scss";
+
+.txt_disPlayNum{
+  padding:10px 0 20px;
+  font-size:11px;
+  color:#999;
+  line-height:11px;
+  em{
+    color:#333;
+  }
+}
+
+.area_listHead{
+  .num_display{
+    float:left;
+    display:block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    color:#fff;
+    font-size:25px;
+    font-weight:100;
+    text-align:center;
+    background-color:#d4d4d4;
+    border-radius: 40px;
+  }
+  .link_player{
+    display:block;
+    overflow:hidden;
+  }
+}
+.head_display{
+  float:right;
+  position:relative;
+  width:calc(100% - 40px);
+  padding-left:5%;
+  box-sizing:border-box;
+  strong{
+    font-size:13px;
+    font-weight:bold;
+    color:#333;
+    line-height:16px;
+  }
+  p{
+    font-size:9px;
+    color:#999;
+  }
+  &:after{
+    display:block;
+    content:'';
+    position:absolute;
+    right:0;
+    top:15px;
+    width:8px;
+    height:5px;
+    background:url(../img/ico_arrow_off.png) no-repeat;
+    background-size:cover;
+  }
+}
+.on{
+  .head_display{
+    &:after{
+      background:url(../img/ico_arrow_on.png) no-repeat;
+      background-size:cover;
+    }
+  }
+  .num_display{
+    background-color:#c9338b;
+  }
+}
+.list_display{
+  li{
+    padding-bottom:15px;
+    border-bottom:1px solid #e9e9e9;
+    margin-bottom:15px;
+    &.active{
+      .area_listBody{
+        visibility: visible;
+        opacity: 1;
+        height:auto;
+      }
+    }
+  }
+}
+
+.area_listBody{
+  overflow:hidden;
+  visibility: hidden;
+  opacity: 0;
+  height:0;
+  transition:height 3s, visibility 0s, opacity 0.5s linear;
+  text-align:right;
+  .area_input{
+    display:inline-block;
+    width:calc(100% - 40px);
+    text-align:left;
+
+    .tit_inp{float:left;}
+  }
+  .row_divide{
+    .inner_text{
+      width:30%;
+    }
+  }
+  .inner_text{
+    input{
+      width:100%;
+      height:100%;
+      text-align:right;
+      color:#000;
+    }
+  }
+}
+.color_header{
+  .box_color{
+    position:absolute;
+    top:29px;
+    right:25px;
+  }
+  .palette-color-picker-button{
+    width:24px;
+    height:21px;
+    background:url(../img/ico_color.png) no-repeat;
+    background-size:cover;
+  }
+  .palette-color-picker-bubble{
+    &.downside{
+      right:0;
+    }
+    &:before{
+      left:inherit;
+      right:8px;
+    }
+    &:after{
+      left:inherit;
+      right:9px;
+    }
+  }
+}

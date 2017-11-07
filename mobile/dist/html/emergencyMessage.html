@@ -11,7 +11,7 @@
 <body>
 <div id="wrap">
     <div id="header" class="header">
-        <h1 class="tit_header">긴급<br/> 메세지</h1>
+        <h1 class="tit_header">긴급<br/>메세지</h1>
         <div class="box_input box_switch">
             <strong class="tit_inp">모니터 활성화</strong>
             <div class="inner_switch">
@@ -118,22 +118,13 @@
                         </label>
                     </div>
                 </div>
-
-
-
-
-
-
             </div>
         </div>
-
         <div class="area_btn area_btnFull fixed_button">
             <div class="inner_btn">
                 <button class="btn_fill">전송</button>
             </div>
         </div>
-
-
     </div>
 </div>
 <script type="text/javascript" src="../js/lib/jquery-3.1.1.min.js"></script>
@@ -215,12 +206,14 @@
         $('.switch_input').click(function(){
             if($('.switch_input').prop("checked")){
                 $('.area_input').removeClass('disable_area_input');
+                $('.fixed_button button').attr('disabled',false);
                 $('.area_input input').attr('disabled',false);
                 $('.area_input select').attr('disabled',false);
                 $('.palette-color-picker-button').css({ 'pointer-events': 'auto' });
 
             }else{
                 $('.area_input').addClass('disable_area_input');
+                $('.fixed_button button').attr('disabled',true);
                 $('.area_input input').attr('disabled',true);
                 $('.area_input select').attr('disabled',true);
                 $('.palette-color-picker-button').css({ 'pointer-events': 'none' });
