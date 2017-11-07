@@ -265,7 +265,7 @@ select {
 }
 
 .row_input input[type="text"] {
-  font-size: 14px;
+  font-size: 12px;
   color: #999;
   text-align: right;
 }
@@ -304,7 +304,7 @@ input[type="date"],
 input[type="time"] {
   width: 100%;
   height: 100%;
-  font-size: 14px;
+  font-size: 12px;
   color: #999;
 }
 
@@ -342,7 +342,7 @@ input[type="time"] {
 .box_select .inner_select select {
   float: left;
   width: 85%;
-  font-size: 14px;
+  font-size: 12px;
   color: #999;
 }
 
@@ -416,8 +416,8 @@ input[type="time"] {
 
 .area_btn .inner_btn button {
   display: block;
-  height: 40px;
-  line-height: 40px;
+  height: 60px;
+  line-height: 60px;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
