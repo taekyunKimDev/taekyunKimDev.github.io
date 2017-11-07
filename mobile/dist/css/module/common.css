@@ -338,6 +338,9 @@ input[type="time"] {
   padding-left: 10%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .box_date {
