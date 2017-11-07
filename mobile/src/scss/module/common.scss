@@ -132,10 +132,11 @@ input[type="time"]{
 .box_date{
   height:30px;
   label{
-    float:left;
+    float:right;
     width:48%;
     margin-left:2%;
     &:first-child{
+      float:left;
       margin-left:0;
     }
     .inner_date{
