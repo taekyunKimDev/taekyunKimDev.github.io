@@ -125,6 +125,7 @@
     height:21px;
     background:url(../img/ico_color.png) no-repeat;
     background-size:cover;
+    &.btnRadius{border-radius:27px}
   }
   .palette-color-picker-bubble{
     &.downside{

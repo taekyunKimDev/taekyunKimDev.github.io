@@ -833,6 +833,10 @@ input[type="time"] {
   background-size: cover;
 }
 
+.color_header .palette-color-picker-button.btnRadius {
+  border-radius: 27px;
+}
+
 .color_header .palette-color-picker-bubble.downside {
   right: 0;
 }

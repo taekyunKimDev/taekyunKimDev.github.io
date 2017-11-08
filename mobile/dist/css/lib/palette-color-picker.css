@@ -9,8 +9,6 @@
     /*box-shadow: 0 0 0 1px #bbb;*/
     /*border: 2px solid #fff*/
 }
-.palette-color-picker-button.btnRadius{border-radius: 50%;}
-
 .palette-color-picker-bubble {
     display: none;
     margin: 12px 0;

@@ -700,4 +700,8 @@ input[type="time"] {
   border-radius: 6px;
 }
 
+.palette-color-picker-button.btnRadius {
+  border-radius: 18px;
+}
+
 /*# sourceMappingURL=emergency.css.map */

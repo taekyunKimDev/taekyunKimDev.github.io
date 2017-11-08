@@ -1,2 +1,5 @@
 @import "module/common.scss";
 @import "module/switch.scss";
+.palette-color-picker-button{
+  &.btnRadius{border-radius:18px}
+}
