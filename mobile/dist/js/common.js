@@ -15,8 +15,21 @@ function leadingZeros(n, digits) {
 $(document).ready(function(){
 
     $('.link_player').click(function(){
+        var parentLi = $(this).parents('li')
         $(this).toggleClass('on');
         $(this).parents('li').toggleClass('active');
+        var color = $('.palette-color-picker-button').css('background-color');
+        if(!(parentLi.hasClass('active'))){
+            $('.list_display .num_display').css('background-color','#d4d4d4');
+        }else{
+            if(color === 'rgba(0, 0, 0, 0)'){
+                return false;
+            }else{
+                $('.list_display .on .num_display').css('background-color',color);
+                $('.list_display .btn_send').css('background-color',color);
+            }
+
+        }
     });
 
     $('[name="unique-name-1"]').paletteColorPicker({
@@ -98,11 +111,16 @@ $(document).ready(function(){
         // Callback on change value
         onchange_callback: function( clicked_color ) {
             console.log(clicked_color);
+            $('.list_display .on .num_display').css('background-color',clicked_color);
+            $('.list_display .btn_send').css('background-color',clicked_color);
         }
     });
 
     $('.swatch').click(function(){
-        $('.palette-color-picker-bubble').hide()
+        var selectColor = $(this).attr('backgroung-color');
+        $('.palette-color-picker-bubble').hide();
+        $('.palette-color-picker-button').css('border-radius','50%');
+
     });
 
     $('#startDate').val(date);
