@@ -15,7 +15,7 @@ function leadingZeros(n, digits) {
 $(document).ready(function(){
 
     $('.link_player').click(function(){
-        var parentLi = $(this).parents('li')
+        var parentLi = $(this).parents('li');
         $(this).toggleClass('on');
         $(this).parents('li').toggleClass('active');
         var color = $('.palette-color-picker-button').css('background-color');
