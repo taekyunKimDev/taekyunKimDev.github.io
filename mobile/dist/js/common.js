@@ -117,10 +117,8 @@ $(document).ready(function(){
     });
 
     $('.swatch').click(function(){
-        var selectColor = $(this).attr('backgroung-color');
         $('.palette-color-picker-bubble').hide();
-        $('.palette-color-picker-button').css('border-radius','50%');
-        $('.palette-color-picker-button').css('-webkit-border-radius','50%');
+        $('.palette-color-picker-button').addClass('btnRadius');
 
     });
 
