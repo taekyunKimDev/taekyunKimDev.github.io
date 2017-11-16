@@ -29,4 +29,15 @@
     }
   }
 }
-
+.disable_area_input{
+  .ui-slider-track{
+    &.ui-mini{
+      .ui-slider-handle{
+        background-color:#b7b7b7;
+      }
+    }
+    .ui-slider-bg{
+      background-color:#d8d8d8;
+    }
+  }
+}
