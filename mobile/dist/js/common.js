@@ -12,9 +12,10 @@ function leadingZeros(n, digits) {
     }
     return zero + n;
 }
+
 $(document).ready(function(){
 
-    $('.link_player').click(function(){
+    $(document).on("click", ".link_player", function(){
         var parentLi = $(this).parents('li');
         $(this).toggleClass('on');
         $(this).parents('li').toggleClass('active');
@@ -69,6 +70,7 @@ $(document).ready(function(){
 
         // Callback on change value
         onchange_callback: function( clicked_color ) {
+            $("#color").val(clicked_color);
             console.log(clicked_color);
         }
     });
@@ -107,10 +109,11 @@ $(document).ready(function(){
         onbeforeshow_callback: function( what ) {
             console.log(what);
         },
-
         // Callback on change value
         onchange_callback: function( clicked_color ) {
             console.log(clicked_color);
+
+            $("#color").val(clicked_color);
             $('.list_display .on .num_display').css('background-color',clicked_color);
             $('.list_display .btn_send').css('background-color',clicked_color);
         }

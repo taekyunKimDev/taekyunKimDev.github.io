@@ -1,5 +1,5 @@
 .palette-color-picker-button {
-    position: relative;
+    position: relative; 
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -9,6 +9,7 @@
     /*box-shadow: 0 0 0 1px #bbb;*/
     /*border: 2px solid #fff*/
 }
+
 .palette-color-picker-bubble {
     display: none;
     margin: 12px 0;

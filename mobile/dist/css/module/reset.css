@@ -171,4 +171,8 @@ select {
   border: 0;
 }
 
+.ui-selectmenu-button-text {
+  display: none;
+}
+
 /*# sourceMappingURL=reset.css.map */

@@ -171,6 +171,10 @@ select {
   border: 0;
 }
 
+.ui-selectmenu-button-text {
+  display: none;
+}
+
 /* 공통 */
 
 .ir_pm {
@@ -213,7 +217,7 @@ select {
 }
 
 .container {
-  padding-top: 25px;
+  padding: 25px 0 0;
 }
 
 .container .inner_container {
@@ -227,10 +231,17 @@ select {
   color: #333;
   text-align: left;
   line-height: 30px;
-  padding-bottom: 29px;
+  padding-bottom: 15px;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre-line;
+}
+
+.header .link_txt {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  color: #999;
 }
 
 .header .box_input {
@@ -324,6 +335,7 @@ select {
 }
 
 .row_input .tit_inp {
+  float: left;
   font-size: 12px;
   line-height: 20px;
   color: #bcbcbc;
@@ -348,6 +360,7 @@ input[type="time"] {
   padding-left: 10%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  line-height: 20px;
 }
 
 .box_date {
@@ -499,9 +512,7 @@ input[type="time"] {
 }
 
 .fixed_button {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  margin-top: 60px;
 }
 
 /* 버튼 끝 */

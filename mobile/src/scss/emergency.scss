@@ -3,3 +3,30 @@
 .palette-color-picker-button{
   &.btnRadius{border-radius:18px}
 }
+.row_input:last-child .box_input {
+  border-bottom:1px solid #000;
+}
+
+.row_input{
+  .box_volume{
+    position:relative;
+
+    .tit_inp{
+      float:none;
+    }
+    .inp_volume{
+      display:block;
+      position:absolute;
+      top:0;
+      left:50px;
+      float:none;
+      font-size:12px;
+      line-height:15px;
+      border:0;
+    }
+    .ui-slider-track{
+      display:block;
+    }
+  }
+}
+
