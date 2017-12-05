@@ -220,7 +220,7 @@ BRUSHED.contactForm = function(){
 BRUSHED.menu = function(){
 	$('#menu-nav, #menu-nav-mobile').onePageNav({
 		currentClass: 'current',
-    	changeHash: false,
+    	changeHash: ture,
     	scrollSpeed: 750,
     	scrollOffset: 30,
     	scrollThreshold: 0.5,
@@ -369,22 +369,22 @@ BRUSHED.toolTip = function(){
 BRUSHED.slider();
 
 $(document).ready(function(){
-	Modernizr.load([
-	{
-		test: Modernizr.placeholder,
-		nope: 'include/js/placeholder.js', 
-		complete : function() {
-				if (!Modernizr.placeholder) {
-						Placeholders.init({
-						live: true,
-						hideOnFocus: false,
-						className: "yourClass",
-						textColor: "#999"
-						});    
-				}
-		}
-	}
-	]);
+	// Modernizr.load([
+	// {
+	// 	test: Modernizr.placeholder,
+	// 	nope: 'include/js/placeholder.js', 
+	// 	complete : function() {
+	// 			if (!Modernizr.placeholder) {
+	// 					Placeholders.init({
+	// 					live: true,
+	// 					hideOnFocus: false,
+	// 					className: "yourClass",
+	// 					textColor: "#999"
+	// 					});    
+	// 			}
+	// 	}
+	// }
+	// ]);
 	
 	// Preload the page with jPreLoader
 	$('body').jpreLoader({
