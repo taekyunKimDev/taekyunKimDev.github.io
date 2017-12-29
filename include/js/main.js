@@ -220,7 +220,7 @@ BRUSHED.contactForm = function(){
 BRUSHED.menu = function(){
 	$('#menu-nav, #menu-nav-mobile').onePageNav({
 		currentClass: 'current',
-    	changeHash: ture,
+    	changeHash: true,
     	scrollSpeed: 750,
     	scrollOffset: 30,
     	scrollThreshold: 0.5,
