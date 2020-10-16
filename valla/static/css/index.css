@@ -1,0 +1,456 @@
+@import '../font/NanumGothic/NanumGothic.css';
+@import '../font/AppleSDGothicNeo/AppleSDGothicNeo.css';
+/* reset */
+html {
+    overflow-y: scroll;
+    height: 100%
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+    margin: 0;
+    padding: 0
+}
+
+fieldset, img {
+    border: 0 none;
+    vertical-align: top
+}
+
+dl, ul, ol, menu, li {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+input, select, textarea, button {
+    vertical-align: middle
+}
+
+input::-ms-clear {
+    display: none
+}
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer
+}
+
+body {
+    height: 100%;
+    background: #2f2f2f
+}
+
+a {
+    color: #222;
+    text-decoration: none
+}
+
+/*a:active, a:hover {*/
+/*    text-decoration: underline*/
+/*}*/
+
+a:active {
+    background-color: transparent
+}
+
+address, caption, cite, code, dfn, em, var {
+    font-style: normal;
+    font-weight: normal
+}
+
+body,
+h2,
+h3,
+a,
+p,
+span,
+em,
+button,
+strong,
+input,
+input::placeholder,
+textarea,
+textarea::placeholder {
+    font-family: "NanumGothic", "AppleSDGothicNeo", "Malgun Gothic", sans-serif;
+}
+header {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    padding: 56px 0;
+}
+header .header_inner {
+    overflow: hidden;
+}
+header .header_inner .tit_logo {
+    float:left;
+}
+header .header_inner .link_enter {
+    float: right;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+}
+.valla_inner {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sec_download {
+    padding:280px 0 160px;
+}
+.sec_download .inner_section {
+    padding-left: 280px;
+    text-align: left;
+}
+.sec_download .link_download {
+    display: inline-block;
+    width: 461px;
+    margin-top: 100px;
+    font-size: 22px;
+    line-height: 81px;
+    border-radius: 12px;
+    color: #ff1810;
+    text-align: center;
+    background-color: #fff;
+}
+.sec_download .info_header {
+    padding: 0 0 48px;
+    font-size: 68px;
+    line-height: 84px;
+    text-align: left;
+    color: #fff;
+}
+.sec_download .info_header em {
+    position: relative;
+    font-weight: bold;
+}
+.sec_download .info_header em:after {
+    content: '';
+    position:absolute;
+    bottom: -8px;
+    left:0;
+    width: 100%;
+    height: 8px;
+    background-color: #fff;
+}
+.sec_download p {
+    font-size: 24px;
+    line-height: 26px;
+    text-align: left;
+    color: #fff;
+}
+.sec_info {
+    padding: 80px 0 67px;
+}
+.info_header {
+    text-align: center;
+}
+.info_header .num_info {
+    display:inline-block;
+    position:relative;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #ff1810;
+    line-height:40px;
+}
+.info_header .num_info:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:2px;
+    background-color: #ff1810;
+}
+.info_header .title_info {
+    margin-top: 25px;
+    font-size: 36px;
+    line-height: 46px;
+}
+.info_header .title_info em {
+    display:block;
+}
+.info_header .title_info strong {
+    display:block;
+    color: #ff1810;
+}
+.info_content {
+    text-align: center;
+}
+footer, .sec_download {
+    background-color: #ff1810
+}
+.sec_info01, .sec_info03, .sec_info05 {
+    background-color: #f5f5f5;
+}
+.sec_visual, .sec_info02, .sec_info04 {
+    background-color: #fff;
+}
+.sec_talk {
+    padding: 80px 0 60px;
+    background-image: linear-gradient(1deg, #ffffff 6%, #f5f5f5 98%);
+}
+.sec_visual {
+    padding-bottom: 100px;
+}
+.sec_info01 .info_content img {
+    margin: 30px 0 30px;
+}
+.sec_info02 .info_content img {
+    margin-left: 40px;
+}
+.sec_info03 .info_content img {
+    margin-left: 50px;
+}
+.sec_info04 .info_content img {
+    margin-left: 60px;
+}
+.sec_info05 .info_content img {
+    margin-left: 30px;
+}
+.info_content p {
+    padding-bottom: 13px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #5d5d5d;
+}
+
+footer .sec_footer {
+    padding: 50px 0;
+}
+footer .sec_footer .inner_section {
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+}
+footer .area_partner,
+footer .area_company,
+footer .area_help {
+    float:left;
+    box-sizing: border-box;
+}
+footer .area_partner,
+footer .area_company {
+    width: 38%;
+}
+footer .area_help {
+    width: 24%;
+}
+.sec_footer h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.sec_footer .area_partner .txt_enter {
+    font-size:13px;
+    line-height: 20px;
+}
+.sec_footer .area_partner .email_form {
+    margin-top: 10px;
+}
+.sec_footer .area_partner label {
+    overflow:hidden;
+    position:absolute;
+    width:0;
+    height:0;
+    line-height:0;
+    text-indent:-9999px;
+}
+.sec_footer .area_partner input {
+    width: 100%;
+    height:40px;
+    padding-top: 5px;
+    padding-left: 15px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 0;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.sec_footer .area_partner textarea {
+    width: 100%;
+    height: 101px;
+    padding-top: 13px;
+    resize: none;
+    margin-bottom: 8px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 0;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.sec_footer .area_partner input::placeholder,
+.sec_footer .area_partner textarea::placeholder {
+    color: #fff;
+}
+.sec_footer .area_partner .btn_submit {
+    width: 104px;
+    height: 40px;
+    border-radius: 6px;
+    font-size:12px;
+    line-height:40px;
+    text-align: center;
+    color: #ff1810;
+    background-color: #fff;
+}
+footer .area_company {
+    padding-left: 72px;
+}
+footer .area_company a,
+footer .area_company p {
+    font-size: 13px;
+    line-height: 25px;
+}
+footer .area_company a,
+footer .area_company span {
+    display: inline-block;
+}
+footer .area_company span {
+    margin: 0;
+    padding: 0 5px;
+}
+footer .area_help {
+    padding-left: 15px;
+}
+footer .area_company a,
+footer .area_help a{
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 640px) {
+    header {
+        padding: 0;
+    }
+    header .header_inner {
+        padding:30px;
+    }
+    .valla_inner {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    header .header_inner .tit_logo {
+        width: 81.6px;
+        height: 24px;
+    }
+    .valla_inner img {
+        width:100%;
+    }
+    header .header_inner .link_enter {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .sec_download {
+        padding: 258px 0 50px;
+    }
+    .sec_download .inner_section {
+        padding: 0 30px;
+    }
+    .sec_download .info_header {
+        font-size: 44px;
+        line-height: 56px;
+    }
+    .sec_download .link_download {
+        width: 100%;
+        font-size: 16px;
+        line-height: 63px;
+    }
+    .info_header .num_info {
+        font-size: 34px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+    .info_header .num_info:after {
+        left: 50%;
+        width: 50%;
+        margin-left: -25%;
+    }
+    .info_header .title_info {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .info_content p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .sec_talk .cont_talk img{
+        width: 115%;
+        margin-left: -7%;
+    }
+    .sec_info{
+        padding: 50px 0;
+    }
+    .sec_info01 .info_content img {
+        width: 120%;
+        margin-left: -7%;
+    }
+    .sec_info02 .info_content img {
+        margin-left: 14px;
+    }
+    .sec_info03 .info_content img {
+        margin-left: 30px;
+    }
+    .sec_info04 .info_content img {
+        margin-left: 32px;
+    }
+    .sec_info05 .info_content img {
+        width: 138%;
+        margin-left: -14%;
+    }
+    footer .sec_footer .inner_section{
+        padding: 0 30px;
+    }
+    .sec_footer h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .sec_footer .area_partner .txt_enter {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .sec_footer .area_partner input {
+        height: 51px;
+        font-size: 15px;
+        line-height: 48px;
+    }
+    .sec_footer .area_partner textarea {
+        height: 220px;
+        font-size: 15px;
+        line-height: 48px;
+    }
+    .sec_footer .area_partner .btn_submit {
+        width: 100%;
+        height: 51px;
+        font-size: 15px;
+        line-height: 48px;
+    }
+    footer .area_partner,
+    footer .area_company,
+    footer .area_help {
+        width: 100%;
+    }
+    footer .area_company,
+    footer .area_help {
+        padding-left: 0;
+        padding-top: 50px;
+    }
+    footer .area_company a,
+    footer .area_help a,
+    footer .area_company p {
+        font-size: 12px;
+    }
+}
