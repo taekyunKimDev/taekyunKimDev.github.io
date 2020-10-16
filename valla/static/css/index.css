@@ -79,7 +79,7 @@ input,
 input::placeholder,
 textarea,
 textarea::placeholder {
-    font-family: "NanumGothic", "AppleSDGothicNeo", "Malgun Gothic", sans-serif;
+    font-family: "AppleSDGothicNeo", "NanumGothic", "Malgun Gothic", sans-serif;
 }
 header {
     position: absolute;
