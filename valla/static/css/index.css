@@ -336,7 +336,6 @@ footer .area_help a{
 @media only screen and (max-width: 640px) {
     body,
     #valla {
-        overflow: hidden;
         position: relative;
         width: 100%;
     }
