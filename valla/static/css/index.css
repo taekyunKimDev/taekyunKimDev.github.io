@@ -389,9 +389,17 @@ footer .area_help a{
         font-size: 24px;
         line-height: 40px;
     }
+    .info_content {
+        width: 100%;
+        overflow: hidden;
+    }
     .info_content p {
         font-size: 15px;
         line-height: 24px;
+    }
+    .sec_talk .cont_talk {
+        width: 100%;
+        overflow: hidden;
     }
     .sec_talk .cont_talk img{
         width: 115%;
