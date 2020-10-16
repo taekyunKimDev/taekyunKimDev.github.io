@@ -344,6 +344,7 @@ footer .area_help a{
         padding:30px;
     }
     .valla_inner {
+        overflow:hidden;
         width: 100%;
         box-sizing: border-box;
     }
