@@ -333,6 +333,10 @@ footer .area_help a{
 
 
 @media only screen and (max-width: 640px) {
+    #valla {
+        overflow:hidden;
+        width: 100%;
+    }
     header {
         padding: 0;
     }
