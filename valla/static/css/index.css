@@ -362,7 +362,7 @@ footer .area_help a{
         line-height: 22px;
     }
     .sec_download {
-        padding: 258px 0 50px;
+        padding: 200px 0 50px;
     }
     .sec_download .inner_section {
         padding: 0 30px;
@@ -370,25 +370,38 @@ footer .area_help a{
     .sec_download .info_header {
         font-size: 44px;
         line-height: 56px;
+        font-weight: normal;
+    }
+    .sec_download p {
+        font-size: 18px;
     }
     .sec_download .link_download {
         width: 100%;
         font-size: 16px;
         line-height: 63px;
+        font-weight: bold;
     }
     .info_header .num_info {
         font-size: 34px;
         line-height: 40px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
+        font-weight: bold;
     }
     .info_header .num_info:after {
         left: 50%;
         width: 50%;
-        margin-left: -25%;
+        margin-left: -28%;
     }
-    .info_header .title_info {
+    .info_header .title_info em {
+        margin-bottom: 5px;
         font-size: 24px;
         line-height: 40px;
+        font-weight: bold;
+    }
+    .info_header .title_info strong {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: bold;
     }
     .info_content {
         width: 100%;
@@ -407,7 +420,7 @@ footer .area_help a{
         margin-left: -7%;
     }
     .sec_info{
-        padding: 50px 0;
+        padding: 30px 0;
     }
     .sec_info01,
     .sec_info02,
