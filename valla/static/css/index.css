@@ -416,6 +416,7 @@ footer .area_help a{
     .info_content p {
         font-size: 15px;
         line-height: 24px;
+        margin-top: -15px;
     }
     .sec_talk .cont_talk {
         width: 100%;
@@ -426,7 +427,10 @@ footer .area_help a{
         margin-left: -7%;
     }
     .sec_info{
-        padding: 30px 0;
+        padding: 50px 0;
+    }
+    .sec_info01 {
+        padding-bottom: 0;
     }
     .sec_info01,
     .sec_info02,
@@ -446,7 +450,7 @@ footer .area_help a{
         margin-left: 40px;
     }
     .sec_info04 .info_content img {
-        margin-left: 50px;
+        margin-left: 30px;
     }
     .sec_info05 .info_content img {
         width: 138%;
